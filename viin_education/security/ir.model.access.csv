@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+ace_student,education.student user,model_education_student,,1,0,0,0
+ace_student_teacher,education.student teacher,model_education_student,group_teacher,1,1,1,1
+ace_std_level,student.level user,model_student_level,,1,0,0,0
+ace_std_level_teacher,student.level teacher,model_student_level,group_teacher,1,1,1,1
+ace_edu_class,education.class user,model_education_class,,1,0,0,0
+ace_edu_class_teacher,education.class teacher,model_education_class,group_teacher,1,1,1,1
+ace_edu_school,education.school user,model_education_school,,1,0,0,0
+ace_edu_school_teacher,education.school teacher,model_education_school,group_teacher,1,1,1,1
+ace_edu_class_group,education.class.group user,model_education_class_group,,1,0,0,0
+ace_edu_class_group_teacher,education.class.group teacher,model_education_class_group,group_teacher,1,1,1,1

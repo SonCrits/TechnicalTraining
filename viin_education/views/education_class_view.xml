@@ -1,0 +1,56 @@
+<odoo>
+
+	<record id="education_class_form_view" model='ir.ui.view'>
+		<field name="name">education.class.form.view</field>
+		<field name='model'>education.class</field>
+		<field name='arch' type='xml'>
+			<form string='Class Form'>
+				<header>
+					<button type='object' name='get_all_students' string="Log All Students"/>
+					<button type="object" name="create_classes" string="Create New Class"/>
+				</header>
+				<sheet>
+					<group>
+						<group>
+							<field name='name'/>
+							<field name='code'/>
+						</group>
+						<group>
+							<field name='school_id'/>
+							<field name='teacher_ids' widget="many2many_tags"/>	
+						</group>
+					</group>															
+				</sheet>
+			</form>
+		</field>
+	</record>
+	
+	<record id='education_class_tree_view' model='ir.ui.view'>
+		<field name='name'>education.class.tree.view</field>
+		<field name='model'>education.class</field>
+		<field name='arch' type='xml'>
+			<tree string="Class List">
+				<field name='name'/>
+				<field name='code'/>
+				<field name='school_id'/>
+				<field name='teacher_ids' widget="many2many_tags"/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="education_class_action"
+		model="ir.actions.act_window">
+		<field name='name'>Class</field>
+		<field name='res_model'>education.class</field>
+		<field name='view_mode'>tree,form</field>
+	</record>
+
+	<menuitem 
+		id="education_class_menu" 
+		name="Class"
+		parent="education_student_menu_tab" 
+		action="education_class_action"
+		sequence="70"
+	/>
+
+</odoo>

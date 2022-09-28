@@ -1,0 +1,52 @@
+<odoo>
+
+	<record id="education_school_form_view" model="ir.ui.view">
+		<field name='name'>education.school.form.view</field>
+		<field name='model'>education.school</field>
+		<field name='arch' type='xml'>
+			<form string="School Form">
+				<sheet>
+					<group>
+						<field name='name'/>
+						<field name='code'/>
+						<field name='address'/>
+					</group>
+					<notebook>
+						<page name='class' string="Class">
+							<group>
+								<field name='class_ids'/>
+							</group>
+						</page>
+					</notebook>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	
+	<record id="education_school_tree_view" model='ir.ui.view'>
+		<field name='name'>education.school.tree.view</field>
+		<field name='model'>education.school</field>
+		<field name='arch' type="xml">
+			<tree string='School List'>
+				<field name='name'/>
+				<field name='code'/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="education_school_action"
+		model='ir.actions.act_window'>
+		<field name='name'>School</field>
+		<field name='res_model'>education.school</field>
+		<field name='view_mode'>tree,form</field>
+	</record>
+
+	<menuitem 
+		id='education_school_menu'
+		parent="education_student_menu_tab" 
+		action="education_school_action"
+		name="School" 
+		sequence='80' 
+	/>
+
+</odoo>
