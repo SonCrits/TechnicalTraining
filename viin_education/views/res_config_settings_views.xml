@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.account</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="40"/>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('settings')]" position="inside">
+                    <div class="app_settings_block" data-string="Education" string="Education" data-key="viin_education" groups="viin_education.viin_education_group_admin">                        
+                        <h2 id="education_feature">Extra Features</h2>
+                        <div class="row mt16 o_settings_container" id="education_feature_col1">
+                            <div class="col-12 col-lg-6 o_setting_box" id="education_crm" >
+                                <div class="o_setting_left_pane">
+                                    <field name="module_viin_education_crm"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="module_viin_education_crm"/>
+                                    <div class="text-muted">
+                                        Create Student, Parent during convert lead to opportunity
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 o_setting_box" id="education_fee" >
+                                <div class="o_setting_left_pane">
+                                    <field name="module_viin_education_fees"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="module_viin_education_fees"/>
+                                    <div class="text-muted">
+                                        Create education fees terms
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt16 o_settings_container" id="education_feature_col2">
+                            <div class="col-12 col-lg-6 o_setting_box" id="education_admission" >
+                                <div class="o_setting_left_pane">
+                                    <field name="module_viin_education_admission"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="module_viin_education_admission"/>
+                                    <div class="text-muted">
+                                        Manage Admission and Application
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 o_setting_box" id="education_admission" >
+                                <div class="o_setting_left_pane">
+                                    <field name="module_viin_education_admission_crm"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="module_viin_education_admission_crm"/>
+                                    <div class="text-muted">
+                                        Link lead/opportunity with admission
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt16 o_settings_container" id="education_feature_col2">
+                            <div class="col-12 col-lg-6 o_setting_box" id="education_admission" >
+                                <div class="o_setting_left_pane">
+                                    <field name="module_viin_education_admission_survey_crm"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="module_viin_education_admission_survey_crm"/>
+                                    <div class="text-muted">
+                                        Link survey questions to admission
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 o_setting_box" id="education_admission" >
+                                <div class="o_setting_left_pane">
+                                    <field name="module_viin_education_crm_detect_partner"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="module_viin_education_crm_detect_partner"/>
+                                    <div class="text-muted">
+                                        Auto detect student, parent by email, phone, birthday on lead/opportunity
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt16 o_settings_container" id="education_feature_col2">
+                            <div class="col-12 col-lg-6 o_setting_box" id="education_admission" >
+                                <div class="o_setting_left_pane">
+                                    <field name="module_viin_education_final_year"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="module_viin_education_final_year"/>
+                                    <div class="text-muted">
+                                        Manage education final year
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="action_education_config" model="ir.actions.act_window">
+            <field name="name">Settings</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_id" ref="res_config_settings_view_form"/>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+            <field name="context">{'module' : 'viin_education', 'bin_size': False}</field>
+        </record>
+
+        <menuitem id="menu_education_config" name="Settings" parent="education_configuration_menu_root"
+            sequence="0" action="action_education_config" groups="base.group_system"/>
+    </data>
+</odoo>

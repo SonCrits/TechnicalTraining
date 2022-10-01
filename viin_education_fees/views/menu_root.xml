@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<menuitem id="education_fee_menu_root" name="Education Fees" web_icon="viin_education_fees,static/description/icon.png" groups="viin_education_fees.group_education_fee_user" />
+</odoo>

@@ -1,33 +1,24 @@
-from odoo import fields, models
+from odoo import fields, models, _
 
 
 class EducationClass(models.Model):
     _name = 'education.class'
-    _description = 'Class'
+    _description = 'Education Class'
     
-    name = fields.Char(string="Class Name", translate=True, required=True)
-    code = fields.Char(string="Code", copy=False)
-    school_id = fields.Many2one('education.school', string="School", required=True)
-    teacher_ids = fields.Many2many('res.partner', string="Teachers")
-    student_ids = fields.One2many('education.student', 'class_id', string="Students")
+    name = fields.Char(string='Name', required=True)
+    class_group_id = fields.Many2one('education.class.group', string='Class Group', ondelete='restrict')
+    next_class_id = fields.Many2one('education.class', string='Next Class')
+    school_id = fields.Many2one('education.school', string='School', required=True)
+    company_id = fields.Many2one('res.company', string='Company')
+    active = fields.Boolean(default=True,
+        help="By unchecking the active field, you may hide a Class without deleting it.")
     
-    def get_all_students(self):
-        student = self.env["education.student"]
-        student_list = student.search([])
-        print("All Student: ", student_list)
-    
-    def create_classes(self):
-        student_1 = {
-            'name': 'Nguyen Van A'
-        }
-        student_2 = {
-            'name': 'Nguyen Van B'
-        }
-        create_value = {
-            'name': 'New Class',
-            'student_ids': [
-                (0, 0, student_1),
-                (0, 0, student_2)
-            ]
-        }
-        return self.env['education.class'].create(create_value)
+    _sql_constraints = [('class_name_unique', 'unique(name, company_id)', "The class name must be unique for each company!")]
+
+    def copy(self, default=None):
+        self.ensure_one()
+        if default is None:
+            default = {}
+        if 'name' not in default:
+            default['name'] = _("%s (copy)") % self.name
+        return super(EducationClass, self).copy(default=default)

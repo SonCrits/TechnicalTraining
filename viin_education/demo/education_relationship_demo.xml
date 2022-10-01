@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="demo_education_relationship_father" model="education.relationship">
+        <field name="name">Father</field>
+        <field name="relation_type">father</field>
+    </record>
+    
+    <record id="demo_education_relationship_mother" model="education.relationship">
+        <field name="name">Mother</field>
+        <field name="relation_type">mother</field>
+    </record>
+    
+    <record id="demo_education_relationship_other" model="education.relationship">
+        <field name="name">Other</field>
+        <field name="relation_type">other</field>
+    </record>
+
+</odoo>

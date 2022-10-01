@@ -1,0 +1,28 @@
+<odoo>
+	<record id="survey_form" model="ir.ui.view">
+		<field name="name">survey.survey.view.form.inherit</field>
+		<field name="model">survey.survey</field>
+		<field name="inherit_id" ref="survey.survey_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//div[@name='button_box']" position="inside">
+	            <button name="action_view_lead"
+	                type="object"
+	                class="oe_stat_button"
+	                icon="fa-star">
+	                <field string="Leads/Opportunities" name="leads_count" widget="statinfo"/>
+	            </button>
+			</xpath>
+			<xpath expr="//group[1]" position="after">
+	            <group>
+	                <group>
+	                    <field name="create_lead"/>
+	                </group>
+	            </group>
+			</xpath>
+			<xpath expr="//field[@name='question_and_page_ids']/tree/field[@name='question_type']" position="after">
+				<field name="lead_field_ids" invisible="1"/>
+				<field name="lead_field_id"/>
+			</xpath>
+		</field>
+	</record>
+</odoo>

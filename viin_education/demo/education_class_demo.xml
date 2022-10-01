@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="demo_education_class_12a1" model="education.class">
+        <field name="name">Class 12A1</field>
+        <field name="school_id" eval="demo_education_school_high"/>
+        <field name="class_group_id" eval="demo_education_class_group_12"/>
+    </record>
+    
+    <record id="demo_education_class_12a2" model="education.class">
+        <field name="name">Class 12A2</field>
+        <field name="school_id" eval="demo_education_school_high"/>
+        <field name="class_group_id" eval="demo_education_class_group_12"/>
+    </record>
+    
+    <record id="demo_education_class_11a1" model="education.class">
+        <field name="name">Class 11A1</field>
+        <field name="school_id" eval="demo_education_school_high"/>
+        <field name="class_group_id" eval="demo_education_class_group_11"/>
+        <field name="next_class_id" eval="demo_education_class_12a1"/>
+    </record>
+    
+    <record id="demo_education_class_11a2" model="education.class">
+        <field name="name">Class 11A2</field>
+        <field name="school_id" eval="demo_education_school_high"/>
+        <field name="class_group_id" eval="demo_education_class_group_11"/>
+        <field name="next_class_id" eval="demo_education_class_12a2"/>
+    </record>
+    
+    <record id="demo_education_class_10a1" model="education.class">
+        <field name="name">Class 10A1</field>
+        <field name="school_id" eval="demo_education_school_high"/>
+        <field name="class_group_id" eval="demo_education_class_group_10"/>
+        <field name="next_class_id" eval="demo_education_class_11a1"/>
+    </record>
+    
+    <record id="demo_education_class_10a2" model="education.class">
+        <field name="name">Class 10A2</field>
+        <field name="school_id" eval="demo_education_school_high"/>
+        <field name="class_group_id" eval="demo_education_class_group_10"/>
+        <field name="next_class_id" eval="demo_education_class_11a2"/>
+    </record>
+    
+    <record id="demo_education_class_it501" model="education.class">
+        <field name="name">Class IT501</field>
+        <field name="school_id" eval="demo_education_school_university"/>
+        <field name="class_group_id" eval="demo_education_class_group_it"/>
+    </record>
+    
+    <record id="demo_education_class_it502" model="education.class">
+        <field name="name">Class IT502</field>
+        <field name="school_id" eval="demo_education_school_university"/>
+        <field name="class_group_id" eval="demo_education_class_group_it"/>
+    </record>
+    
+    <record id="demo_education_class_ba601" model="education.class">
+        <field name="name">Class BA601</field>
+        <field name="school_id" eval="demo_education_school_university"/>
+        <field name="class_group_id" eval="demo_education_class_group_ba"/>
+    </record>
+    
+    <record id="demo_education_class_ba602" model="education.class">
+        <field name="name">Class BA602</field>
+        <field name="school_id" eval="demo_education_school_university"/>
+        <field name="class_group_id" eval="demo_education_class_group_ba"/>
+    </record>
+
+</odoo>

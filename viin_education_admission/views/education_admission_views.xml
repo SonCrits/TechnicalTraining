@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="education_admission_view_tree" model="ir.ui.view">
+		<field name="name">education.admission.tree</field>
+		<field name="model">education.admission</field>
+		<field name="arch" type="xml">
+			<tree string="Admission Tree" decoration-muted="state=='cancelled'">
+				<field name="name" />
+				<field name="school_year_id" />
+				<field name="start_date" />
+				<field name="end_date" />
+				<field name="expected_applications" />
+				<field name="state" />
+				<field name="company_id" groups="base.group_multi_company" optional="show" />
+			</tree>
+		</field>
+	</record>
+
+	<record id="education_admission_view_form" model="ir.ui.view">
+		<field name="name">education.admission.form</field>
+		<field name="model">education.admission</field>
+		<field name="arch" type="xml">
+			<form string="Admission Form">
+				<header>
+					<button name="action_confirm" string="Confirm" class="btn-primary" type="object" states="draft" 
+					attrs="{'invisible': [('state', '!=', 'draft')]}" />
+					<button name="action_inprogress" string="In Progress" class="btn-primary" type="object" states="confirmed" />
+					<button name="action_done" string="Done" class="btn-primary" type="object" states="inprogress" />
+					<button name="action_cancel" string="Cancel" type="object" states="confirmed,inprogress,done" 
+					groups="viin_education_admission.viin_admission_group_admin" />
+					<button name="action_draft" string="Set to Draft" type="object" states="cancelled" />
+					<field name="state" widget="statusbar" />
+				</header>
+				<sheet>
+					<div class="oe_button_box" name="button_box">
+						<button name="action_view_application" type="object" class="oe_stat_button" icon="fa-list">
+							<div class="o_stat_info">
+								<field name="application_count" class="o_stat_value" />
+								<span class="o_stat_text">Applications</span>
+							</div>
+						</button>
+					</div>
+					<widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}" />
+					<field name="active" invisible="1" />
+					<div class="oe_title">
+						<h1>
+							<field name="name" />
+						</h1>
+					</div>
+					<group>
+						<group>
+							<field name="start_date" />
+							<field name="end_date" />
+							<field name="expected_applications" />
+							<field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" />
+						</group>
+						<group>
+							<field name="school_year_id" />
+							<field name="user_id" />
+							<field name="company_id" groups="base.group_multi_company" />
+						</group>
+					</group>
+					<notebook>
+						<page name="application" string="Applications">
+							<field name="application_ids">
+								<tree>
+									<field name="student_id" />
+									<field name="name" />
+									<field name="application_date" />
+									<field name="admission_date" />
+									<field name="state" />
+								</tree>
+							</field>
+						</page>
+						<page name="description" string="Description">
+							<field name="description" type="html" />
+						</page>
+					</notebook>
+				</sheet>
+				<div class="oe_chatter">
+					<field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+					<field name="activity_ids" widget="mail_activity" />
+					<field name="message_ids" widget="mail_thread" />
+				</div>
+			</form>
+		</field>
+	</record>
+
+	<record id="education_admission_view_kanban" model="ir.ui.view">
+		<field name="name">education.admission.kanban</field>
+		<field name="model">education.admission</field>
+		<field name="arch" type="xml">
+			<kanban class="oe_background_grey o_kanban_dashboard">
+				<field name="name" />
+				<field name="school_year_id" />
+				<field name="color" />
+				<field name="application_count" />
+				<field name="state" />
+				<field name="user_id" />
+				<field name="new_application_count" />
+				<field name="confirm_application_count" />
+				<field name="expected_applications" />
+				<templates>
+					<t t-name="kanban-box">
+						<div t-attf-class="#{!selection_mode ? kanban_color(record.color.raw_value) : ''}">
+							<div class="o_kanban_card_header">
+								<div class="o_kanban_card_header_title">
+									<div class="o_primary col-12">
+										<span>
+											<t t-esc="record.name.value" />
+										</span>
+									</div>
+									<div class="o_kanban_record_subtitle col-12 text-muted">
+										<field name="user_id" />
+										<field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" 
+										invisible="context.get('fsm_mode', False)" />
+									</div>
+								</div>
+								<div class="o_kanban_manage_button_section">
+									<a class="o_kanban_manage_toggle_button" href="#">
+										<i class="fa fa-ellipsis-v" role="img" aria-label="Manage" title="Manage" />
+									</a>
+								</div>
+							</div>
+							<div class="container o_kanban_card_content">
+								<div class="row">
+									<div class="col-6">
+										<button class="btn btn-primary" name="action_view_application" type="object">
+											<field name="application_count" />
+											Applications
+										</button>
+									</div>
+									<div class="col-6">
+										<field name="expected_applications" />
+										Expected
+										<br />
+										<field name="new_application_count" />
+										New
+										<br />
+										<field name="confirm_application_count" />
+										Confirmed
+									</div>
+								</div>
+							</div>
+							<div class="o_kanban_card_manage_pane dropdown-menu" role="menu">
+								<div class="o_kanban_card_manage_section">
+									<div role="menuitem">
+										<a t-if="widget.editable" name="edit_job" type="edit">Edit</a>
+									</div>
+								</div>
+								<div role="menuitem" aria-haspopup="true">
+									<ul class="oe_kanban_colorpicker" data-field="color" role="menu" />
+								</div>
+							</div>
+						</div>
+					</t>
+				</templates>
+			</kanban>
+		</field>
+	</record>
+
+	<record id="education_admission_view_graph" model="ir.ui.view">
+		<field name="name">education.admission.graph</field>
+		<field name="model">education.admission</field>
+		<field name="arch" type="xml">
+			<graph string="Education Admission">
+				<field name="name" />
+				<field name="expected_applications" type="measure" />
+			</graph>
+		</field>
+	</record>
+
+	<record id="education_admission_view_pivot" model="ir.ui.view">
+		<field name="name">education.admission.pivot</field>
+		<field name="model">education.admission</field>
+		<field name="arch" type="xml">
+			<pivot string="Education Admission">
+				<field name="name" type="row" />
+				<field name="expected_applications" type="measure" />
+			</pivot>
+		</field>
+	</record>
+
+	<record id="education_admission_view_search" model="ir.ui.view">
+		<field name="name">education.admission.search</field>
+		<field name="model">education.admission</field>
+		<field name="arch" type="xml">
+			<search string="Admission Search">
+				<field name="name" />
+				<field name="tag_ids" />
+				<field name="start_date" />
+				<field name="end_date" />
+				<filter string="Draft" name="ftr_draft" domain="[('state','=','draft')]" />
+				<filter string="Confirmed" name="ftr_confirmed" domain="[('state','=','confirmed')]" />
+				<filter string="In Progress" name="ftr_inprogress" domain="[('state','=','inprogress')]" />
+				<filter string="Done" name="ftr_done" domain="[('state','=','done')]" />
+				<filter string="Cancelled" name="ftr_cancelled" domain="[('state','=','cancelled')]" />
+				<separator />
+				<filter string="Archived" name="ftr_inactive" domain="[('active', '=', False)]" />
+				<group expand="0" string="Group By">
+					<filter string="School Year" name="grp_school_year" context="{'group_by': 'school_year_id'}" />
+					<filter string="State" name="grp_state" context="{'group_by': 'state'}" />
+					<filter string="Responsible" name="grp_user" context="{'group_by': 'user_id'}" />
+					<filter string="Company" name="grp_company" domain="[]" context="{'group_by' : 'company_id'}" 
+					groups="base.group_multi_company" />
+				</group>
+				<searchpanel>
+					<field name="company_id" groups="base.group_multi_company" icon="fa-building" />
+				</searchpanel>
+			</search>
+		</field>
+	</record>
+
+	<record id="education_admission_action" model="ir.actions.act_window">
+		<field name="name">Admissions</field>
+		<field name="res_model">education.admission</field>
+		<field name="view_mode">kanban,tree,form,pivot,graph</field>
+	</record>
+
+	<menuitem id="education_admission_menu" action="education_admission_action" parent="education_admission_menu_root" sequence="20" />
+</odoo>

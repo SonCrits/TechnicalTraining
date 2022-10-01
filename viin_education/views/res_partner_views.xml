@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="view_partner_form" model="ir.ui.view">
+		<field name="name">res.partner.form.inherit</field>
+		<field name="model">res.partner</field>
+		<field name="inherit_id" ref="base.view_partner_form" />
+		<field name="arch" type="xml">
+			<field name="vat" position="after">
+				<field name="is_parent" groups="viin_education.viin_education_group_user" />
+				<field name="is_teacher" groups="viin_education.viin_education_group_user" />
+			</field>
+			<xpath expr="//notebook" position="inside">
+				<page string="Students" attrs="{'invisible': [('is_parent', '=', False)]}" groups="viin_education.viin_education_group_user">
+					<field name="student_ids">
+						<tree editable="bottom">
+							<field name="student_id" />
+							<field name="relationship_id" />
+						</tree>
+					</field>
+				</page>
+			</xpath>
+		</field>
+	</record>
+	
+	<record id="view_res_partner_filter" model="ir.ui.view">
+		<field name="name">res.partner.select.inherit</field>
+		<field name="model">res.partner</field>
+		<field name="inherit_id" ref="base.view_res_partner_filter" />
+		<field name="arch" type="xml">
+			<filter name="inactive" position="after">
+				<separator/>
+				<filter string="Is Student" name="ftr_is_student" domain="[('education_student_ids', '!=', False)]"
+					groups="viin_education.viin_education_group_user"/>
+				<separator/>
+				<filter string="Is Parent" name="ftr_is_parent" domain="[('is_parent', '=', True)]"
+					groups="viin_education.viin_education_group_user"/>
+				<separator/>
+				<filter string="Is Teacher" name="ftr_is_teacher" domain="[('is_teacher', '=', True)]"
+					groups="viin_education.viin_education_group_user"/>
+				<separator/>
+				<filter string="Parents have studying students" name="ftr_parents_have_studying_students"
+					domain="[('studying_student_count', '&gt;=', 1)]" groups="viin_education.viin_education_group_user"/>
+				<filter string="Parents have more than 1 studying students" name="ftr_parents_with_more_than_studying_students"
+					domain="[('studying_student_count', '&gt;=', 2)]" groups="viin_education.viin_education_group_user"/>
+			</filter>
+		</field>
+	</record>
+
+	<record id="education_parent_action" model="ir.actions.act_window">
+		<field name="name">Parents</field>
+		<field name="res_model">res.partner</field>
+		<field name="view_mode">kanban,tree,form</field>
+		<field name="domain">[('is_parent', '!=', False)]</field>
+		<field name="context">{'default_is_parent': True}</field>
+	</record>
+
+	<menuitem id="education_parent_menu" action="education_parent_action" parent="education_parent_menu_root" name="Parents" sequence="50" />
+</odoo>

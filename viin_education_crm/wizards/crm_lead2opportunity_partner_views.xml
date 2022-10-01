@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="view_crm_lead2opportunity_partner" model="ir.ui.view">
+		<field name="name">crm.lead2opportunity.partner.form.inherit</field>
+		<field name="model">crm.lead2opportunity.partner</field>
+		<field name="inherit_id" ref="crm.view_crm_lead2opportunity_partner" />
+		<field name="arch" type="xml">
+			<group name="action" position="before">
+				<group>
+					<group name="parent_action" attrs="{'invisible': [('name', '!=', 'convert')]}" string="Parent">
+						<field name="parent_action" nolabel="1" widget="radio" />
+						<field name="parent_id" widget="res_partner_many2one" context="{'res_partner_search_mode': 'customer', 
+    						'show_vat': True, 'default_is_parent': True}" 
+    						attrs="{'required': [('parent_action', '=', 'exist')], 'invisible':[('parent_action','!=','exist')]}" />
+                        <field name="show_relationship" invisible="1"/>
+                        <field name="relationship_id" attrs="{'invisible': [('show_relationship','=',False)], 'required': [('show_relationship','=',True)]}"/>
+					</group>
+				</group>
+			</group>
+			<field name="partner_id" position="after">
+				<field name="student_id" attrs="{'required': [('action', '=', 'existing_student')], 'invisible':[('action','!=','existing_student')]}" />
+			</field>
+		</field>
+	</record>
+</odoo>

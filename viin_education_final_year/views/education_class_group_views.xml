@@ -1,0 +1,14 @@
+<odoo>
+
+	<record id="education_class_group_view_form" model="ir.ui.view">
+		<field name="name">education.class.group.form.inherit</field>
+		<field name="model">education.class.group</field>
+		<field name="inherit_id" ref="viin_education.education_class_group_view_form" />
+		<field name="arch" type="xml">
+			<field name="name" position="after">
+				<field name="final_year"/>
+			</field>
+		</field>
+	</record>
+	
+</odoo>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<menuitem id="education_management_menu_root" name="Education"
+		web_icon="viin_education,static/description/icon.png" />
+		
+	<menuitem id="education_student_menu_root"
+		name="Students" parent="education_management_menu_root"
+		sequence="10"/>
+	
+	<menuitem id="education_parent_menu_root"
+		name="Parents" parent="education_management_menu_root"
+		sequence="20"/>
+		
+	<menuitem id="education_configuration_menu_root"
+		name="Configuration" parent="education_management_menu_root"
+		sequence="99" groups="viin_education.viin_education_group_admin"/>
+</odoo>

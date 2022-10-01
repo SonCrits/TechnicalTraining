@@ -1,0 +1,17 @@
+<odoo>
+    <record id="survey_question_form" model="ir.ui.view">
+        <field name="name">Form view for survey question</field>
+        <field name="model">survey.question</field>
+       	<field name="inherit_id" ref="survey.survey_question_form"/>
+        <field name="arch" type="xml">
+        	<xpath expr="//field[@name='question_type']/parent::group/parent::group" position="after">
+        		<group attrs="{'invisible': [('is_page', '=', True)]}">
+        			<group>
+        				<field name="lead_field_ids" invisible="1"/>
+        				<field name="lead_field_id" attrs="{'invisible': ['|',('question_type', '=', 'multiple_choice'),('question_type', '=', 'matrix')]}"/>
+        			</group>
+        		</group>
+        	</xpath>
+        </field>
+    </record>
+</odoo>

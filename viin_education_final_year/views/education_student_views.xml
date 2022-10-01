@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	
+	<record id="education_student_view_form" model="ir.ui.view">
+		<field name="name">education.student.form.inherit</field>
+		<field name="model">education.student</field>
+		<field name="inherit_id" ref="viin_education.education_student_view_form" />
+		<field name="arch" type="xml">
+			<field name="class_id" position="after">
+				<field name="final_year"/>
+			</field>
+		</field>
+	</record>
+	
+	<record id="education_student_view_search" model="ir.ui.view">
+		<field name="name">education.student.search.inherit</field>
+		<field name="model">education.student</field>
+		<field name="inherit_id" ref="viin_education.education_student_view_search"/>
+		<field name="arch" type="xml">
+			<filter name="inactive" position="after">
+				<separator/>
+				<filter string="Final Year Student" name="ftr_final_year" domain="[('final_year', '=', True)]" />
+			</filter>
+		</field>
+	</record>
+
+</odoo>

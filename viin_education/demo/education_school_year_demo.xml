@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="demo_education_school_year_2021" model="education.school.year">
+        <field name="name">2021 - 2022</field>
+        <field name="start_date">2021-09-06</field>
+        <field name="end_date">2022-05-25</field>
+    </record>
+    
+    <record id="demo_education_school_year_2022" model="education.school.year">
+        <field name="name">2022 - 2023</field>
+        <field name="start_date">2022-09-05</field>
+        <field name="end_date">2023-05-25</field>
+    </record>
+    
+    <record id="demo_education_school_year_2024" model="education.school.year">
+        <field name="name">2023 - 2024</field>
+        <field name="start_date">2023-09-05</field>
+        <field name="end_date">2024-05-25</field>
+    </record>
+
+</odoo>

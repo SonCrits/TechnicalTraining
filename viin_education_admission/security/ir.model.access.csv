@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_application_user,education.application user,model_education_application,viin_admission_group_user,1,1,1,0
+access_application_admin,education.application admin,model_education_application,viin_admission_group_admin,1,1,1,1
+access_admission_user,education.admission user,model_education_admission,viin_admission_group_user,1,1,1,0
+access_admission_admin,education.admission admin,model_education_admission,viin_admission_group_admin,1,1,1,1
+access_admission_tag_user,education.admission.tag user,model_education_admission_tag,viin_admission_group_user,1,1,1,0

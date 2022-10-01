@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="education_student_view_tree" model="ir.ui.view">
+		<field name="name">education.student.tree</field>
+		<field name="model">education.student</field>
+		<field name="arch" type="xml">
+			<tree string="Student Tree">
+				<field name="name" />
+				<field name="phone" optional="hide" />
+				<field name="mobile" optional="show" />
+				<field name="email" optional="show" />
+				<field name="city" optional="hide" />
+				<field name="state" optional="show" />
+				<field name="student_level_id" optional="hide" />
+				<field name="company_id" groups="base.group_multi_company" />
+			</tree>
+		</field>
+	</record>
+
+	<record id="education_student_view_form" model="ir.ui.view">
+		<field name="name">education.student.form</field>
+		<field name="model">education.student</field>
+		<field name="arch" type="xml">
+			<form string="Student Form">
+				<header>
+					<field name="state" widget="statusbar" />
+				</header>
+				<sheet>
+					<field name="image_1920" widget="image" class="oe_avatar" options='{"preview_image": "image_128"}' />
+					<div class="oe_title">
+						<h1>
+							<field name="name" placeholder="Full Name" required="True" />
+						</h1>
+					</div>
+					<group>
+						<group>
+							<span class="o_form_label o_td_label" name="address_name">
+								<b>Address</b>
+							</span>
+							<div class="o_address_format">
+								<field name="street" placeholder="Street..." class="o_address_street" />
+								<field name="street2" placeholder="Street 2..." class="o_address_street" />
+								<field name="district_id" placeholder="District" class="o_address_street" />
+								<field name="city" placeholder="City" class="o_address_city" />
+								<field name="state_id" class="o_address_state" placeholder="State" />
+								<field name="zip" placeholder="ZIP" class="o_address_zip" />
+								<field name="country_id" placeholder="Country" class="o_address_country" />
+							</div>
+							<field name="ethnicity_id" placeholder="Ethnicity" context="{'default_country_id': country_id}" />
+							<field name="nationality_id" options="{'no_create': True, 'no_open': True}"/>
+						</group>
+						<group>
+							<field name="student_code" />
+							<field name="phone" widget="phone" />
+							<field name="mobile" widget="phone" />
+							<field name="email" widget="email" context="{'gravatar_image': True}" />
+							<field name="dob" />
+							<field name="gender" />
+							<field name="class_group_id" />
+							<field name="class_id" />
+							<field name="responsible_id" />
+						</group>
+					</group>
+					<notebook>
+						<page name="general" string="General Information">
+							<group>
+								<group>
+									<field name="student_level_id" />
+								</group>
+								<group>
+									<field name="school_id" />
+									<field name="company_id" groups="base.group_multi_company" />
+								</group>
+							</group>
+						</page>
+						<page name="school_year" string="School Year">
+							<field name="school_stage_ids">
+								<tree editable="bottom">
+									<field name="class_id" />
+									<field name="school_year_id" />
+									<field name="start_date" optional="hide" />
+									<field name="end_date" optional="hide" />
+									<field name="state" />
+								</tree>
+								<form>
+									<group>
+										<field name="class_id" />
+									</group>
+									<group>
+										<field name="school_year_id" />
+										<field name="state" />
+									</group>
+								</form>
+							</field>
+						</page>
+						<page name="parents" string="Parents">
+							<field name="parent_ids">
+								<tree editable="bottom">
+									<field name="parent_id" context="{'default_is_parent': True}" />
+									<field name="is_contact_person" widget='boolean_toggle' />
+									<field name="relationship_id" />
+								</tree>
+								<form>
+									<group>
+										<field name="parent_id" />
+									</group>
+									<group>
+										<field name="relationship_id" />
+									</group>
+								</form>
+							</field>
+						</page>
+						<page name="documents" string="Attached Documents">
+							<group>
+								<field name="attachment_ids" widget="many2many_binary" />
+							</group>
+						</page>
+					</notebook>
+				</sheet>
+				<div class="oe_chatter">
+					<field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+					<field name="activity_ids" widget="mail_activity" />
+					<field name="message_ids" widget="mail_thread" />
+				</div>
+			</form>
+		</field>
+	</record>
+
+	<!-- Partner Kanban View -->
+	<record id="education_student_view_kanban" model="ir.ui.view">
+		<field name="name">education.student.kanban</field>
+		<field name="model">education.student</field>
+		<field name="arch" type="xml">
+			<kanban class="o_res_partner_kanban">
+				<field name="id" />
+				<field name="color" />
+				<field name="display_name" />
+				<field name="email" />
+				<field name="street" />
+				<field name="street2" />
+				<field name="zip" />
+				<field name="city" />
+				<field name="country_id" />
+				<field name="mobile" />
+				<field name="state_id" />
+				<field name="category_id" />
+				<field name="image_128" />
+				<field name="type" />
+				<templates>
+					<t t-name="kanban-box">
+						<div class="oe_kanban_global_click o_kanban_record_has_image_fill o_res_partner_kanban">
+							<div class="o_kanban_image">
+								<img t-att-src="kanban_image('education.student', 'image_128', record.id.raw_value)" alt="Student" class="o_image_64_contain" />
+							</div>
+							<div class="oe_kanban_details">
+								<strong class="o_kanban_record_title oe_partner_heading">
+									<field name="display_name" />
+								</strong>
+								<div class="o_kanban_tags_section oe_kanban_partner_categories" />
+								<ul>
+									<li t-if="record.city.raw_value and !record.country_id.raw_value">
+										<field name="city" />
+									</li>
+									<li t-if="!record.city.raw_value and record.country_id.raw_value">
+										<field name="country_id" />
+									</li>
+									<li t-if="record.city.raw_value and record.country_id.raw_value">
+										<field name="city" />
+										,
+										<field name="country_id" />
+									</li>
+									<li t-if="record.mobile.raw_value">
+										<field name="mobile" />
+									</li>
+									<li t-if="record.email.raw_value" class="o_text_overflow">
+										<field name="email" />
+									</li>
+								</ul>
+								<div class="oe_kanban_partner_links" />
+							</div>
+						</div>
+					</t>
+				</templates>
+			</kanban>
+		</field>
+	</record>
+
+	<record id="education_student_view_search" model="ir.ui.view">
+		<field name="name">education.student.search</field>
+		<field name="model">education.student</field>
+		<field name="arch" type="xml">
+			<search string="Students Search">
+				<field name="name" filter_domain="['|', '|', ('name', 'ilike', self), ('ref', '=', self), ('email', 'ilike', self)]" />
+				<field name="class_id" />
+				<field name="school_id" />
+				<field name="email" filter_domain="[('email', 'ilike', self)]" />
+				<field name="phone" filter_domain="['|', ('phone', 'ilike', self), ('mobile', 'ilike', self)]" />
+				<field name="dob" />
+				<field name="dyob" />
+				<field name="mob" />
+				<field name="yob" />
+				<separator />
+				<filter string="New" name="ftr_new" domain="[('state', '=', 'new')]" />
+				<filter string="Studying" name="ftr_studying" domain="[('state', '=', 'studying')]" />
+				<filter string="Off" name="ftr_off" domain="[('state', '=', 'off')]" />
+				<separator />
+				<filter string="Archived" name="inactive" domain="[('active', '=', False)]" />
+				<group expand="0" string="Group By">
+					<filter string="Level" name="grp_level" context="{'group_by': 'student_level_id'}" />
+					<filter string="Gender" name="grp_gender" context="{'group_by': 'gender'}" />
+					<filter string="Class" name="grp_class" context="{'group_by': 'class_id'}" />
+					<filter string="Class Group" name="grp_class_group" context="{'group_by': 'class_group_id'}" />
+					<filter string="Day of Birth" name="grp_dyob" context="{'group_by' : 'dyob'}" />
+					<filter string="Month of Birth" name="grp_mob" context="{'group_by' : 'mob'}" />
+					<filter string="Year of Birth" name="grp_yob" context="{'group_by' : 'yob'}" />
+					<filter string="School" name="grp_school" context="{'group_by': 'school_id'}" />
+					<filter string="Company" name="grp_company" context="{'group_by' : 'company_id'}" groups="base.group_multi_company" />
+				</group>
+				<searchpanel>
+					<field name="school_id" icon="fa-building" />
+					<field name="class_group_id" />
+				</searchpanel>
+			</search>
+		</field>
+	</record>
+
+	<record id="education_student_action" model="ir.actions.act_window">
+		<field name="name">Students</field>
+		<field name="res_model">education.student</field>
+		<field name="view_mode">kanban,tree,form</field>
+	</record>
+
+	<menuitem id="education_student_menu" action="education_student_action" parent="education_student_menu_root" name="Students" sequence="50" />
+</odoo>

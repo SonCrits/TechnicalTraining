@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="demo_education_school_high" model="education.school">
+        <field name="name">Vietnam Australia International High School</field>
+        <field name="code">VAHS</field>
+    </record>
+    
+    <record id="demo_education_school_university" model="education.school">
+        <field name="name">Vietnam Australia International University</field>
+        <field name="code">VAU</field>
+    </record>
+
+</odoo>

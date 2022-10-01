@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<record id="education_admission_view_form" model="ir.ui.view">
+		<field name="name">education.admission.form.inherit</field>
+		<field name="model">education.admission</field>
+		<field name="inherit_id" ref="viin_education_admission.education_admission_view_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//div[@name='button_box']" position="inside">
+	            <button name="action_view_lead" groups="sales_team.group_sale_salesman"
+	                type="object"
+	                class="oe_stat_button"
+	                icon="fa-star">
+	                <field string="Leads" name="leads_count" widget="statinfo"/>
+	            </button>
+			</xpath>
+            <field name="user_id" position="after">
+                <field name="source_id"/>
+            </field>
+		</field>
+	</record>
+
+	<record id="education_admission_view_kanban" model="ir.ui.view">
+		<field name="name">education.admission.kanban.inherit</field>
+		<field name="model">education.admission</field>
+		<field name="inherit_id" ref="viin_education_admission.education_admission_view_kanban"/>
+		<field name="arch" type="xml">
+			<xpath expr="//kanban/field[@name='expected_applications']" position="after">
+	            <field name="leads_count" />
+			</xpath>
+            <xpath expr="//div[hasclass('o_kanban_card_content')]/div[hasclass('row')]/div[hasclass('col-6')][2]" position="inside">
+				<br />
+				<field name="leads_count" />
+				Leads
+            </xpath>
+		</field>
+	</record>
+
+</odoo>

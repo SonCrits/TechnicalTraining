@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<menuitem id="education_admission_menu_root" name="Admission" groups="viin_education_admission.viin_admission_group_user"
+		web_icon="viin_education_admission,static/description/icon.png" />
+        
+    <menuitem id="education_admission_config_menu_root" name="Configurations" parent="education_admission_menu_root" 
+        groups="viin_education_admission.viin_admission_group_admin" sequence="99"/>
+</odoo>

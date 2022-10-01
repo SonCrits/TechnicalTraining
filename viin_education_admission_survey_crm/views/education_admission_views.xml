@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<record id="education_admission_view_form" model="ir.ui.view">
+		<field name="name">education.admission.form.inherit</field>
+		<field name="model">education.admission</field>
+		<field name="inherit_id" ref="viin_education_admission.education_admission_view_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//div[@name='button_box']" position="inside">
+	            <button name="action_view_survey"
+	                type="object"
+	                class="oe_stat_button"
+	                icon="fa-align-justify">
+	                <field string="Surveys" name="surveys_count" widget="statinfo"/>
+	            </button>
+			</xpath>
+		</field>
+	</record>
+
+</odoo>

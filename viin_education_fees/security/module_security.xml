@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id="module_category_education_fees" model="ir.module.category">
+			<field name="name">Education Fees</field>
+			<field name="parent_id" ref="viin_education.module_education_category" />
+		</record>
+
+		<record id="group_education_fee_user" model="res.groups">
+			<field name="name">User</field>
+			<field name="implied_ids" eval="[(4, ref('viin_education.viin_education_group_user'))]" />
+			<field name="category_id" ref="module_category_education_fees" />
+		</record>
+
+		<record id="group_education_fee_manager" model="res.groups">
+			<field name="name">Administrator</field>
+			<field name="implied_ids" eval="[(4, ref('group_education_fee_user'))]" />
+			<field name="category_id" ref="module_category_education_fees" />
+			<field name="users" eval="[(4, ref('base.user_root')),(4, ref('base.user_admin'))]" />
+		</record>
+	</data>
+	
+	<data noupdate="1">
+		<record id="rule_education_fee_term_multi_company" model="ir.rule">
+			<field name="name">Education Fees Term: multi-company</field>
+			<field  name="model_id" ref="model_education_fee_term" />
+			<field eval="True" name="global" />
+			<field name="domain_force">['|',('company_id','=',False),('company_id', 'in', company_ids)]</field>
+		</record>
+	</data>
+</odoo>

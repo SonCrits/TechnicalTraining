@@ -1,0 +1,390 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* viin_partner_ethnicity
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-13 09:49+0000\n"
+"PO-Revision-Date: 2021-09-13 09:49+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-B-13
+msgid "Ba-na"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-BK-23
+msgid "Bru-Vân Kiều"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-B-52
+msgid "Brâu"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-BY-49
+msgid "Bố Y"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-C-36
+msgid "Chu-ru"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-C-17
+msgid "Chăm"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-C-32
+msgid "Chơ-ro"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-C-44
+msgid "Chứt"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-C-30
+msgid "Co"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:ir.model.fields,field_description:viin_partner_ethnicity.field_res_partner_ethnicity__code
+msgid "Code"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:ir.model,name:viin_partner_ethnicity.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:ir.model.fields,field_description:viin_partner_ethnicity.field_res_partner_ethnicity__country_id
+#: model_terms:ir.ui.view,arch_db:viin_partner_ethnicity.res_partner_ethnicity_view_search
+msgid "Country"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:ir.model.fields,field_description:viin_partner_ethnicity.field_res_partner_ethnicity__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:ir.model.fields,field_description:viin_partner_ethnicity.field_res_partner_ethnicity__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-CL-47
+msgid "Cơ Lao"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-C-16
+msgid "Cơ-ho"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-C-26
+msgid "Cơ-tu"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-C-48
+msgid "Cống"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-D-09
+msgid "Dao"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:ir.model.fields,field_description:viin_partner_ethnicity.field_res_partner_ethnicity__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:ir.actions.act_window,name:viin_partner_ethnicity.res_partner_ethnicity_action
+msgid "Ethnicities"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:ir.model,name:viin_partner_ethnicity.model_res_partner_ethnicity
+#: model:ir.model.fields,field_description:viin_partner_ethnicity.field_res_partner__ethnicity_id
+#: model:ir.model.fields,field_description:viin_partner_ethnicity.field_res_users__ethnicity_id
+#: model_terms:ir.ui.view,arch_db:viin_partner_ethnicity.view_partner_form
+msgid "Ethnicity"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model_terms:ir.ui.view,arch_db:viin_partner_ethnicity.res_partner_ethnicity_view_form
+msgid "Ethnicity Form"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model_terms:ir.ui.view,arch_db:viin_partner_ethnicity.res_partner_ethnicity_view_search
+msgid "Ethnicity Search"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model_terms:ir.ui.view,arch_db:viin_partner_ethnicity.res_partner_ethnicity_view_tree
+msgid "Ethnicity Tree"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-G-10
+msgid "Gia-rai"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-G-25
+msgid "Giáy"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-G-27
+msgid "Gié-Triêng"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model_terms:ir.ui.view,arch_db:viin_partner_ethnicity.res_partner_ethnicity_view_search
+msgid "Group By"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-H-08
+msgid "Hmông"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-H-04
+msgid "Hoa"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-H-19
+msgid "Hrê"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-HN-35
+msgid "Hà Nhì"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:ir.model.fields,field_description:viin_partner_ethnicity.field_res_partner_ethnicity__id
+msgid "ID"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-K-33
+msgid "Kháng"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-KR-56
+msgid "Không rõ"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-K-05
+msgid "Khơ-me"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-K-29
+msgid "Khơ-mú"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-K-01
+msgid "Kinh"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-LC-38
+msgid "La Chi"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-LH-39
+msgid "La Ha"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-LH-41
+msgid "La Hủ"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:ir.model.fields,field_description:viin_partner_ethnicity.field_res_partner_ethnicity____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:ir.model.fields,field_description:viin_partner_ethnicity.field_res_partner_ethnicity__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:ir.model.fields,field_description:viin_partner_ethnicity.field_res_partner_ethnicity__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-L-37
+msgid "Lào"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-LL-43
+msgid "Lô Lô"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-L-42
+msgid "Lự"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-M-20
+msgid "Mnông"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-M-06
+msgid "Mường"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-M-28
+msgid "Mạ"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-M-45
+msgid "Mảng"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:ir.model.fields,field_description:viin_partner_ethnicity.field_res_partner_ethnicity__name
+msgid "Name"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-N-11
+msgid "Ngái"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-NNN-55
+msgid "Người nước ngoài"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-N-07
+msgid "Nùng"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-PL-40
+msgid "Phù Lá"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-PP-51
+msgid "Pu Péo"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-PT-46
+msgid "Pà Thẻn"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-R-21
+msgid "Ra-glai"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-R-54
+msgid "Rơ-măm"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-SL-50
+msgid "Si La"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-SC-15
+msgid "Sán Chay"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-SD-18
+msgid "Sán Dìu"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-T-31
+msgid "Ta-ôi"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:ir.model.constraint,message:viin_partner_ethnicity.constraint_res_partner_ethnicity_code_unique
+msgid "The code of Ethnicity must be unique per country!"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-T-03
+msgid "Thái"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-T-24
+msgid "Thổ"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-T-02
+msgid "Tày"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-X-34
+msgid "Xinh-mun"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-X-22
+msgid "Xtiêng"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-X-14
+msgid "Xơ-đăng"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-E-12
+msgid "Ê-đê"
+msgstr ""
+
+#. module: viin_partner_ethnicity
+#: model:res.partner.ethnicity,name:viin_partner_ethnicity.ethnicity_vn_VN-OD-53
+msgid "Ơ Đu"
+msgstr ""

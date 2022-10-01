@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="demo_education_class_group_10" model="education.class.group">
+        <field name="name">Group 10</field>
+    </record>
+    
+    <record id="demo_education_class_group_11" model="education.class.group">
+        <field name="name">Group 11</field>
+    </record>
+    
+    <record id="demo_education_class_group_12" model="education.class.group">
+        <field name="name">Group 12</field>
+    </record>
+    
+    <record id="demo_education_class_group_it" model="education.class.group">
+        <field name="name">Information Technology</field>
+    </record>
+    
+    <record id="demo_education_class_group_ba" model="education.class.group">
+        <field name="name">Business Administration</field>
+    </record>
+
+</odoo>

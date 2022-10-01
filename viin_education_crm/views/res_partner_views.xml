@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="view_partner_form" model="ir.ui.view">
+		<field name="name">res.partner.form.inherit</field>
+		<field name="model">res.partner</field>
+		<field name="inherit_id" ref="base.view_partner_form" />
+		<field name="arch" type="xml">
+			<xpath expr="//div[@name='button_box']" position="inside">
+				<button name="action_view_opportunity_parent" type="object" class="oe_stat_button" icon="fa-inbox" 
+				    attrs="{'invisible': [('is_parent', '=', False)]}">
+					<div class="o_stat_info">
+						<field name="opportunity_parent_count" class="o_stat_value" />
+						<span class="o_stat_text">Opportunities</span>
+					</div>
+				</button>
+			</xpath>
+		</field>
+	</record>
+
+	<record id="view_partners_form_crm1" model="ir.ui.view">
+		<field name="name">res.partner.form.crm1.inherit</field>
+		<field name="model">res.partner</field>
+		<field name="inherit_id" ref="crm.view_partners_form_crm1" />
+		<field name="arch" type="xml">
+			<xpath expr="//button[@name='action_view_opportunity']" position="attributes">
+				<attribute name="attrs">{'invisible': [('is_parent', '!=', False)]}</attribute>
+			</xpath>
+		</field>
+	</record>
+</odoo>

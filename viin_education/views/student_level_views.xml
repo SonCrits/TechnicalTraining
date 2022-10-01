@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="student_level_view_tree" model="ir.ui.view">
+		<field name="name">student.level.tree</field>
+		<field name="model">student.level</field>
+		<field name="arch" type="xml">
+			<tree string="Student Level Tree">
+				<field name="sequence" widget="handle" />
+				<field name="name" />
+			</tree>
+		</field>
+	</record>
+
+	<record id="student_level_view_form" model="ir.ui.view">
+		<field name="name">student.level.form</field>
+		<field name="model">student.level</field>
+		<field name="arch" type="xml">
+			<form string="Student Level Form">
+				<sheet>
+					<widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}" />
+					<field name="active" invisible="1" />
+					<group>
+						<group>
+							<field name="name" />
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	
+	<record id="student_level_view_search" model="ir.ui.view">
+		<field name="name">student.level.search</field>
+		<field name="model">student.level</field>
+		<field name="arch" type="xml">
+			<search string="Student Level Search">
+				<field name="name" />
+			</search>
+		</field>
+	</record>
+
+	<record id="student_level_action" model="ir.actions.act_window">
+		<field name="name">Student Level</field>
+		<field name="res_model">student.level</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<menuitem id="student_level_menu" action="student_level_action" parent="education_configuration_menu_root" sequence="30" />
+</odoo>

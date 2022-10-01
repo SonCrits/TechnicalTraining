@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="education_admission_tag_tree_view" model="ir.ui.view">
+        <field name="name">education.admission.tag.tree</field>
+        <field name="model">education.admission.tag</field>
+        <field name="arch" type="xml">
+            <tree string="Admission Tags" editable="bottom">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    
+    <record id="education_admission_tags_form_view" model="ir.ui.view">
+        <field name="name">education.admission.form</field>
+        <field name="model">education.admission.tag</field>
+        <field name="arch" type="xml">
+            <form string="Tags">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="education_admission_tags_search_view" model="ir.ui.view">
+        <field name="name">education.admission.tag.search</field>
+        <field name="model">education.admission.tag</field>
+        <field name="arch" type="xml">
+            <search string="Admission Tags">
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+    
+    <record id="education_admission_tags_action" model="ir.actions.act_window">
+        <field name="name">Admission Tags</field>
+        <field name="res_model">education.admission.tag</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <menuitem id="education_admission_tag_menu" action="education_admission_tags_action" parent="education_admission_config_menu_root" sequence="10" />
+
+</odoo>

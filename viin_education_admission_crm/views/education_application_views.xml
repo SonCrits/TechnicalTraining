@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="education_application_view_form" model="ir.ui.view">
+		<field name="name">education.application.form</field>
+		<field name="model">education.application</field>
+		<field name="inherit_id" ref="viin_education_admission.education_application_view_form"/>
+		<field name="arch" type="xml">
+			<field name="student_id" position="after">
+				<field name="lead_id" groups="sales_team.group_sale_salesman"/>
+			</field>
+		</field>
+	</record>
+</odoo>

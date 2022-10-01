@@ -1,0 +1,210 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* viin_education_crm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-13 02:44+0000\n"
+"PO-Revision-Date: 2021-10-13 02:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: viin_education_crm
+#: model_terms:ir.ui.view,arch_db:viin_education_crm.education_student_view_form
+#: model_terms:ir.ui.view,arch_db:viin_education_crm.view_partner_form
+msgid "<span class=\"o_stat_text\">Opportunities</span>"
+msgstr "<span class=\"o_stat_text\">Cơ hội</span>"
+
+#. module: viin_education_crm
+#: code:addons/viin_education_crm/models/crm_lead.py:0
+#, python-format
+msgid "Can't create parent because the parent name on lead %s is empty."
+msgstr ""
+"Bạn không thể tạo phụ huynh bởi vì thông tin tên phụ huynh trên tiềm năng %s"
+" đang để trống"
+
+#. module: viin_education_crm
+#: code:addons/viin_education_crm/models/crm_lead.py:0
+#, python-format
+msgid "Can't create student because the contact name on lead %s is empty."
+msgstr ""
+"Bạn không thể tạo học sinh bởi vì thông tin tên liên hệ trên tiềm năng %s "
+"đang để trống"
+
+#. module: viin_education_crm
+#: model:ir.model,name:viin_education_crm.model_res_partner
+msgid "Contact"
+msgstr "Liên hệ"
+
+#. module: viin_education_crm
+#: model:ir.model,name:viin_education_crm.model_crm_lead2opportunity_partner
+msgid "Convert Lead to Opportunity (not in mass)"
+msgstr "Chuyển khách hàng tiềm năng thành cơ hội (không hàng loạt)"
+
+#. module: viin_education_crm
+#: model:ir.model.fields.selection,name:viin_education_crm.selection__crm_lead2opportunity_partner__parent_action__create
+#: model:ir.model.fields.selection,name:viin_education_crm.selection__crm_lead2opportunity_partner_mass__parent_action__create
+msgid "Create a new parent"
+msgstr "Tạo một phụ huynh mới"
+
+#. module: viin_education_crm
+#: model:ir.model.fields.selection,name:viin_education_crm.selection__crm_lead2opportunity_partner__action__create_student
+#: model:ir.model.fields.selection,name:viin_education_crm.selection__crm_lead2opportunity_partner_mass__action__create_student
+msgid "Create a new student"
+msgstr "Tạo một học sinh mới"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead__partner_id
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner__display_name
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:viin_education_crm.field_education_student__display_name
+#: model:ir.model.fields,field_description:viin_education_crm.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: viin_education_crm
+#: model:ir.model.fields.selection,name:viin_education_crm.selection__crm_lead2opportunity_partner__parent_action__nothing
+#: model:ir.model.fields.selection,name:viin_education_crm.selection__crm_lead2opportunity_partner_mass__parent_action__nothing
+msgid "Do not link to a parent"
+msgstr "Không liên kết tới Phụ huynh"
+
+#. module: viin_education_crm
+#: model:ir.model,name:viin_education_crm.model_education_student
+msgid "Education Student"
+msgstr "Học sinh"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner__id
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead__id
+#: model:ir.model.fields,field_description:viin_education_crm.field_education_student__id
+#: model:ir.model.fields,field_description:viin_education_crm.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner____last_update
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead____last_update
+#: model:ir.model.fields,field_description:viin_education_crm.field_education_student____last_update
+#: model:ir.model.fields,field_description:viin_education_crm.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối"
+
+#. module: viin_education_crm
+#: model:ir.model,name:viin_education_crm.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Tiềm năng/Cơ hội"
+
+#. module: viin_education_crm
+#: model:ir.model.fields.selection,name:viin_education_crm.selection__crm_lead2opportunity_partner__parent_action__exist
+#: model:ir.model.fields.selection,name:viin_education_crm.selection__crm_lead2opportunity_partner_mass__parent_action__exist
+msgid "Link to an existing parent"
+msgstr "Liên kết tới một phụ huynh đã tồn tại"
+
+#. module: viin_education_crm
+#: model:ir.model.fields.selection,name:viin_education_crm.selection__crm_lead2opportunity_partner__action__existing_student
+#: model:ir.model.fields.selection,name:viin_education_crm.selection__crm_lead2opportunity_partner_mass__action__existing_student
+msgid "Link to an existing student"
+msgstr "Liên kết tới một học sinh đã tồn tại"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,help:viin_education_crm.field_crm_lead__partner_id
+msgid ""
+"Linked partner (optional). Usually created when converting the lead. You can"
+" find a partner by its Name, TIN, Email or Internal Reference."
+msgstr ""
+"Đối tác liên quan (tuỳ chọn). Thường được tạo khi chuyển đổi tiềm năng. Bạn "
+"có thể tìm đối tác bằng Tên, Mã số thuế, Email hoặc Tham chiếu Nội bộ."
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_education_student__opportunity_of_parent_ids
+#: model:ir.model.fields,field_description:viin_education_crm.field_res_partner__opportunity_of_parent_ids
+#: model:ir.model.fields,field_description:viin_education_crm.field_res_users__opportunity_of_parent_ids
+msgid "Opportunity of Parent"
+msgstr "Cơ hội của phụ huynh"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_education_student__opportunity_parent_count
+#: model:ir.model.fields,field_description:viin_education_crm.field_res_partner__opportunity_parent_count
+#: model:ir.model.fields,field_description:viin_education_crm.field_res_users__opportunity_parent_count
+msgid "Opportunity of Parent counter"
+msgstr "Số lượng cơ hội của phụ huynh"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_education_student__opportunity_of_student_ids
+msgid "Opportunity of Student"
+msgstr "Cơ hội của học sinh"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_education_student__opportunity_student_count
+msgid "Opportunity of Student Count"
+msgstr "Số lượng cơ hội của học sinh"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner__parent_id
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner_mass__parent_id
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead__parent_id
+#: model_terms:ir.ui.view,arch_db:viin_education_crm.crm_lead_view_form
+#: model_terms:ir.ui.view,arch_db:viin_education_crm.view_crm_lead2opportunity_partner
+#: model_terms:ir.ui.view,arch_db:viin_education_crm.view_crm_lead2opportunity_partner_mass
+msgid "Parent"
+msgstr "Phụ huynh"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead__parent_name
+msgid "Parent Name"
+msgstr "Tên phụ huynh"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner__action
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner_mass__action
+msgid "Related Customer"
+msgstr "Khách hàng liên quan"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner__parent_action
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner_mass__parent_action
+msgid "Related Parent"
+msgstr "Phụ huynh liên quan"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,help:viin_education_crm.field_crm_lead2opportunity_partner__relationship_id
+#: model:ir.model.fields,help:viin_education_crm.field_crm_lead2opportunity_partner_mass__relationship_id
+msgid "Relation between parent and student"
+msgstr "Quan hệ giữa phụ huynh và học sinh"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner__relationship_id
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner_mass__relationship_id
+msgid "Relationship"
+msgstr "Quan hệ"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner__show_relationship
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner_mass__show_relationship
+msgid "Show Relationship"
+msgstr ""
+
+#. module: viin_education_crm
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner__student_id
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead2opportunity_partner_mass__student_id
+#: model:ir.model.fields,field_description:viin_education_crm.field_crm_lead__student_id
+msgid "Student"
+msgstr "Học sinh"
+
+#. module: viin_education_crm
+#: model:ir.model.fields,help:viin_education_crm.field_crm_lead2opportunity_partner__show_relationship
+#: model:ir.model.fields,help:viin_education_crm.field_crm_lead2opportunity_partner_mass__show_relationship
+msgid ""
+"Technical field computed to hide or show relationship based on parent and "
+"student"
+msgstr ""

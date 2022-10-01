@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="demo_education_student_aaron" model="education.student">
+        <field name="name">Hank Aaron</field>
+        <field name="gender">male</field>
+        <field name="student_code">HA001</field>
+        <field name="mobile">0912345601</field>
+        <field name="email">handaaron@example.com</field>
+        <field name="dob">2006-06-03</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_2"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_10"/>
+        <field name="class_id" ref="demo_education_class_10a1"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/aaron.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_alba" model="education.student">
+        <field name="name">Jessica Alba</field>
+        <field name="gender">female</field>
+        <field name="student_code">JA001</field>
+        <field name="mobile">0912345602</field>
+        <field name="email">jessicaalba@example.com</field>
+        <field name="dob">2006-09-05</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_5"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_10"/>
+        <field name="class_id" ref="demo_education_class_10a1"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/alba.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_bacon" model="education.student">
+        <field name="name">Francis Bacon</field>
+        <field name="gender">male</field>
+        <field name="student_code">FB001</field>
+        <field name="mobile">0912345603</field>
+        <field name="email">francisbacon@example.com</field>
+        <field name="dob">2006-09-11</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_10"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_10"/>
+        <field name="class_id" ref="demo_education_class_10a1"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/bacon.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_gurion" model="education.student">
+        <field name="name">David Ben Gurion</field>
+        <field name="gender">male</field>
+        <field name="student_code">DBG001</field>
+        <field name="mobile">0912345604</field>
+        <field name="email">davidgurion@example.com</field>
+        <field name="dob">2006-02-08</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_12"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_10"/>
+        <field name="class_id" ref="demo_education_class_10a2"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/gurion.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_bowen" model="education.student">
+        <field name="name">Elizabeth Bowen</field>
+        <field name="gender">female</field>
+        <field name="student_code">EB001</field>
+        <field name="mobile">0912345605</field>
+        <field name="email">elizabethbowen@example.com</field>
+        <field name="dob">2006-07-11</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_23"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_10"/>
+        <field name="class_id" ref="demo_education_class_10a2"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/bowen.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_cameron" model="education.student">
+        <field name="name">Kirk Cameron</field>
+        <field name="gender">male</field>
+        <field name="student_code">KC001</field>
+        <field name="mobile">0912345606</field>
+        <field name="email">kirkcameron@example.com</field>
+        <field name="dob">2007-01-17</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_11"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_11"/>
+        <field name="class_id" ref="demo_education_class_11a1"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/cameron.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_christie" model="education.student">
+        <field name="name">Agatha Christie</field>
+        <field name="gender">female</field>
+        <field name="student_code">AC001</field>
+        <field name="mobile">0912345607</field>
+        <field name="email">agathachristie@example.com</field>
+        <field name="dob">2007-03-05</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_18"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_11"/>
+        <field name="class_id" ref="demo_education_class_11a1"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/christie.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_coolidge" model="education.student">
+        <field name="name">Calvin Coolidge</field>
+        <field name="gender">male</field>
+        <field name="student_code">CC001</field>
+        <field name="mobile">0912345608</field>
+        <field name="email">calvincoolidge@example.com</field>
+        <field name="dob">2007-11-28</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_2"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_11"/>
+        <field name="class_id" ref="demo_education_class_11a2"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/coolidge.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_dickinson" model="education.student">
+        <field name="name">Emily Dickinson</field>
+        <field name="gender">female</field>
+        <field name="student_code">ED001</field>
+        <field name="mobile">0912345609</field>
+        <field name="email">emilydickinson@example.com</field>
+        <field name="dob">2007-04-19</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_45"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_11"/>
+        <field name="class_id" ref="demo_education_class_11a2"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/dickinson.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_fellini" model="education.student">
+        <field name="name">Federico Fellini</field>
+        <field name="gender">male</field>
+        <field name="student_code">FF001</field>
+        <field name="mobile">0912345610</field>
+        <field name="email">federicofellini@example.com</field>
+        <field name="dob">2007-10-08</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_44"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_11"/>
+        <field name="class_id" ref="demo_education_class_11a2"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/fellini.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_falilei" model="education.student">
+        <field name="name">Galileo Galilei</field>
+        <field name="gender">male</field>
+        <field name="student_code">GG001</field>
+        <field name="mobile">0912345611</field>
+        <field name="email">galileogalilei@example.com</field>
+        <field name="dob">2008-10-24</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_26"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_12"/>
+        <field name="class_id" ref="demo_education_class_12a1"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/galilei.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_groening" model="education.student">
+        <field name="name">Matt Groening</field>
+        <field name="gender">male</field>
+        <field name="student_code">MT001</field>
+        <field name="mobile">0912345612</field>
+        <field name="email">mattgroening@example.com</field>
+        <field name="dob">2008-08-22</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_5"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_12"/>
+        <field name="class_id" ref="demo_education_class_12a1"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/groening.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_rand" model="education.student">
+        <field name="name">Ayn Rand</field>
+        <field name="gender">female</field>
+        <field name="student_code">AR001</field>
+        <field name="mobile">0912345613</field>
+        <field name="email">aynrand@example.com</field>
+        <field name="dob">2008-01-24</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_2"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_12"/>
+        <field name="class_id" ref="demo_education_class_12a2"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/rand.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_piper" model="education.student">
+        <field name="name">Roddy Piper</field>
+        <field name="gender">male</field>
+        <field name="student_code">RP001</field>
+        <field name="mobile">0912345614</field>
+        <field name="email">roddypiper@example.com</field>
+        <field name="dob">2008-09-26</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_12"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_12"/>
+        <field name="class_id" ref="demo_education_class_12a2"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/piper.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_ramirez" model="education.student">
+        <field name="name">Manny Ramirez</field>
+        <field name="gender">male</field>
+        <field name="student_code">MR001</field>
+        <field name="mobile">0912345615</field>
+        <field name="email">mannyramirez@example.com</field>
+        <field name="dob">2008-06-04</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_10"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_12"/>
+        <field name="class_id" ref="demo_education_class_12a2"/>
+        <field name="student_level_id" ref="demo_student_level_high"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/ramirez.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_saroyan" model="education.student">
+        <field name="name">William Saroyan</field>
+        <field name="gender">male</field>
+        <field name="student_code">WS001</field>
+        <field name="mobile">0912345616</field>
+        <field name="email">williamsaroyan@example.com</field>
+        <field name="dob">2009-07-15</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_2"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_it"/>
+        <field name="class_id" ref="demo_education_class_it501"/>
+        <field name="student_level_id" ref="demo_student_level_university"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/saroyan.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_shelley" model="education.student">
+        <field name="name">Mary Shelley</field>
+        <field name="gender">female</field>
+        <field name="student_code">MS001</field>
+        <field name="mobile">0912345617</field>
+        <field name="email">maryshelley@example.com</field>
+        <field name="dob">2009-09-15</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_18"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_it"/>
+        <field name="class_id" ref="demo_education_class_it501"/>
+        <field name="student_level_id" ref="demo_student_level_university"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/shelley.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_swift" model="education.student">
+        <field name="name">Jonathan Swift</field>
+        <field name="gender">male</field>
+        <field name="student_code">JS001</field>
+        <field name="mobile">0912345618</field>
+        <field name="email">jonathanswift@example.com</field>
+        <field name="dob">2010-07-17</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_12"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_it"/>
+        <field name="class_id" ref="demo_education_class_it501"/>
+        <field name="student_level_id" ref="demo_student_level_university"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/swift.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_trollope" model="education.student">
+        <field name="name">Anthony Trollope</field>
+        <field name="gender">male</field>
+        <field name="student_code">AT001</field>
+        <field name="mobile">0912345619</field>
+        <field name="email">anthonytrollope@example.com</field>
+        <field name="dob">2010-02-16</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_11"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_it"/>
+        <field name="class_id" ref="demo_education_class_it502"/>
+        <field name="student_level_id" ref="demo_student_level_university"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/trollope.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_camus" model="education.student">
+        <field name="name">Albert Camus</field>
+        <field name="gender">male</field>
+        <field name="student_code">AC0001</field>
+        <field name="mobile">0912345620</field>
+        <field name="email">albertcamus@example.com</field>
+        <field name="dob">2011-01-01</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_26"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_it"/>
+        <field name="class_id" ref="demo_education_class_it502"/>
+        <field name="student_level_id" ref="demo_student_level_university"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/camus.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_churchill" model="education.student">
+        <field name="name">Sarah Churchill</field>
+        <field name="gender">female</field>
+        <field name="student_code">SC001</field>
+        <field name="mobile">0912345621</field>
+        <field name="email">sarahchurchill@example.com</field>
+        <field name="dob">2009-11-11</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_23"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_ba"/>
+        <field name="class_id" ref="demo_education_class_ba601"/>
+        <field name="student_level_id" ref="demo_student_level_university"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/churchill.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_cobain" model="education.student">
+        <field name="name">Hillary Cobain</field>
+        <field name="gender">female</field>
+        <field name="student_code">HC001</field>
+        <field name="mobile">0912345622</field>
+        <field name="email">hillarycobain@example.com</field>
+        <field name="dob">2011-06-21</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_44"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_ba"/>
+        <field name="class_id" ref="demo_education_class_ba601"/>
+        <field name="student_level_id" ref="demo_student_level_university"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/cobain.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_dangerfield" model="education.student">
+        <field name="name">Rodney Dangerfield</field>
+        <field name="gender">female</field>
+        <field name="student_code">RD001</field>
+        <field name="mobile">0912345623</field>
+        <field name="email">rodneydangerfield@example.com</field>
+        <field name="dob">2011-03-08</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_45"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_ba"/>
+        <field name="class_id" ref="demo_education_class_ba602"/>
+        <field name="student_level_id" ref="demo_student_level_university"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/dangerfield.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_elliot" model="education.student">
+        <field name="name">Jim Elliot</field>
+        <field name="gender">male</field>
+        <field name="student_code">JE001</field>
+        <field name="mobile">0912345624</field>
+        <field name="email">jimelliot@example.com</field>
+        <field name="dob">2012-07-17</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_50"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_ba"/>
+        <field name="class_id" ref="demo_education_class_ba602"/>
+        <field name="student_level_id" ref="demo_student_level_university"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/elliot.jpeg"/>
+    </record>
+    
+    <record id="demo_education_student_francona" model="education.student">
+        <field name="name">Terry Francona</field>
+        <field name="gender">male</field>
+        <field name="student_code">TF001</field>
+        <field name="mobile">0912345625</field>
+        <field name="email">terryfrancona@example.com</field>
+        <field name="dob">2012-10-05</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="state_id" ref="base.state_us_50"/>
+        <field name="nationality_id" ref="base.us"/>
+        <field name="class_group_id" ref="demo_education_class_group_ba"/>
+        <field name="class_id" ref="demo_education_class_ba602"/>
+        <field name="student_level_id" ref="demo_student_level_university"/>
+        <field name="image_1920" type="base64" file="viin_education/static/img/francona.jpeg"/>
+    </record>
+
+</odoo>

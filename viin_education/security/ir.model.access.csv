@@ -1,11 +1,19 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-ace_student,education.student user,model_education_student,,1,0,0,0
-ace_student_teacher,education.student teacher,model_education_student,group_teacher,1,1,1,1
-ace_std_level,student.level user,model_student_level,,1,0,0,0
-ace_std_level_teacher,student.level teacher,model_student_level,group_teacher,1,1,1,1
-ace_edu_class,education.class user,model_education_class,,1,0,0,0
-ace_edu_class_teacher,education.class teacher,model_education_class,group_teacher,1,1,1,1
-ace_edu_school,education.school user,model_education_school,,1,0,0,0
-ace_edu_school_teacher,education.school teacher,model_education_school,group_teacher,1,1,1,1
-ace_edu_class_group,education.class.group user,model_education_class_group,,1,0,0,0
-ace_edu_class_group_teacher,education.class.group teacher,model_education_class_group,group_teacher,1,1,1,1
+
+access_education_school_user,education.school user,model_education_school,viin_education_group_user,1,0,0,0
+access_education_school_admin,education.school admin,model_education_school,viin_education_group_admin,1,1,1,1
+access_education_class_user,education.class user,model_education_class,viin_education_group_user,1,0,0,0
+access_education_class_admin,education.class admin,model_education_class,viin_education_group_admin,1,1,1,1
+access_education_class_group_user,education.class.group user,model_education_class_group,viin_education_group_user,1,0,0,0
+access_education_class_group_admin,education.class.group admin,model_education_class_group,viin_education_group_admin,1,1,1,1
+access_student_level_user,student.level user,model_student_level,viin_education_group_user,1,0,0,0
+access_student_level_admin,student.level admin,model_student_level,viin_education_group_admin,1,1,1,1
+access_education_relationship_user,education.relationship user,model_education_relationship,viin_education_group_user,1,0,0,0
+access_education_relationship_admin,education.relationship admin,model_education_relationship,viin_education_group_admin,1,1,1,1
+access_education_school_year_user,education.school.year user,model_education_school_year,viin_education_group_user,1,0,0,0
+access_education_school_year_admin,education.school.year admin,model_education_school_year,viin_education_group_admin,1,1,1,1
+access_education_student_user,education.student user,model_education_student,viin_education_group_user,1,1,1,0
+access_education_student_admin,education.student admin,model_education_student,viin_education_group_admin,1,1,1,1
+access_student_relation_user,student.relation user,model_student_relation,viin_education_group_user,1,1,1,1
+access_student_school_stage_user,student.shool.stage user,model_student_school_stage,viin_education_group_user,1,1,1,0
+access_student_school_stage_admin,student.shool.stage admin,model_student_school_stage,viin_education_group_admin,1,1,1,1
