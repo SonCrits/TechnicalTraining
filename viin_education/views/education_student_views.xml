@@ -23,6 +23,8 @@
 		<field name="arch" type="xml">
 			<form string="Student Form">
 				<header>
+					<button type='object' name='action_dropout' string='Drop ReaSon'/>
+					<button type='object' name='action_tuition_fee' string='Tuition Fee'/>
 					<field name="state" widget="statusbar" />
 				</header>
 				<sheet>
@@ -59,6 +61,12 @@
 							<field name="class_group_id" />
 							<field name="class_id" />
 							<field name="responsible_id" />
+							<field name='dropout_reason' readonly='1'/>
+							<field name='tuition_fee' readonly='1'/>
+							<field name='math_point'/>
+							<field name='physical_point'/>
+							<field name='chemistry_point'/>
+							<field name='average_point'/>
 						</group>
 					</group>
 					<notebook>

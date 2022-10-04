@@ -22,6 +22,15 @@ class EducationStudent(models.Model):
     parent_ids = fields.One2many('student.relation', 'student_id', string='Parents')
     attachment_ids = fields.Many2many('ir.attachment', 'education_student_ir_attachment_rel', 'attachment_id', 'student_id', string='Attachments')
     responsible_id = fields.Many2one('res.users', string='Responsible', tracking=True, help="Responsible for this student.")
+    dropout_reason = fields.Text(string='Dropout Reason')
+    tuition_fee = fields.Float(string='Tuition Free')
+    math_point = fields.Float(string='Math Point')
+    physical_point = fields.Float(string='Physical Point')
+    chemistry_point = fields.Float(string='Chemistry Point')
+    average_point = fields.Float(string='Average Point', compute='_compute_average_point')
+    ref_ir_act_window = fields.Many2one('ir.actions.act_window', 'Sidebar action', readonly=True, copy=False,
+                                        help="Sidebar action to make this template available on records "
+                                             "of the related document model")
     
     _sql_constraints = [('student_code_unique', 'unique(student_code)', "The student code must be unique!")]
 
@@ -38,6 +47,14 @@ class EducationStudent(models.Model):
             if r.country_id and r.district_id and r.district_id.country_id != r.country_id:
                 raise ValidationError(_("The district '%s' does not belong to country '%s'. Please select another!")\
                                       % (r.district_id.name, r.country_id.name))
+                
+    @api.depends('math_point', 'physical_point', 'chemistry_point')
+    def _compute_average_point(self):
+        for r in self:
+            if r.math_point == False and r.physical_point == False and r.chemistry_point == False:
+                r.average_point = 0
+            else:
+                r.average_point = (r.math_point + r.physical_point + r.chemistry_point) / 3
     
     @api.onchange('country_id')
     def _onchange_country_id(self):
@@ -74,3 +91,21 @@ class EducationStudent(models.Model):
     def _onchange_class_group_id(self):
         if self.class_group_id and self.class_group_id != self.class_id.class_group_id:
             self.class_id = False
+            
+    def action_dropout(self):
+        return self.env.ref('viin_education.education_student_dropout_wizard_action').read()[0]
+    
+    def action_tuition_fee(self):
+        self.ensure_one()
+        view = self.env.ref('viin_education.education_student_tuition_fee_view_wizard_form')
+        return {
+            'name': _("Chose Student"),
+            'type': 'ir.actions.act_window',
+            'res_model': 'education.student.tuition.fee.wizard',
+            'views': [(view.id, 'form')],
+            'target': 'new',
+            'context': {
+                'default_student_id': self.id,
+                'state': self.state
+            }
+        }

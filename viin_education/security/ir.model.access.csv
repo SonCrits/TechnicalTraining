@@ -17,3 +17,5 @@ access_education_student_admin,education.student admin,model_education_student,v
 access_student_relation_user,student.relation user,model_student_relation,viin_education_group_user,1,1,1,1
 access_student_school_stage_user,student.shool.stage user,model_student_school_stage,viin_education_group_user,1,1,1,0
 access_student_school_stage_admin,student.shool.stage admin,model_student_school_stage,viin_education_group_admin,1,1,1,1
+access_education_student_dropout_wizard,education.student.dropout.wizard,model_education_student_dropout_wizard,viin_education_group_user,1,1,1,1
+access_education_student_tuition_fee_wizard, education.student.tuition.fee.wizard,model_education_student_tuition_fee_wizard,viin_education_group_user,1,1,1,1

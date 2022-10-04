@@ -1,0 +1,29 @@
+<odoo>
+	
+	<record id="education_student_dropout_wizard_action" model='ir.actions.act_window'>
+		<field name='name'>Dropout Reason</field>
+		<field name='type'>ir.actions.act_window</field>
+		<field name='res_model'>education.student.dropout.wizard</field>
+		<field name='view_mode'>form</field>
+		<field name='target'>new</field>
+	</record>
+	
+	<record id='education_student_dropout_wizard_view_form' model='ir.ui.view'>
+		<field name='name'>education.student.dropout.wizard.view.form</field>
+		<field name='model'>education.student.dropout.wizard</field>
+		<field name='arch' type='xml'>
+			<form string='Dropout Reason Form'>
+				<sheet>
+					<group>
+						<field name='student_id' invisible='1'/>
+						<field name='dropout_reason'/>
+					</group>
+					<footer>
+						<button type='object' name='action_confirm' string='Confirm'/>
+						<button special='cancel' string='Cancel'/>
+					</footer>
+				</sheet>
+			</form>
+		</field>
+	</record>
+</odoo>
