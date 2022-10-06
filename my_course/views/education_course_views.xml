@@ -1,0 +1,20 @@
+<odoo>
+	<record id='education_course_action' model='ir.actions.act_window'>
+		<field name='name'>Course</field>
+		<field name='res_model'>education.course</field>
+		<field name='view_mode'>form,tree</field>
+	</record>
+	
+	<menuitem 
+		id='education_course_root_menu' 
+		name='Course' sequence='80' 
+		parent="viin_education.education_management_menu_root"
+	/>
+	<menuitem 
+		id='education_course_menu'
+		name='Course List'
+		sequence='90'
+		parent="education_course_root_menu"
+		
+	/>
+</odoo>
