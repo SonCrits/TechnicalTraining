@@ -1,0 +1,34 @@
+<odoo>
+
+	<template id="s_showcase" inherit_id="website.s_showcase">
+		
+		<!-- icon -->
+		<xpath expr="(//i)[1]" position="attributes">
+			<attribute name="class" add="fa-hand-o-up" remove="fa-desktop" separator=" "/>
+		</xpath>
+		<xpath expr="(//i)[2]" position="attributes">
+			<attribute name="class" add="fa-lock" remove="fa-paint-brush" separator=" "/>
+		</xpath>
+		<xpath expr="(//i)[3]" position="attributes">
+			<attribute name="class" add="fa-wifi" remove="fa-heart" separator=" "/>
+		</xpath>
+		<xpath expr="(//i)[4]" position="attributes">
+			<attribute name="class" add="fa-mobile" remove="fa-gift" separator=" "/>
+		</xpath>
+		
+		<!-- content -->
+		<xpath expr="(//h3)[1]" position="replace" mode="inner">
+			Finger Identify
+		</xpath>
+		<xpath expr="(//h3)[2]" position="replace" mode="inner">
+			Security Solve
+		</xpath>
+		<xpath expr="(//h3)[3]" position="replace" mode="inner">
+			CCTV Safety
+		</xpath>
+		<xpath expr="(//h3)[4]" position="replace" mode="inner">
+			Manager by Phone
+		</xpath>
+	</template>
+
+</odoo>

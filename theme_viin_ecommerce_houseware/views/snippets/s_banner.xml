@@ -1,0 +1,15 @@
+<odoo>
+	<template id='s_banner' inherit_id="website.s_banner">
+		<xpath expr="//div[hasclass('container')]" position="replace">
+			<div class="container">
+	            <div class="row s_nb_column_fixed">
+	                <div class="col-lg-6 offset-lg-7 bg-black-50 text-center pt48 pb40" data-name="Box">
+	                    <h1><font style="font-size: 62px;">Sell Online. Easily.</font></h1>
+	                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+	                    <a t-att-href="cta_btn_href" class="btn btn-primary mb-2"><t t-esc="cta_btn_text">View Item On Sale</t></a>
+	                </div>
+	            </div>
+        	</div>
+		</xpath>
+	</template>
+</odoo>

@@ -1,0 +1,31 @@
+<odoo>
+
+	<template name="Items" id="s_product_list"
+		inherit_id="website.s_product_list">
+		<xpath expr="//a[text()[contains(., 'Furniture')]]"
+			position="replace">
+			<a t-att-href="url" class="btn btn-primary">Product 1</a>
+		</xpath>
+		<xpath expr="//a[text()[contains(., 'Clothes')]]"
+			position="replace">
+			<a t-att-href="url" class="btn btn-primary">Product 2</a>
+		</xpath>
+		<xpath expr="//a[text()[contains(., 'Books')]]"
+			position="replace">
+			<a t-att-href="url" class="btn btn-primary">Product 3</a>
+		</xpath>
+		<xpath expr="//a[text()[contains(., 'Essential oils')]]"
+			position="replace">
+			<a t-att-href="url" class="btn btn-primary">Product 4</a>
+		</xpath>
+		<xpath expr="//a[text()[contains(., 'Service')]]"
+			position="replace">
+			<a t-att-href="url" class="btn btn-primary">Product 5</a>
+		</xpath>
+		<xpath expr="//a[text()[contains(., 'Multimedia')]]"
+			position="replace">
+			<a t-att-href="url" class="btn btn-primary">Product 6</a>
+		</xpath>
+	</template>
+
+</odoo>

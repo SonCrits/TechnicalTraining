@@ -1,0 +1,16 @@
+body {
+    main {
+        .s_card_list {
+            .card {
+                border-left: 4px solid lighten($primary, 20) !important;
+                border-radius: 0;
+                height: 100%;
+            }
+
+            .card-header {
+                background-color: white;
+                border-bottom: 2px solid rgba(0, 0, 0, 0.05) !important;
+            }
+        }
+    }
+}

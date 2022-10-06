@@ -1,0 +1,30 @@
+<odoo>
+	<template id='s_features' inherit_id='website.s_features'>
+		<!-- section -->
+		<xpath expr="//section" position="attributes">
+			<attribute name="class" add="o_cc o_cc5" separator=" "/>
+			<attribute name="style" remove="background-image: none;" separator=";"/>
+		</xpath>
+		<xpath expr="//div[hasclass('container')]" position='replace'>
+			<div class="container">
+	          <div class="row">
+	            <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+	              <i class="fa fa-3x rounded bg-primary m-3 fa-user-circle"/>
+	              <h3 class="o_default_snippet_text">24x7 Free Support</h3>
+	              <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lectus enim, sagittis et orci eu, pharetra commodo turpis. Proin tincidunt facilisis pharetra. Cras tempus aliquam sollicitudin. Vestibulum elementum luctus tempus.</p>
+	            </div>
+	            <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+	              <i class="fa fa-3x rounded m-3 fa-usd bg-primary"/>
+	              <h3 class="o_default_snippet_text">Money Back Gurantee</h3>
+	              <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lectus enim, sagittis et orci eu, pharetra commodo turpis. Proin tincidunt facilisis pharetra. Cras tempus aliquam sollicitudin. Vestibulum elementum luctus tempus.</p>
+	            </div>
+	            <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+	              <i class="fa fa-3x rounded m-3 fa-train bg-primary"/>
+	              <h3 class="o_default_snippet_text">Free Worldwide shipping</h3>
+	              <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lectus enim, sagittis et orci eu, pharetra commodo turpis. Proin tincidunt facilisis pharetra. Cras tempus aliquam sollicitudin. Vestibulum elementum luctus tempus.</p>
+	            </div>
+	          </div>
+        	</div>
+		</xpath>
+	</template>
+</odoo>

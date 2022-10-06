@@ -1,0 +1,22 @@
+// custom variables
+$gray-border: #D9D9D9;
+$gray-text: #707070;
+$transparent: rgba(255, 255, 255, 0);
+
+$primary-light: desaturate(lighten($primary, 35), 15) !default;
+
+$seagreen-light-low-saturate: desaturate(lighten($secondary, 50), 60);
+$seagreen-100: lighten($secondary, 40);
+$seagreen-200: lighten($secondary, 30);
+$seagreen-300: lighten($secondary, 20);
+$seagreen-400: lighten($secondary, 10);
+$seagreen-500: $secondary;
+$seagreen-600: darken($secondary, 10);
+
+$border-radius-0: 0px;
+$border-radius-3: 3px;
+$border-radius-5: 5px;
+$border-radius-10: 10px;
+$border-radius-20: 20px;
+$border-radius-30: 30px;
+$border-radius-100: 100%;

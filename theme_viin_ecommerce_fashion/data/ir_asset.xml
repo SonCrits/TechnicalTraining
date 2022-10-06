@@ -1,0 +1,10 @@
+<odoo>
+
+	<record id="theme_viin_ecommerce_fashion.primary_variables_scss" model="theme.ir.asset">
+	    <field name="key">theme_viin_ecommerce_fashion.primary_variables_scss</field>
+	    <field name="name">Primary variables SCSS</field>
+	    <field name="bundle">web._assets_primary_variables</field>
+	    <field name="path">theme_viin_ecommerce_fashion/static/src/scss/primary_variables.scss</field>
+	</record>
+
+</odoo>

@@ -1,0 +1,50 @@
+section.s_landingpage_utilities {
+    background: #F9F9F9;
+
+    .so_function_icon {
+        .fa {
+            color: #3c9eac;
+            height: 30px;
+            text-align: center;
+            width: 30px;
+            border: 3px solid #3c9eac;
+            border-radius: 50%;
+            line-height: 1.4;
+            font-size: 19px;
+        }
+    }
+
+    .so_function_content {
+        display: table;
+
+        .so_function_title {
+            font-size: 1.25rem;
+            display: block;
+            color: #000;
+        }
+
+        .so_function_detail {
+            font-size: 1rem;
+            color: #000;
+        }
+    }
+
+    .so_uti_image {
+        padding: 20px 0;
+        text-align: center;
+
+        .so_item_img {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    body {
+        main {
+            .so_uti_function_left {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

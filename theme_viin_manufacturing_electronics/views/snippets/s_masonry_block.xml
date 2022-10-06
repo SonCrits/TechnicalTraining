@@ -1,0 +1,7 @@
+<odoo>
+	<template id="s_masonry_block" inherit_id="website.s_masonry_block">
+		<xpath expr="//div[hasclass('container-fluid')]" position="attributes">
+			<attribute name="class" add="container" remove="container-fluid" separator=" "/>
+		</xpath>
+	</template>
+</odoo>

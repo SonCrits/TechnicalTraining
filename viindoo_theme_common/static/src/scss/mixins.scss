@@ -1,0 +1,18 @@
+@mixin theme-transition($duration, $type) {
+    -webkit-transition: all $duration $type;
+    -moz-transition: all $duration $type;
+    -o-transition: all $duration $type;
+    -ms-transition: all $duration $type;
+    transition: all $duration $type;
+}
+
+@mixin theme-box-shadow($p1: 0, $p2: 0, $p3: 5px, $p4: 1px, $color: rgba(0, 0, 0, 0.15)) {
+    -webkit-box-shadow: $p1 $p2 $p3 $p4 $color;
+    -moz-box-shadow: $p1 $p2 $p3 $p4 $color;
+    box-shadow: $p1 $p2 $p3 $p4 $color;
+}
+
+@mixin background-opacity($color, $opacity: 0.5) {
+    background: $color;
+    background: rgba($color, $opacity);
+}

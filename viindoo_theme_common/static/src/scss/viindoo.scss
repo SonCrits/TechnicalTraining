@@ -1,0 +1,184 @@
+body {
+    .js_language_selector {
+        .dropdown-menu-right {
+            max-width: 200px
+        }
+
+        .dropdown-menu.show {
+            min-width: max-content;
+        }
+    }
+
+    main {
+        .o_indent ol, ul li {
+            margin-bottom: 0.5rem;
+        }
+    }
+    .section-title {
+        text-align: center;
+    }
+    
+    /* Legacy building block */
+    section.whyus-section, section.s_company_different, section.services-section, section.viindoo-section {
+        overflow-x: hidden;
+    } 
+}
+
+
+/*SHOPPING CART*/
+.mycart-popover {
+    border: none;
+    @include theme-box-shadow(0, 4px, 10px, -3px, $gray-border);
+
+    .arrow {
+        display: none;
+    }
+
+    .popover-header {
+        display: none;
+    }
+
+    .popover-body {
+        a {
+            font-weight: 600;
+        }
+
+        padding: 1rem;
+
+        .cart_line {
+            line-height: 1.5rem;
+            font-weight: 600;
+
+            span.h6 {
+                font-weight: 600;
+                color: $seagreen-500;
+            }
+        }
+    }
+
+    #cart_total {
+        font-weight: 600;
+    }
+}
+
+.oe_website_sale {
+    #o_cart_summary {
+        .card.js_cart_summary {
+            border: 0;
+            @include theme-box-shadow(0, 4px, 10px, -3px, $gray-border);
+            margin-bottom: 2rem;
+
+            .card-body {
+                font-weight: 600;
+
+                h4 {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+
+    .order-xl-2 .card {
+        border: none;
+        padding: 1rem;
+        @include theme-box-shadow(0, 4px, 10px, -3px, $gray-border);
+    }
+
+    .o_page_header {
+        font-size: 2rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        font-weight: 600;
+    }
+
+    .progress-wizard {
+        .progress-wizard-step.complete {
+            .progress-wizard-dot:after {
+                color: $secondary;
+            }
+
+            .progress-wizard-steplabel {
+                color: $secondary;
+            }
+        }
+    }
+
+    #cart_products.js_cart_lines {
+        line-height: 3rem;
+        margin-bottom: 2rem !important;
+        border-bottom: 1px solid #cecece;
+
+        th {
+            border-top: 0;
+            border-bottom: 1px solid #cecece;
+        }
+
+        td {
+            border-top: 0;
+
+            &.td-product_name {
+                a {
+                    color: $secondary;
+                    font-size: 1rem;
+                }
+
+                .text-muted {
+                    line-height: 1.8rem;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+/*END SHOPPING CART*/
+
+@media (max-width: 991px) {
+    body {
+        .container {
+            width: 95%;
+            max-width: 95%;
+        }
+        section.s_viindoo_pricing {
+            .card.bg-primary {
+                margin-top: 0 !important;
+            }
+        }
+
+        section.s_viindoo_pricing_addons {
+            .container {
+                .pricing-addons {
+                    table {
+                        .th-title {
+                            width: auto !important;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        .container {
+            width: 98%;
+            max-width: 100%;
+        }
+    }
+}
+/***** END RESPONSIVE Styles *****/
+
+.o_footer_copyright {
+    background-color: inherit !important;
+    .o_footer_copyright_name {
+        font-style: normal;
+        color: $white;
+    }
+    .o_debug_mode {
+        display: none;
+    }
+}

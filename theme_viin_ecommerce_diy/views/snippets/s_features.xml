@@ -1,0 +1,52 @@
+<odoo>
+
+	<template id="s_features" inherit_id="website.s_features">
+		<xpath expr="//div[hasclass('container')]" position="replace">
+			<div class='container'>
+				<div class="row homebanner h5">
+					<!--==== Features 1 ====== -->
+					<div class="col-sm-12 col-md-4 col-lg-4 pt32 pb32">
+						<div class="d-flex flex-column justify-content-between ">
+							<div class="card">
+								<img src="/web/image/website.library_image_01"
+									alt="feature 1" class="card-img-top" loading="lazy"/>
+								<div class="card-body">
+									<p class="card-text">Some quick example text to build on the card title
+										and make up the bulk of the card's content.</p>
+									<a href="/shop" class="btn btn-primary">Shop Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--==== Features 2 ====== -->
+					<div class="col-sm-12 col-md-4 col-lg-4 pt32 pb32">
+						<div class="card">
+							<img src="/web/image/website.library_image_17" alt="feature 2"
+								class="card-img-top " loading="lazy"/>
+							<div class="card-body">
+								<p class="card-text">Some quick example text to build on the card title
+									and make up the bulk of the card's content.</p>
+								<a href="/shop" class="btn btn-primary">Shop Now</a>
+							</div>
+						</div>
+					</div>
+					<!--==== Features 3 ====== -->
+					<div class="col-sm-12 col-md-4 col-lg-4 pt32 pb32">
+						<div class='d-flex flex-column justify-content-between '>
+							<div class="card">
+								<img src="/web/image/website.library_image_18" alt="feature 3"
+									class="card-img-top" loading="lazy"/>
+								<div class="card-body">
+									<p class="card-text">Some quick example text to build on the card title
+										and make up the bulk of the card's content.</p>
+									<a href="/shop" class="btn btn-primary">Shop Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</xpath>
+	</template>
+
+</odoo>

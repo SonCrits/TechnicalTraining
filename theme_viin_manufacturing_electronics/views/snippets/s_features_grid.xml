@@ -1,0 +1,81 @@
+<odoo>
+
+	<template id="s_features_grid" inherit_id="website.s_features_grid">				
+		<!-- ======= change icon ======= -->
+		<!-- Item #1 -->
+		<xpath expr="//i" position="attributes">
+			<attribute name="class"
+				add="rounded-0 bg-o-color-3 text-o-color-1 fa fa-hand-o-up"
+				remove="rounded-circle bg-primary fa-font-awesome" separator=" " />
+		</xpath>
+		<!-- Item #2 -->
+		<xpath expr="(//i)[2]" position="attributes">
+			<attribute name="class"
+				add="rounded-0 bg-o-color-3 text-o-color-1 fa fa-exclamation-triangle"
+				remove="rounded-circle bg-primary fa-files-o" separator=" " />
+		</xpath>
+		<!-- Item #3 -->
+		<xpath expr="(//i)[3]" position="attributes">
+			<attribute name="class"
+				add="rounded-0 bg-o-color-3 text-o-color-1 fas fa-user"
+				remove="rounded-circle bg-primary fa-trash" separator=" " />
+		</xpath>
+		<!-- Item #4 -->
+		<xpath expr="(//i)[4]" position="attributes">
+			<attribute name="class"
+				add="rounded-0 bg-o-color-3 text-o-color-1 fas fa-home"
+				remove="rounded bg-secondary fa-magic" separator=" " />
+		</xpath>
+		<!-- Item #5 -->
+		<xpath expr="(//i)[5]" position="attributes">
+			<attribute name="class"
+				add="rounded-0 bg-o-color-3 text-o-color-1 fas fa-laptop"
+				remove="rounded bg-secondary fa-eyedropper" separator=" " />
+		</xpath>
+		<!-- Item #6 -->
+		<xpath expr="(//i)[6]" position="attributes">
+			<attribute name="class"
+				add="rounded-0 bg-o-color-3 text-o-color-1 fa fa-camera"
+				remove="rounded bg-secondary fa-picture-o" separator=" " />
+		</xpath>
+		
+		<!-- ======= Paragraph ======== -->
+		<!-- Left Title -->
+		<xpath expr="//h2" position="replace">
+			<h2 class='text-center'>Your Advantages</h2>
+		</xpath>
+		<xpath expr="//h5" position="replace">
+			<h5 class='text-center'>Add a great slogan.</h5>
+		</xpath>
+		<!-- Right Title -->
+		<xpath expr="(//h2)[2]" position="replace">
+			<h2 class='text-center'>Product Info</h2>
+		</xpath>
+		<xpath expr="(//h5)[2]" position="replace">
+			<h5 class='text-center'>Add a great slogan.</h5>
+		</xpath>
+		
+		
+		<xpath expr="(//h4)[1]" position="replace" mode="inner">
+			Finger Print Access
+		</xpath>
+		<xpath expr="(//h4)[2]" position="replace" mode="inner">
+			Hacking Protection
+		</xpath>
+		<xpath expr="(//h4)[3]" position="replace" mode="inner">
+			Useful Support
+		</xpath>
+		<xpath expr="(//h4)[4]" position="replace" mode="inner">
+			Home Security
+		</xpath>
+		<xpath expr="(//h4)[5]" position="replace" mode="inner">
+			Network Security
+		</xpath>
+		<xpath expr="(//h4)[6]" position="replace" mode="inner">
+			CCTV information
+		</xpath>
+		
+
+	</template>
+
+</odoo>

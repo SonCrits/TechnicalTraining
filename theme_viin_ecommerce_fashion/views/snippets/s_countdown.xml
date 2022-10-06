@@ -1,0 +1,23 @@
+<odoo>
+
+	<template id="s_countdown" inherit_id="website.s_countdown">
+		<!-- Section -->
+		<xpath expr="//section" position='attributes'>
+			<attribute name='data-size' add='120' remove='175' separator=" "/>
+			<attribute name='data-layout' add='boxes' remove='circle' separator=" "/>
+			<attribute name='data-layout-background' add='plain' remove='none' separator=" "/>
+			<attribute name='data-progress-bar-style' add='none' remove='surrounded' separator=" "/>
+			<attribute name='data-layout-background-color' add='black' remove='400' separator=" "/>
+		</xpath>
+		<xpath expr="//div[hasclass('container')]" position='replace'>
+			<div class="container text-center">
+	            <div class="s_countdown_canvas_wrapper"/>
+	            <a href="/shop" class='btn btn-primary mt-3' role="button">View Products</a>
+	        </div>		
+		</xpath>
+		<xpath expr="//div[hasclass('container')]" position='attributes'>
+			<attribute name="class" add="container-fluid" remove="container" separator=" "/>	
+		</xpath>	
+	</template>
+
+</odoo>

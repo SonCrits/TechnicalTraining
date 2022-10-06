@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Snippets menu -->
+    <template id="s_erponline_mega_menu" name="Mega Menu ERPOnline" groups="base.group_user">
+        <section class="s_mega_menu_multi_menus erponline_mega py-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 py-1 text-left">
+                        <nav class="nav flex-column">
+                            <a href="#" class="nav-link" data-name="Menu Item"><span class="fa fa-cog fa-fw"/>By
+                                Operations</a>
+                            <a href="/solutions/by-operations/crm-solution" class="nav-link" data-name="Menu Item">
+                                Customer Relationships Management</a>
+                            <a href="/solutions/by-operations/sales-management-solution" class="nav-link"
+                               data-name="Menu Item">Sales Management Solution</a>
+                            <a href="/solutions/by-operations/purchase-supply-chain-solution" class="nav-link"
+                               data-name="Menu Item">Purchase | Supply Chain Management</a>
+                            <a href="/solutions/by-operations/warehouse-management-solution" class="nav-link"
+                               data-name="Menu Item">Warehouse Management</a>
+                            <a href="/solutions/by-operations/mrp-solution" class="nav-link" data-name="Menu Item">
+                                Manufacturing Resources Planning</a>
+                            <a href="/solutions/by-operations/hrm-solution" class="nav-link" data-name="Menu Item">Human
+                                Resource Management</a>
+                            <a href="/solutions/by-operations/accounting-financial-management-solution" class="nav-link"
+                               data-name="Menu Item">Accounting &amp; Financial Management</a>
+                            <a href="/solutions/by-operations/pos-solution" class="nav-link" data-name="Menu Item">Point
+                                Of Sale</a>
+                            <a href="/solutions/by-operations/website-build-e-commerce-solution" class="nav-link"
+                               data-name="Menu Item">Website Builder &amp; e-Commerce</a>
+                        </nav>
+                    </div>
+                    <div class="col-lg-6 py-1 text-left">
+                        <nav class="nav flex-column">
+                            <a href="#" class="nav-link" data-name="Menu Item"><span class="fa fa-cube fa-fw"/>
+                                Intergrated Bundles</a>
+                            <a href="/solutions/by-integrated-bundles/erp-for-bus-transportation-services-companies"
+                               class="nav-link" data-name="Menu Item">ERP for Bus Transportation Companies</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_erponline_mega_menu_options" inherit_id="website.snippet_options">
+        <xpath expr="//*[@data-js='MegaMenuLayout']//t" position="before">
+            <t t-set="_label">Erponline Mega Menu</t>
+            <we-button t-att-data-select-label="_label"
+                       data-select-template="viindoo_theme_common.s_erponline_mega_menu"
+                       data-img="/website/static/src/img/snippets_thumbs/s_mega_menu_multi_menus.svg"
+                       t-out="_label"/>
+        </xpath>
+    </template>
+
+    <record id="viindoo_theme_common.s_erponline_mega_menu_000_scss" model="ir.asset">
+        <field name="name">Erponline mega menu 000 SCSS</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">viindoo_theme_common/static/src/snippets/s_erponline_mega_menu/000.scss</field>
+        <field name="active" eval="True"/>
+    </record>
+</odoo>
