@@ -63,6 +63,7 @@ Tính năng nổi bật
         'views/education_student_views.xml',
         'views/education_relationship_views.xml',
         'views/res_partner_views.xml',
+        'views/education_course_views.xml',
         
         'wizard/education_student_dropout_wizard_views.xml',
         'wizard/education_student_tuition_fee_wizard_views.xml'

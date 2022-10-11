@@ -9,3 +9,4 @@ from . import education_school
 from . import education_school_year
 from . import student_school_stage
 from . import res_config_settings
+from . import education_course
