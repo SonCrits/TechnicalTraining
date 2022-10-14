@@ -8,8 +8,6 @@
 				<sheet>
 					<group>
 						<field name='student_id' invisible='0'/>
-						<field name='student_state'/>
-						<field name='tuition_fee' />
 						<field name='math_point'/>
 						<field name='physical_point'/>
 						<field name='chemistry_point' />

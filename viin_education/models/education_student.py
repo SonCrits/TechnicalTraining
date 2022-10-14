@@ -94,7 +94,7 @@ class EducationStudent(models.Model):
             
     def action_dropout(self):
         return self.env.ref('viin_education.education_student_dropout_wizard_action').read()[0]
-    
+  
     def action_tuition_fee(self):
         self.ensure_one()
         view = self.env.ref('viin_education.education_student_tuition_fee_view_wizard_form')
@@ -106,6 +106,9 @@ class EducationStudent(models.Model):
             'target': 'new',
             'context': {
                 'default_student_id': self.id,
-                'state': self.state
+                'default_state': self.state,
+                'default_math_point': self.math_point,
+                'default_physical_point': self.physical_point,
+                'default_chemistry_point': self.chemistry_point
             }
         }
