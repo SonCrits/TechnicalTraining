@@ -1,0 +1,81 @@
+<odoo>
+	<template id="s_three_columns"
+		inherit_id="website.s_three_columns">
+		<!-- Section -->
+		<xpath expr="//section" position="attributes">
+			<attribute name="class" add="o_cc1 o_colored_level"
+				remove="o_cc2" separator=" " />
+		</xpath>
+		<!-- Column #1 -->
+		<xpath expr="//div[hasclass('card')]" position="attributes">
+			<attribute name="class" add="shadow" separator=" " />
+			<attribute name="style" add="border-width: 0px !important;"
+				separator=";" />
+		</xpath>
+		<!-- Column #1 - Title -->
+		<xpath expr="//div[hasclass('card-body')]//h3"
+			position="replace" mode="inner">
+			Simply Beautiful
+		</xpath>
+		<!-- Column #1 - Paragraph -->
+		<xpath expr="//div[hasclass('card-body')]//p" position="replace"
+			mode="inner">
+			In oder to be inrreplaceable, one must always be different.
+		</xpath>
+		<!-- Column #1 - Add a button -->
+		<xpath expr="//div[hasclass('card-body')]//p" position="after">
+			<p>
+				<a href="#" class="btn btn-primary">More details</a>
+			</p>
+		</xpath>
+		<!-- Column #2 -->
+		<xpath expr="(//div[hasclass('card')])[2]" position="attributes">
+			<attribute name="class" add="shadow" separator=" " />
+			<attribute name="style" add="border-width: 0px !important;"
+				separator=";" />
+		</xpath>
+		<!-- Column #2 - Title -->
+		<xpath expr="(//div[hasclass('card-body')])[2]//h3"
+			position="replace" mode="inner">
+			Let the journey begin
+		</xpath>
+		<!-- Column #2 - Paragraph -->
+		<xpath expr="(//div[hasclass('card-body')])[2]//p"
+			position="replace" mode="inner">
+			Matching style and class with luxury and comfort.
+		</xpath>
+		<!-- Column #2 - Add a button -->
+		<xpath expr="(//div[hasclass('card-body')])[2]//p"
+			position="after">
+			<p>
+				<a href="#" class="btn btn-primary">Discover</a>
+			</p>
+		</xpath>
+		<!-- Column #3 -->
+		<xpath expr="(//div[hasclass('card')])[3]" position="attributes">
+			<attribute name="class" add="shadow" separator=" " />
+			<attribute name="style" add="border-width: 0px !important;"
+				separator=";" />
+		</xpath>
+		<!-- Column #3 - Title -->
+		<xpath expr="(//div[hasclass('card-body')])[3]//h3"
+			position="replace" mode="inner">
+			Endless discovery
+		</xpath>
+		<!-- Column #3 - Paragraph -->
+		<xpath expr="(//div[hasclass('card-body')])[3]//p"
+			position="replace" mode="inner">
+			Maybe She’s Born With It, Maybe It’s Maybelline.
+		</xpath>
+		<!-- Column #3 - Add a button -->
+		<xpath expr="(//div[hasclass('card-body')])[3]//p"
+			position="after">
+			<p>
+				<a href="/contactus" class="btn btn-primary">Contact me</a>
+			</p>
+		</xpath>
+		<xpath expr="//div[hasclass('container')]" position='attributes'>
+			<attribute name="class" add="container-fluid" remove="container" separator=" "/>	
+		</xpath>
+	</template>
+</odoo>

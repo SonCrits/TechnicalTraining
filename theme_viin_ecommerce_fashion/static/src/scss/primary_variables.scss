@@ -1,0 +1,65 @@
+//------------------------------------------------------------------------------
+// Config size <h> tag
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (48 / 14);
+$o-theme-h2-font-size-multiplier: (38 / 14);
+$o-theme-h3-font-size-multiplier: (28 / 14);
+$o-theme-h4-font-size-multiplier: (24 / 14);
+$o-theme-h5-font-size-multiplier: (21 / 14);
+$o-theme-h6-font-size-multiplier: (18 / 14);
+
+//------------------------------------------------------------------------------
+// Import font
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+
+    'Nunito': (
+        'family': ('Nunito', serif),
+        'url': 'Nunito:300,300i,400,400i,700,700i',
+    ),
+	'Source Sans Pro': (
+        'family': ('Source Sans Pro', sans-serif),
+        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    ),
+    'EB Garamond': (
+        'family': ('EB Garamond', serif),
+        'url': 'EB+Garamond:300,300i,400,400i,700,700i',
+    ),
+    'Spartan': (
+        'family': ('Spartan', sans-serif),
+        'url': 'Spartan:300,300i,400,400i,700,700i',
+    ),
+);
+
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'notes-1',
+
+        'font': 'Nunito',
+        'headings-font': 'Nunito',
+        'navbar-font': 'Nunito',
+        'buttons-font': 'Nunito',
+
+        'font-size-base': (14 / 16) * 1rem,
+        'header-font-size': (14 / 16) * 1rem,
+
+        'hamburger-type': 'off-canvas',
+        'menu-box-shadow': false,
+
+        'btn-ripple': true,
+
+        'btn-font-size': (14 / 16) * 1rem,
+        'btn-border-radius': 5px,
+
+        'btn-font-size-lg': (14 / 16) * 1rem,
+        'btn-padding-y-lg': 1rem,
+        'btn-padding-x-lg': (28 / 16) * 1rem,
+    ),
+);

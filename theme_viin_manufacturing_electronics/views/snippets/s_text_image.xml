@@ -1,0 +1,64 @@
+<odoo>
+	<template id="s_text_image" inherit_id="website.s_text_image">
+		<!-- style -->
+		<xpath expr="//section" position="attributes">
+			<attribute name="class" add="pb56 pt24 o_cc o_cc1"
+				remove="pt32 pb32" separator=" " />
+		</xpath>
+		<xpath expr="//h2" position="attributes">
+			<attribute name='class' add="font-weight-bold"
+				separator=" " />
+		</xpath>
+
+		<!-- content -->
+		<xpath expr="//h2" position='after'>
+			<div class="container">
+				<div class="d-flex justify-content-center m-auto ">
+					<hr class="mx-0 w-100 bg-warning" style="height:0.1rem"></hr>					
+				</div>
+			</div>
+		</xpath>
+		<xpath expr="//h2" position='replace' mode='inner'>
+			Simple Description
+		</xpath>
+		<xpath expr="//p" position="before">
+			<h3>Our Facility</h3>
+		</xpath>
+		<xpath expr="//p" position="replace" />
+		<xpath expr="(//p)[1]" position="replace" />
+		<xpath expr="//h3" position="before">
+			<p>We are a leader in endpoint protection solutions by industry
+				analysts, indep endet testing organi- zations and security
+				professionals. orem ipsum dolor sit amet, consectetur adipisicing
+				elit, sed do.</p>
+		</xpath>
+		<xpath expr="//h3" position='after'>
+			<div class='container ml-3'>
+				<div class='row'>
+					<span class='col-1'>
+						<i class="fa fa-check bg-primary"></i>
+					</span>
+					<span class='col-'>
+						<p>Security is everyone's concern lectus.</p>
+					</span>
+				</div>
+				<div class='row'>
+					<span class='col-1'>
+						<i class="fa fa-check bg-primary"></i>
+					</span>
+					<span class='col-'>
+						<p>Quis lectus nulla at volutpat diam venenatis.</p>
+					</span>
+				</div>
+				<div class='row'>
+					<span class='col-1'>
+						<i class="fa fa-check bg-primary"></i>
+					</span>
+					<span class='col-'>
+						<p>Pharetra massa massaultricies mi quis.</p>
+					</span>
+				</div>
+			</div>
+		</xpath>
+	</template>
+</odoo>

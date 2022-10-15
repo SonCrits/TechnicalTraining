@@ -1,0 +1,8 @@
+section.solutions-banner {
+    background: url('/viindoo_theme_common/static/src/img/solution-banner.png') no-repeat center/cover;
+    color: $white;
+    padding: 10rem 0 10rem 0;
+    @include media-breakpoint-down(sm) {
+        padding: 4rem 0 4rem 0 !important;
+    }
+}

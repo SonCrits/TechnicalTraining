@@ -1,0 +1,865 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* viindoo_theme_common
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-11 02:06+0000\n"
+"PO-Revision-Date: 2022-07-11 02:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_youtube_video_options
+msgid ", .s_youtube_video"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid ""
+"<b>\n"
+"                                                    Email\n"
+"                                                    <br/>\n"
+"                                                    Marketing\n"
+"                                                </b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid ""
+"<b>\n"
+"                                                    Social\n"
+"                                                    <br/>\n"
+"                                                    Marketing\n"
+"                                                </b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>Accounting</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>CRM</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>ENTERPRISE OPERATING</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>Employee<br/>Advance</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>Events</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>Expenses</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>FINANCE AND ACCOUNTING</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>Forum</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>HUMAN RESOURCES</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>Inventory</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>Invoicing</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>MARKETING</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>OKR</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>One solution for every need</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>POS</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>Payroll</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>Project</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>Purchase</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>Recruitment</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>SALES BOOST</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>Sales</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "<b>Total Integrated Enterprise Management Solution</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>WEBSITE BUILDER</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>Website</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>and more...</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>eCommerce</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "<b>eLearing</b>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.snippets
+msgid "<i class=\"fa fa-cubes\"/>Viindoo Snippets"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_erponline_mega_menu
+msgid ""
+"<span class=\"fa fa-cog fa-fw\"/>By\n"
+"                                Operations"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_erponline_mega_menu
+msgid ""
+"<span class=\"fa fa-cube fa-fw\"/>\n"
+"                                Intergrated Bundles"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid "<span class=\"h4 font-weight-bold\">Business Management</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid "<span class=\"h4 font-weight-bold\">Marketing Strategy</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid "<span class=\"h4 font-weight-bold\">Sales Promotion</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.footer_copyright_company_name
+msgid ""
+"<span class=\"o_footer_copyright_name mr-2 d-block my-2\">\n"
+"                Copyright by Viindoo Technology Joint Stock Company\n"
+"            </span>"
+msgstr ""
+"<span class=\"o_footer_copyright_name mr-2 d-block my-2\">\n"
+"                Bản quyền thuộc về Công ty Cổ phần Công nghệ Viindoo\n"
+"            </span>"
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">Blogs</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Attract your potential customer with a beautiful and informative blog</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">CRM</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Build customer trust. Track customer leads and close sale opportunities.</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">E-Commerce</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Boost your sales with Online shop, Inventory and Accounting features</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">Email Marketing</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Create email marketing campaigns. Send, receive emails and track conversion rates.</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">Event</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Create attractive event pages and manage your online events</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">Finance &amp; Accounting</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Vietnamese Accounting Standards. Manage liabilities, invoices and payments</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">Human Resources</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Contain employee contacts, personnel files, labor contracts and salary structure.</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">Inventory</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Double-entry bookkeeping system and modern warehouse operations</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">Live Chat</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Online chat with your website visitors simultaneously, anywhere, anytime.</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">POS (Point of Sales)</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Create invoices for POS transactions (support touchscreen). Manage POS chain.</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">Production Planning (MRP)</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Automatically make, manage, keep track of the planning and production processes</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">Project Management</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Based on modern project management theory. Quality Control by Gantt charts.</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">Purchase Management</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Automate RFQs and POs, supplier selection. Improve and optimize inventory</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">Quotation</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Create quotations for customer's orders. Allow online signatures and payments.</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">SMS Marketing</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Directly connect to your customer through SMS Marketing campaign</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">Sale management</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Manage customer orders and sales team. Linked to Inventory and Accounting.</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">Survey</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Raise the customer awareness about your brand and business with online surveys.</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid ""
+"<span class=\"service-name\">Website Builder</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"service-des\">Design and manage your own amazing website within a few clicks.</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_utilities
+msgid ""
+"<span class=\"so_function_title\">\n"
+"                                            <b>Online Platform</b>\n"
+"                                        </span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_utilities
+msgid ""
+"<span class=\"so_function_title\">\n"
+"                                            <b>Reasonable costs for all sizes</b>\n"
+"                                        </span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_utilities
+msgid ""
+"<span class=\"so_function_title\">\n"
+"                                        <b>Flexible scalability</b>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_utilities
+msgid ""
+"<span class=\"so_function_title\">\n"
+"                                        <b>Total management</b>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_solutions_video
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Accounting"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_erponline_mega_menu
+msgid "Accounting &amp; Financial Management"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_youtube_video_options
+msgid "Alignment"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.404
+msgid "All Apps"
+msgstr "Ứng dụng"
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_card_column_img_text_header
+msgid "Appointments"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Blogs"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Boost your success rate"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Build great website"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "CRM"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_youtube_video_options
+msgid "Center"
+msgstr ""
+
+#. module: viindoo_theme_common
+#. openerp-web
+#: code:addons/viindoo_theme_common/static/src/xml/s_youtube_video.xml:0
+#, python-format
+msgid "Close"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Communication"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.404
+msgid "Contact us"
+msgstr "Liên hệ"
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_erponline_mega_menu
+msgid "Customer Relationships Management"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_card_column_img_text_header
+msgid "Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid ""
+"Discuss\n"
+"\t\t\t\t\t\t\t\t\t<span class=\"badge badge-success\">New</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_erponline_mega_menu
+msgid "ERP for Bus Transportation Companies"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_utilities
+msgid ""
+"Easy to expand, additional settings to adapt\n"
+"                                        <br/>\n"
+"                                        to every change of the Enterprise."
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Employees"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_erponline_mega_menu_options
+msgid "Erponline Mega Menu"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Events"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid ""
+"Expenses\n"
+"\t\t\t\t\t\t\t\t\t<span class=\"badge badge-success\">New</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_card_column_img_text_header
+msgid ""
+"Explore\n"
+"\t\t\t\t\t\t\t\t\t\t\t<i class=\"ml-1 fa fa-angle-right\"/>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid ""
+"Forums\n"
+"\t\t\t\t\t\t\t\t\t<span class=\"badge badge-success\">New</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid ""
+"Get started now with simple apps. Expand, install more\n"
+"                                    whenever."
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Hardware"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model:ir.model.fields,field_description:viindoo_theme_common.field_website_page__is_header_absolute
+msgid "Header Transparent"
+msgstr "Header trong suốt"
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "High efficiency"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.404
+msgid "Home"
+msgstr "Trang chủ"
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_erponline_mega_menu
+msgid ""
+"Human\n"
+"                                Resource Management"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid ""
+"Human Resources\n"
+"\t\t\t\t\t\t\t\t\tNew"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_utilities
+msgid ""
+"Integrating and synchronizing data of all parts\n"
+"                                        <br/>\n"
+"                                        according to a standardized and throughout process."
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Invoicing"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid "Learn more"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_youtube_video_options
+msgid "Left"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Live Chat"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Mailing Lists"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid "Main Modules"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model:ir.model.fields,help:viindoo_theme_common.field_website_page__is_header_absolute
+msgid "Make header transparent on this page"
+msgstr "Làm cho header trong suốt trên trang này"
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_erponline_mega_menu
+msgid "Manufacturing Resources Planning"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Marketing New"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_youtube_video_options
+msgid "Middle"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model:ir.model,name:viindoo_theme_common.model_ir_module_module
+msgid "Module"
+msgstr "Mô đun"
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_solutions_video
+msgid "More"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_youtube_video_options
+msgid "Normal"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid ""
+"Notes\n"
+"\t\t\t\t\t\t\t\t\t<span class=\"badge badge-success\">New</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Operations"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model:ir.model,name:viindoo_theme_common.model_website_page
+msgid "Page"
+msgstr "Trang"
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_solutions_video
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_youtube_video
+msgid "Play"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_erponline_mega_menu
+msgid ""
+"Point\n"
+"                                Of Sale"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid ""
+"Point of Sale\n"
+"\t\t\t\t\t\t\t\t\t<span class=\"badge badge-success\">New</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_youtube_video_options
+msgid "Position"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Professional assistant"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Project"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_erponline_mega_menu
+msgid "Purchase | Supply Chain Management"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model:ir.model,name:viindoo_theme_common.model_ir_qweb
+msgid "Qweb"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Recruitment"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid ""
+"Referral New\n"
+"\t\t\t\t\t\t\t\t\t<span class=\"badge badge-success\">New</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid ""
+"Restaurants\n"
+"\t\t\t\t\t\t\t\t\t<span class=\"badge badge-success\">New</span>"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_youtube_video_options
+msgid "Right"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Sales"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_erponline_mega_menu
+msgid "Sales Management Solution"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Shops"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Social New"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_utilities
+msgid ""
+"The solution is suitable for the budget\n"
+"                                            <br/>\n"
+"                                            of all businesses."
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.404
+msgid "This page isn't available. Try again some helpful links below."
+msgstr ""
+"Tìm kiếm của bạn không khả dụng. Hãy thử lại với một trong số các liên kết "
+"dưới đây!"
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Timesheet"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Tools"
+msgstr ""
+
+#. module: viindoo_theme_common
+#. openerp-web
+#: code:addons/viindoo_theme_common/static/src/xml/website.pageProperties.xml:0
+#, python-format
+msgid "Transparent Header"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_youtube_video_options
+msgid "Video ID"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_solutions_video
+msgid "Video Image"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_services
+msgid "Viindoo - a Fully-Integrated Business Management Software"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu_options
+msgid "Viindoo Mega Menu"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_solution
+msgid "Vindoo three columns"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_utilities
+msgid "Vindoo web"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_erponline_mega_menu
+msgid "Warehouse Management"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.404
+msgid "We are sorry. But the page you were looking for is not found."
+msgstr "Rất tiếc. Không tìm thấy trang."
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Website"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "Website Builder"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_erponline_mega_menu
+msgid "Website Builder &amp; e-Commerce"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_landingpage_utilities
+msgid ""
+"Working anytime, anywhere, no need\n"
+"                                            <br/>\n"
+"                                            to install on a computer."
+msgstr ""
+
+#. module: viindoo_theme_common
+#. openerp-web
+#: code:addons/viindoo_theme_common/static/src/xml/s_youtube_video.xml:0
+#, python-format
+msgid "YouTube video player"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "eCommerce"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.s_viindoo_mega_menu
+msgid "eLearning"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.snippets
+msgid "landing"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.snippets
+msgid "services"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.snippets
+msgid "video"
+msgstr ""
+
+#. module: viindoo_theme_common
+#: model_terms:ir.ui.view,arch_db:viindoo_theme_common.snippets
+msgid "video, youtube"
+msgstr ""

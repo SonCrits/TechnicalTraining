@@ -1,0 +1,14 @@
+<odoo>
+	<template id="s_title" inherit_id="website.s_title"> 
+		<xpath expr="//h1" position="after">
+			<div class="container">
+				<div class="d-flex justify-content-center m-auto ">
+					<hr class="mx-0 w-100 bg-warning" style="height:0.1rem"></hr>					
+				</div>
+			</div>
+		</xpath>
+		<xpath expr="//h1" position="replace">
+			<h3 class="font-weight-bold">Top Product</h3>
+		</xpath>
+	</template>
+</odoo>

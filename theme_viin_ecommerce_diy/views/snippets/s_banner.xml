@@ -1,0 +1,24 @@
+<odoo>
+	<template id="s_banner" inherit_id="website.s_banner">
+		<!-- Section -->
+		<xpath expr="//div[hasclass('jumbotron')]" position="attributes">
+			<attribute name="class">jumbotron o_colored_level pb40 pt24 o_animating rounded col-lg-7 text-light text-uppercase</attribute>			
+		</xpath>
+		<xpath expr="//p" position="attributes">
+			<attribute name="style" add="font-size: 24px" separator=";"/>
+			<attribute name="class" add="text-warning" separator=" "/>
+		</xpath>
+		<xpath expr="//h1" position="replace" mode='inner'>
+			Best power tools
+		</xpath>
+		<xpath expr="//p" position="replace" mode='inner'>
+			Get up to 15 % discount
+		</xpath>
+		<xpath expr="//a" position="replace" mode='inner'>
+			Shop now
+		</xpath>
+		<xpath expr="//a" position="attributes">
+			<attribute name="class" add="text-capitalize" separator=" "/>
+		</xpath>
+	</template>
+</odoo>

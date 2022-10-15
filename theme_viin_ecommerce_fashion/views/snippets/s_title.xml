@@ -1,0 +1,21 @@
+<odoo>
+
+	<template id="s_title" inherit_id="website.s_title">
+		<xpath expr="//div[hasclass('container')]" position="inside">
+			<img
+				src="/theme_viin_ecommerce_fashion/static/src/img/content/heading_background.png"
+				alt='heading_background' loading="lazy" />
+		</xpath>
+		<xpath expr="//div[hasclass('container')]" position="attributes">
+			<attribute name='class' add='text-center' separator=" " />
+		</xpath>
+		<xpath expr='//h1' position='replace' mode='inner'>
+			Top Products Sell
+		</xpath>
+		<xpath expr="//div[hasclass('container')]" position='attributes'>
+			<attribute name="class" add="container-fluid"
+				remove="container" separator=" " />
+		</xpath>
+	</template>
+
+</odoo>

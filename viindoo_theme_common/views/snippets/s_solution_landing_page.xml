@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- Landingpage Solution -->
+        <template id="s_viindoo_landingpage_solution" name="Viindoo Solution">
+            <section class="s_landingpage_solution pt48 pb48">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div
+                                    class="so_text theme-element-hidden animate__animated animate__delay-0.25s animate__slow animate__fadeInDown"
+                                    data-animate-style="animate__fadeInDown">
+                                <h2 class="so_title">
+                                    <b>One solution for every need</b>
+                                </h2>
+                                <h5 class="so_detail">Get started now with simple apps. Expand, install more
+                                    whenever.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="so_body">
+                    <div class="container-fluid">
+                        <div class="so_group">
+                            <div class="so_line so_line_one so_grid">
+                                <div
+                                        class="so_block theme-element-hidden animate__animated animate__delay-0.25s animate__slow animate__zoomIn"
+                                        data-animate-style="animate__zoomIn">
+                                    <p
+                                            class="so_block_title so_block_title_right_two text-center m-0">
+                                        <b>SALES BOOST</b>
+                                    </p>
+                                    <div class="so_block_items so_block_items_four so_grid">
+                                        <div class="so_block_items_color so_grid">
+                                            <div class="so_block_item_color"/>
+                                            <div class="so_block_item_color"/>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/crm.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>CRM</b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/pos.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>POS</b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/sales.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>Sales</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                        class="so_block theme-element-hidden animate__animated animate__delay-0.25s animate__slow animate__zoomIn"
+                                        data-animate-style="animate__zoomIn">
+                                    <p class="so_block_title m-0 text-center">
+                                        <b>FINANCE AND ACCOUNTING</b>
+                                    </p>
+                                    <div class="so_block_items so_block_items_three so_grid">
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/accounting-icon.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>Accounting</b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/invoice.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>Invoicing</b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/cost.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>Expenses</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                        class="so_block theme-element-hidden animate__animated animate__delay-0.25s animate__slow animate__zoomIn"
+                                        data-animate-style="animate__zoomIn">
+                                    <p
+                                            class="so_block_title so_block_title_left_one text-center m-0">
+                                        <b>ENTERPRISE OPERATING</b>
+                                    </p>
+                                    <div class="so_block_items so_block_items_five so_grid">
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/mrp.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>Project</b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/inventory.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>Inventory</b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/purchase.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>Purchase</b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/okr.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>OKR</b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item_color"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="so_line so_line_two so_grid">
+                                <div
+                                        class="so_block theme-element-hidden animate__animated animate__delay-0.25s animate__slow animate__zoomIn"
+                                        data-animate-style="animate__zoomIn">
+                                    <p
+                                            class="so_block_title so_block_title_right_one text-center m-0">
+                                        <b>WEBSITE BUILDER</b>
+                                    </p>
+                                    <div
+                                            class="so_block_items so_block_items_five_reverse so_grid">
+                                        <div
+                                                class="so_block_item_color so_block_item_color_invisible border-0"/>
+                                        <div class="so_block_item_color"/>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/website.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>Website</b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/ecommerce.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>eCommerce</b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/forum.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>Forum</b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/learn.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>eLearing</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                        class="so_block theme-element-hidden animate__animated animate__delay-0.25s animate__slow animate__zoomIn"
+                                        data-animate-style="animate__zoomIn">
+                                    <p class="so_block_title m-0 text-center">
+                                        <b>MARKETING</b>
+                                    </p>
+                                    <div class="so_block_items so_block_items_three so_grid">
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/social.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>
+                                                    Social
+                                                    <br/>
+                                                    Marketing
+                                                </b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/email.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>
+                                                    Email
+                                                    <br/>
+                                                    Marketing
+                                                </b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/event.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>Events</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                        class="so_block theme-element-hidden animate__animated animate__delay-0.25s animate__slow animate__zoomIn"
+                                        data-animate-style="animate__zoomIn">
+                                    <p
+                                            class="so_block_title so_block_title_left_two text-center m-0">
+                                        <b>HUMAN RESOURCES</b>
+                                    </p>
+                                    <div class="so_block_items so_block_items_four so_grid">
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/recruitment.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>Recruitment</b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/salary.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>Payroll</b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_item">
+                                            <a href="#">
+                                                <img class="so_item_img"
+                                                     src="/viindoo_theme_common/static/src/img/advance.png"
+                                                     alt="Vindoo three columns" loading="lazy"/>
+                                            </a>
+                                            <p class="so_item_name m-0">
+                                                <b>Employee<br/>Advance</b>
+                                            </p>
+                                        </div>
+                                        <div class="so_block_items_color so_grid">
+                                            <div class="so_block_item_color"/>
+                                            <div class="so_block_item_color"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                                class="so_btn_more text-center" data-name="Button">
+                            <a href="#" class="btn btn-primary">
+                                <b>and more...</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+
+        <record id="viindoo_theme_common.s_viindoo_landingpage_solution_000_scss" model="ir.asset">
+            <field name="name">Viindoo landingpage solution 000 SCSS</field>
+            <field name="bundle">web.assets_frontend</field>
+            <field name="path">viindoo_theme_common/static/src/snippets/s_viindoo_landingpage_solution/000.scss</field>
+            <field name="active" eval="True"/>
+        </record>
+</odoo>

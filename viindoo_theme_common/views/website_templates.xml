@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- THEME WEBSITE LAYOUT -->
+    <template id="layout" inherit_id="website.layout" name="Viindoo Website Layout">
+        <!-- ADD CUSTOM PAGE CLASSES -->
+        <xpath expr="//div[@id='wrapwrap']" position="attributes">
+            <attribute name="t-attf-class" separator=" "
+                       add="#{main_object.check_absolute_header() if main_object._name == 'website.page' else ''}"/>
+        </xpath>
+
+        <xpath expr="//*[hasclass('o_footer_copyright_name')]//parent::*" position="attributes">
+            <attribute name="class" separator=" " add="justify-content-between d-md-flex align-items-center"/>
+        </xpath>
+
+        <xpath expr="//t[@t-call='web.brand_promotion']//parent::*" position="attributes">
+            <attribute name="class" separator=" " add="d-none"/>
+        </xpath>
+    </template>
+
+    <template id="footer_copyright_company_name" inherit_id="website.layout" priority="200">
+        <xpath expr="//*[hasclass('o_footer_copyright_name')]" position="replace">
+            <span class="o_footer_copyright_name mr-2 d-block my-2">
+                Copyright by Viindoo Technology Joint Stock Company
+            </span>
+        </xpath>
+    </template>
+
+    <template id="404" inherit_id="http_routing.404" name="Viindoo Page Not Found">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div class="container my-5">
+                <div class="text-center">
+                    <img src="/viindoo_theme_common/static/src/img/viindoo-404.png"/>
+                </div>
+                <div class="text-center mt-5">
+                    <h2>We are sorry. But the page you were looking for is not found.</h2>
+                </div>
+                <div class="text-center mt-1">
+                    <p>This page isn't available. Try again some helpful links below.</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a class="btn btn-secondary btn-link mr-2" href="/" role="button">Home</a>
+                    <a class="btn btn-primary btn-link mx-2" href="/pricing" role="button">All Apps</a>
+                    <a class="btn btn-outline-secondary btn-link ml-2" href="/contactus" role="button">Contact us</a>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+		<template id="s_card_column_img_text_header" name="Card Column Image-Text Header">
+			<section class="s_card_list pb-4 gray-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-lg-4 my-4">
+							<div class="card border-0">
+								<div class="card-header o_gradient_beta py-3 px-3">
+									<div class="d-flex align-items-center">
+										<img class="mr-3" src="/viindoo_theme_common/static/src/img/icon.webp" width="40px" loading="lazy"/>
+										<h5 class="m-0 text-black font-weight-bold">Appointments</h5>
+									</div>
+								</div>
+								<div class="card-body">
+									<p>
+										Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo
+									</p>
+									<div class="s_btn text-left pb0 pt0 explore" data-name="Button">
+										<a href="#" class="text-reset font-weight-bold">
+											Explore
+											<i class="ml-1 fa fa-angle-right" />
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 my-4">
+							<div class="card border-0">
+								<div class="card-header o_gradient_beta py-3 px-3">
+									<div class="d-flex align-items-center">
+										<img class="mr-3" src="/viindoo_theme_common/static/src/img/icon.webp" width="40px" loading="lazy"/>
+										<h5 class="m-0 text-black font-weight-bold">Appointments</h5>
+									</div>
+								</div>
+								<div class="card-body">
+									<p>
+										Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo
+									</p>
+									<div class="s_btn text-left pb0 pt0 explore" data-name="Button">
+										<a href="#" class="text-reset font-weight-bold">
+											Explore
+											<i class="ml-1 fa fa-angle-right" />
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 my-4">
+							<div class="card border-0">
+								<div class="card-header o_gradient_beta py-3 px-3">
+									<div class="d-flex align-items-center">
+										<img class="mr-3" src="/viindoo_theme_common/static/src/img/icon.webp" width="40px" loading="lazy"/>
+										<h5 class="m-0 text-black font-weight-bold">Appointments</h5>
+									</div>
+								</div>
+								<div class="card-body">
+									<p>
+										Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo
+									</p>
+									<div class="s_btn text-left pb0 pt0 explore" data-name="Button">
+										<a href="#" class="text-reset font-weight-bold">
+											Explore
+											<i class="ml-1 fa fa-angle-right" />
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</template>
+
+        <record id="viindoo_theme_common.s_card_column_img_text_header_000_scss" model="ir.asset">
+            <field name="name">Card column img text header 000 SCSS</field>
+            <field name="bundle">web.assets_frontend</field>
+            <field name="path">viindoo_theme_common/static/src/snippets/s_card_column_img_text_header/000.scss</field>
+            <field name="active" eval="True"/>
+        </record>
+</odoo>

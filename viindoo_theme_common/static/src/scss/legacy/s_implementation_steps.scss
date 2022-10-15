@@ -1,0 +1,256 @@
+section.imple-steps-section {
+    padding: 1rem 0 8rem;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        left: -50%;
+        transform: rotate(-7deg);
+        background: $light;
+        top: 0;
+        @include media-breakpoint-down(md) {
+            transform: rotate(0);
+        }
+    }
+
+    /* vector bg */
+    .imple-steps-section-vt-left {
+        width: 480px;
+        height: 480px;
+        position: absolute;
+        background: none;
+        border-radius: 100%;
+        border: 65px solid $seagreen-light-low-saturate;
+        opacity: 0.5;
+        top: 25rem;
+        left: -250px;
+        z-index: 0;
+    }
+
+    .container {
+        padding: 4rem 0 0;
+        z-index: 1;
+    }
+
+    /* line */
+    #steps-tab {
+        border-bottom: none;
+        position: relative;
+
+        &:before {
+            content: "";
+            border-top: 1px dashed;
+            width: calc(100% - 16.667%);
+            top: 25px;
+            position: absolute;
+            left: calc(16.667% / 2);
+        }
+    }
+
+    .section-content {
+        margin-top: 4rem;
+    }
+
+    .nav-tabs {
+        .nav-item {
+            border: none;
+            padding: 4.5rem 0;
+            height: 7em;
+            overflow: hidden;
+
+            a.nav-link {
+                font-size: 1rem;
+                border: none;
+                background: none;
+                color: $gray-700;
+                line-height: 1.5;
+                text-align: center;
+                border-radius: $border-radius-0;
+                padding: 0.5rem 0;
+                @include theme-transition(0.5s, ease-in-out);
+
+                &:before {
+                    content: "";
+                    height: 55px;
+                    width: 55px;
+                    position: absolute;
+                    border-radius: 100%;
+                    background-color: lighten(lightgray, 4);
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    @include theme-transition(0.5s, ease-in-out);
+                }
+
+                &:after {
+                    content: "";
+                    width: 35px;
+                    height: 35px;
+                    position: absolute;
+                    border-radius: 100%;
+                    background-color: darken(lightgray, 12);
+                    top: 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    @include theme-transition(0.5s, ease-in-out);
+                }
+
+                &:hover {
+                    color: $primary;
+
+                    &:before {
+                        background-color: $primary-light;
+                        box-shadow: 0 5px 15px $primary-light;
+                    }
+
+                    &:after {
+                        background-color: $primary;
+                    }
+                }
+
+                &.active {
+                    color: $primary;
+
+                    &:before {
+                        background-color: $primary-light;
+                    }
+
+                    &:after {
+                        background-color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        margin: 2.5rem auto 1rem;
+
+        .tab-pane {
+            .col-md-6 {
+                height: 25em;
+            }
+
+            .step-details {
+                margin-top: 2rem;
+            }
+
+            .step-name {
+                font-size: 1.6rem;
+                color: $gray-900;
+                font-weight: 600;
+            }
+
+            .step-des {
+                font-size: 1.1rem;
+                color: $gray-900;
+                margin-top: 1rem;
+            }
+
+            .step-img {
+                position: relative;
+                z-index: 5;
+            }
+
+            .step-img2 {
+                position: relative;
+                z-index: 2;
+                top: -130px;
+                right: -55px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    section.imple-steps-section {
+        padding-bottom: 5rem;
+
+        .container {
+            width: 90%;
+        }
+
+        .section-content {
+            #steps-tab {
+                &:before {
+                    border-top: 1px dashed;
+                    top: 20px;
+                }
+
+                .nav-item {
+                    overflow: unset;
+                    height: 4rem;
+                    padding: 0;
+
+                    a.nav-link {
+                        font-size: 0 !important;
+
+                        &:before {
+                            height: 40px;
+                            width: 40px;
+                        }
+
+                        &:after {
+                            height: 26px;
+                            width: 26px;
+                            top: 7px;
+                        }
+                    }
+                }
+            }
+
+            .tab-content {
+                .tab-pane {
+                    .col-md-6 {
+                        height: auto;
+
+                        .step-details {
+                            margin-top: 0;
+
+                            .step-name {
+                                font-size: 1.3rem;
+                            }
+                        }
+
+                        .step-img,
+                        .step-img2 {
+                            position: static;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .imple-steps-section-vt-left {
+            height: 400px !important;
+            width: 400px !important;
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    section.imple-steps-section {
+
+        .section-content {
+            #steps-tab {
+                &:before {
+                    top: 17px;
+                }
+
+                .nav-item a.nav-link:before {
+                    height: 34px;
+                    width: 34px;
+                }
+
+                .nav-item a.nav-link:after {
+                    height: 20px;
+                    width: 20px;
+                    top: 7px;
+                }
+            }
+        }
+    }
+}

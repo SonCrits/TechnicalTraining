@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	
+	<template id="s_carousel" inherit_id="website.s_carousel">
+	    <xpath expr="//*[hasclass('s_carousel')]" position="attributes">
+	        <attribute name="class" add="carousel-fade bg-o-color-4" separator=" "/>
+	    </xpath>
+	    <!-- Slide #01 -->
+	    <xpath expr="//*[hasclass('carousel-content')][1]" position="attributes">
+	        <attribute name="class" add="col-lg-8 offset-lg-2 bg-black-50 text-center pt48 pb40" remove="col-lg-6" separator=" "/>
+	    </xpath>
+	    <!-- Slide #02 -->
+	    <xpath expr="//*[hasclass('s_hr')][1]" position="replace"/>
+	    <!-- Slide #03 -->
+	    <xpath expr="//div[hasclass('carousel-item')][3]//div[hasclass('carousel-content')]" position="attributes">
+	        <attribute name="class" add=" offset-lg-2 bg-black-50 text-center pt48 pb40" separator=" "/>
+	    </xpath>
+	    <xpath expr="//div[hasclass('carousel-item')][3]//div[hasclass('carousel-content')]//h2" position="replace">
+	    	<h2>24-Hour Control of Your Security Made  Easy</h2>
+	    </xpath>
+	    <xpath expr="//div[hasclass('carousel-item')][3]//div[hasclass('carousel-content')]//h4" position="replace">
+	    	<h4>We are the best security family.</h4>
+	    </xpath>
+	</template>
+
+</odoo>

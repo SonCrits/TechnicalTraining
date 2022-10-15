@@ -1,0 +1,8 @@
+<odoo>
+	<template id="s_image_text" inherit_id="website.s_image_text">
+		<xpath expr="//section" position="attributes">
+			<attribute name="class" add="pb56 pt24 o_cc o_cc1"
+				remove="pt32 pb32" separator=" " />
+		</xpath>
+	</template>
+</odoo>

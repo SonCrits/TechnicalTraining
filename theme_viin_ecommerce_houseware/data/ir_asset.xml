@@ -1,0 +1,11 @@
+<odoo>
+	
+	<record id="theme_viin_ecommerce_houseware.primary_variables_scss" model="theme.ir.asset">
+	    <field name="key">theme_viin_ecommerce_houseware.primary_variables_scss</field>
+	    <field name="name">Primary variables SCSS</field>
+	    <field name="bundle">web._assets_primary_variables</field>
+	    <field name="directive">append</field>
+	    <field name="path">theme_viin_ecommerce_houseware/static/src/scss/primary_variables.scss</field>
+	</record>
+
+</odoo>

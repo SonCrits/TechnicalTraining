@@ -1,0 +1,67 @@
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+$o-color-palettes: map-merge($o-color-palettes,
+	(
+		'avantgarde-6': (
+            'o-color-1': #ffb700,
+            'o-color-2': #f5f5f5,
+            'o-color-3': #e7d1b5,
+            'o-color-4': #FFFFFF,
+            'o-color-5': #1c1c1e,
+
+            'o-cc2-headings': 'o-color-2',
+            'o-cc3-headings': 'o-color-3',
+            'o-cc5-headings': 'o-color-1',
+
+            'copyright-custom': 'black-15',
+        )
+	)
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+	'Source Sans Pro': (
+        'family': ('Source Sans Pro', sans-serif),
+        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    ),
+    'EB Garamond': (
+        'family': ('EB Garamond', serif),
+        'url': 'EB+Garamond:300,300i,400,400i,700,700i',
+    ),
+    'Spartan': (
+        'family': ('Spartan', sans-serif),
+        'url': 'Spartan:300,300i,400,400i,700,700i',
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'avantgarde-6',
+	
+		//Fonts
+        'font': 'Source Sans Pro',
+        'headings-font': 'Source Sans Pro',
+        'navbar-font': 'Source Sans Pro',
+        'buttons-font': 'Source Sans Pro',
+
+        // Buttons
+        'btn-padding-y': .45rem,
+        'btn-padding-x': 1.35rem,
+        'btn-padding-y-sm': .3rem,
+        'btn-padding-x-sm': .9rem,
+        'btn-padding-y-lg': .6rem,
+        'btn-padding-x-lg': 1.8rem,
+        'btn-border-radius': 5px,
+        'btn-border-radius-sm': 5px,
+        'btn-border-radius-lg': 5px,
+
+    ),
+);

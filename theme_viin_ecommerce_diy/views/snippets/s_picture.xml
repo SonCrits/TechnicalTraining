@@ -1,0 +1,17 @@
+<odoo>
+	<template id="s_picture" inherit_id="website.s_picture">
+		<xpath expr="//section" position="attributes">
+			<attribute name="class" add="pb48 o_cc1" remove="pb24 o_cc2" separator=" "/>
+		</xpath>
+		<xpath expr="//div[hasclass('container')]" position="replace" mode="inner">
+			<div class="card">
+				<img class="card-img" src="/web/image/website.s_picture_default_image" alt="picture" loading="lazy"/>
+				<div class="card-img-overlay text-center">
+					<h4 class='text-light'>Limited offer for power tool</h4>
+					<h3 class='text-warning'>Get Extra $10 only with Power Tool</h3>
+					<a href="/shop" class="btn font-weight-bold btn-light">Shop Now</a>
+				</div>
+			</div>
+		</xpath>
+	</template>
+</odoo>

@@ -1,0 +1,14 @@
+<odoo>
+	<template id="s_title" inherit_id="website.s_title"> 
+		<xpath expr="//h1" position="after">
+			<div class="container">
+				<div class="d-flex justify-content-center w-50 m-auto">
+					<hr class="mx-0 w-25 bg-danger" style="height:0.1rem"></hr>
+					<i class="fa fa-leaf text-black m-1 p-2"></i>
+					<hr class="mx-0 w-25 bg-danger" style="height:0.1rem"></hr>
+					
+				</div>
+			</div>
+		</xpath>
+	</template>
+</odoo>
