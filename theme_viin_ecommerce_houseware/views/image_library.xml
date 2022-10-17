@@ -142,6 +142,11 @@
 	    <field name="name">website.s_three_columns_default_image_1</field>
 	    <field name="url">/theme_viin_ecommerce_houseware/static/src/img/content/s_three_columns_1.jpeg</field>
 	</record>
+	<record id="s_three_columns_default_image_2" model="theme.ir.attachment">
+	    <field name="key">website.s_three_columns_default_image_2</field>
+	    <field name="name">website.s_three_columns_default_image_2</field>
+	    <field name="url">/theme_viin_ecommerce_houseware/static/src/img/content/s_three_columns_2.jpeg</field>
+	</record>
 	<record id="s_three_columns_default_image_3" model="theme.ir.attachment">
 	    <field name="key">website.s_three_columns_default_image_3</field>
 	    <field name="name">website.s_three_columns_default_image_3</field>
@@ -188,7 +193,31 @@
 	<record id="s_parallax_default_image" model="theme.ir.attachment">
 	    <field name="key">website.s_parallax_default_image</field>
 	    <field name="name">website.s_parallax_default_image</field>
-	    <field name="url">/theme_viin_ecommerce_houseware/static/src/img/snippets/backgrounds16.jpeg</field>
+	    <field name="url">/theme_viin_ecommerce_houseware/static/src/img/snippets/s_parallax_default_image.jpeg</field>
+	</record>
+	
+	<!-- carousel quote image -->
+	<record id="s_quotes_carousel_demo_image_0" model="theme.ir.attachment">
+	    <field name="key">website.s_quotes_carousel_demo_image_0</field>
+	    <field name="name">website.s_quotes_carousel_demo_image_0</field>
+	    <field name="url">/theme_viin_ecommerce_houseware/static/src/img/snippets/s_quotes_carousel_0.jpg</field>
+	</record>
+	<record id="s_quotes_carousel_demo_image_1" model="theme.ir.attachment">
+	    <field name="key">website.s_quotes_carousel_demo_image_1</field>
+	    <field name="name">website.s_quotes_carousel_demo_image_1</field>
+	    <field name="url">/theme_viin_ecommerce_houseware/static/src/img/snippets/s_quotes_carousel_1.jpg</field>
+	</record>
+	<record id="s_quotes_carousel_demo_image_2" model="theme.ir.attachment">
+	    <field name="key">website.s_quotes_carousel_demo_image_2</field>
+	    <field name="name">website.s_quotes_carousel_demo_image_2</field>
+	    <field name="url">/theme_viin_ecommerce_houseware/static/src/img/snippets/s_quotes_carousel_2.jpg</field>
+	</record>
+	
+	<!-- price list -->
+	<record id="s_product_catalog_default_image" model="theme.ir.attachment">
+	    <field name="key">website.s_product_catalog_default_image</field>
+	    <field name="name">website.s_product_catalog_default_image</field>
+	    <field name="url">/theme_viin_ecommerce_houseware/static/src/img/snippets/s_product_catalog.jpeg</field>
 	</record>
 		
 </odoo>
