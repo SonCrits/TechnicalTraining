@@ -40,11 +40,9 @@ Themes Ecommerce dành cho cửa hàng bán dụng cụ kỹ thuât
     'live_test_url': "https://v15demo-int.viindoo.com",
     'live_test_url_vi_VN': "https://v15demo-vn.viindoo.com",
     'support': "apps.support@viindoo.com",
-
     'category': 'Theme/Ecommerce',
     'version': '0.1',
-
-    'depends': ['theme_common'],
+    'depends': ['viin_theme_common'],
 
     # always loaded
     'data': [
@@ -71,14 +69,14 @@ Themes Ecommerce dành cho cửa hàng bán dụng cụ kỹ thuât
         "website.s_media_list_default_image_1":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_media_list_1.jpg",
         "website.s_media_list_default_image_2":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_media_list_2.jpg",
         "website.s_media_list_default_image_3":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_media_list_3.jpg",
-        "website.s_quotes_carousel_demo_image_1":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_masonry_block.jpg",
-        "website.s_quotes_carousel_demo_image_2":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_masonry_block.jpg",
+        "website.s_quotes_carousel_demo_image_1":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_quotes_carousel_1.jpg",
+        "website.s_quotes_carousel_demo_image_2":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_quotes_carousel_2.jpg",
         "website.s_carousel_default_image_1":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_carousel_1.jpg",
         "website.s_carousel_default_image_2":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_carousel_2.jpg",
         "website.s_carousel_default_image_3":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_carousel_3.jpg",
         "website.s_banner_default_image":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_banner_default_image.jpg",
-        "website.s_parallax_default_image":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_masonry_block.jpg",
-        "website.s_product_catalog_default_image":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_product_1.jpg",
+        "website.s_parallax_default_image":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_parallax.jpg",
+        "website.s_product_catalog_default_image":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_product_catalog.jpg",
         "website.s_product_list_default_image_1":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_product_1.jpg",
         "website.s_product_list_default_image_2":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_product_2.jpg",
         "website.s_product_list_default_image_3":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_product_3.jpg",
@@ -88,10 +86,10 @@ Themes Ecommerce dành cho cửa hàng bán dụng cụ kỹ thuât
         "website.s_picture_default_image":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_picture.jpg",
         "website.s_image_text_default_image":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_image_text_default_image.jpg",
         "website.s_text_image_default_image":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_text_image_default_image.jpg",
-        "website.s_three_columns_default_image_1":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_masonry_block.jpg",
-        "website.s_three_columns_default_image_2":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_masonry_block.jpg",
-        "website.s_three_columns_default_image_3":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_masonry_block.jpg",
-        "website.s_quotes_carousel_demo_image_0":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_masonry_block.jpg",
+        "website.s_three_columns_default_image_1":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_three_columns_1.jpg",
+        "website.s_three_columns_default_image_2":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_three_columns_2.jpg",
+        "website.s_three_columns_default_image_3":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_three_columns_3.jpg",
+        "website.s_quotes_carousel_demo_image_0":"/theme_viin_ecommerce_diy/static/src/img/snippets/s_quotes_carousel_0.jpg",
         "website.library_image_03":"/theme_viin_ecommerce_diy/static/src/img/snippets/library_image_03.jpg",
         "website.library_image_10":"/theme_viin_ecommerce_diy/static/src/img/snippets/library_image_10.jpg",
         "website.library_image_13":"/theme_viin_ecommerce_diy/static/src/img/snippets/library_image_13.jpg",
@@ -102,8 +100,7 @@ Themes Ecommerce dành cho cửa hàng bán dụng cụ kỹ thuât
         "website.library_image_02":"/theme_viin_ecommerce_diy/static/src/img/snippets/library_image_02.jpg"
     },
     'snippet_lists': {
-        'homepage': ['s_banner', 's_images_wall', 's_color_blocks_2', 's_references',
-                     's_media_list', 's_company_team'],
+        'homepage': ['s_carousel', 's_process_steps', 's_features','s_picture', 's_color_blocks_2'],
     },
     'price': 0.0,
     'currency': 'EUR',

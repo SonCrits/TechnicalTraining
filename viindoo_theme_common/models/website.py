@@ -21,7 +21,7 @@ class Website(models.Model):
     def _get_viindoo_theme(self):
         themes = []
         domain = [('name', '=like', 'theme_viin%'), ('name', 'not in', [
-            'theme_default', 'theme_common']), ('state', '!=', 'uninstallable')]
+            'theme_default', 'viin_theme_common']), ('state', '!=', 'uninstallable')]
         themes_name = http.request.env['ir.module.module'].search(domain).mapped('name')
         for theme_name in themes_name:
             themes.append({
