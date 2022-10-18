@@ -12,7 +12,7 @@
     "category": "Theme/Services",
     "sequence": 120,
     "version": "0.1",
-    'depends': ['website'],
+    'depends': ['viin_theme_common'],
     'data': [
         'data/ir_asset.xml',
         'views/images_library.xml',

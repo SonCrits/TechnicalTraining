@@ -12,7 +12,7 @@
     "category": "Theme/Ecommerce",
     "sequence": 120,
     "version": "0.1",
-    'depends': ['website_sale'],
+    'depends': ['viin_theme_common'],
     'data': [
         'data/ir_asset.xml',
         'views/image_library.xml',

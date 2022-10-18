@@ -11,7 +11,7 @@ class Website(models.Model):
         """
         themes = []
         domain = [('name', '=like', 'theme%'), ('name', 'not in', [
-            'theme_default', 'theme_common']), ('state', '!=', 'uninstallable')]
+            'theme_default']), ('state', '!=', 'uninstallable')]
         themes_name = http.request.env['ir.module.module'].search(domain).mapped('name')
         for theme_name in themes_name:
             themes.append({
@@ -89,12 +89,13 @@ class Website(models.Model):
         """
         res = super().configurator_init()
         themes = self._get_theme()
-        themes_name = [theme.get('name') for theme in themes]
-        res['industries'] = [{
-            'id': self._get_theme_id(theme_name),
-            'label': self._get_industry_id(theme_name),
-            'Synonyms': False
-        } for theme_name in themes_name]
+        if themes:
+            themes_name = [theme.get('name') for theme in themes]
+            res['industries'] = [{
+                'id': self._get_theme_id(theme_name),
+                'label': self._get_industry_id(theme_name),
+                'Synonyms': False
+            } for theme_name in themes_name]
         return res
 
     @api.model
@@ -135,8 +136,8 @@ class Website(models.Model):
         theme_name_for_industry = request.env['ir.module.module'].search([('id', '=', industry_id)])
         if theme_name_for_industry:
             theme_name_for_industry_id = theme_name_for_industry.mapped('name')[0]
-        custom_resources['images'] = self._get_images(theme_name_for_industry_id)
-        images = custom_resources.get('images', {}) 
-        self._change_images(images)
+            custom_resources['images'] = self._get_images(theme_name_for_industry_id)
+            images = custom_resources.get('images', {}) 
+            self._change_images(images)
         return res
 

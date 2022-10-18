@@ -1,0 +1,9 @@
+<odoo>
+	<template id="snippet_options" inherit_id="website.snippet_options">
+		<xpath expr="//we-select[@class='o_we_theme_colors_select']" position="before">
+			<we-button type='button' name="">
+            	<span><i class="fa fa-undo"></i></span>
+            </we-button>
+		</xpath>
+	</template>
+</odoo>

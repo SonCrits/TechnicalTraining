@@ -12,7 +12,7 @@
     'category': 'Theme/Corporate',
     "sequence": 20,
     "version": "0.1",
-    'depends': ['website_hr_recruitment'],
+    'depends': ['viin_theme_common'],
     'data': [
         'data/website_menu.xml',
         'data/ir_asset.xml',       
