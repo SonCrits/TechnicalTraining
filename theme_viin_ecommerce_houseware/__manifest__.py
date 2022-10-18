@@ -1,8 +1,8 @@
 {
     "name": "Houseware Ecommerce Viindoo Theme",
     "name_vi_VN": "Chủ đề cho website đồ dùng gia dụng cho thương mại điện tử",
-    "summary": "Theme, Layout, Snippets for website ecommerce houseware",
-    "summary_vi_VN": "Chủ đề, bố cục, snippet cho website đồ gia dụng cho thương mại điện tử",
+    "summary": "Electric cooker, Oil-free fryer, Microwave oven",
+    "summary_vi_VN": "Nồi cơm điện, Nồi chiên không dầu, Lò vi sóng",
     "description": "Theme for website ecommerce houseware",
     "description_vi_VN": "Chủ đề cho website đồ gia dụng cho thương mại điện tử",
     "author": "Viindoo",
@@ -12,7 +12,7 @@
     "category": "Theme/Ecommerce",
     "sequence": 120,
     "version": "0.1",
-    'depends': ['theme_common'],
+    'depends': ['viin_theme_common'],
     'data': [
         'data/ir_asset.xml',
         'views/image_library.xml',
@@ -71,7 +71,7 @@
         "website.library_image_02":"/theme_viin_ecommerce_houseware/static/src/img/snippets/library_image_02.jpeg"
     },
     'snippet_lists': {
-        'homepage': ['s_carousel', 's_images_wall', 's_text_image','s_image_text', 's_cover'],
+        'homepage': ['s_carousel', 's_images_wall', 's_text_image','s_image_text', 's_three_columns', 's_numbers', 's_call_to_action', 's_cover'],
     },
     'price': 0.0,
     'currency': 'EUR',

@@ -1,8 +1,8 @@
 {
     "name": "Healthy Care Theme",
     "name_vi_VN": "Chủ đề cho website chăm sóc sức khỏe",
-    "summary": "Theme, Layout, Snippets for website healthy care",
-    "summary_vi_VN": "Chủ đề, snippet cho website chăm sóc sức khỏe",
+    "summary": "Healthy Care, Cosmetic Surgery, Beauty Care",
+    "summary_vi_VN": "Chăm sóc sức khỏe, Phẫu thuật thẩm mỹ, Chăm sóc sắc đẹp",
     "description": "Theme for website healthy care",
     "description_vi_VN": "Chủ đề cho website chăm sóc sức khỏe",
     "author": "Viindoo",
@@ -12,7 +12,7 @@
     "category": "Theme/Services",
     "sequence": 120,
     "version": "0.1",
-    'depends': ['website'],
+    'depends': ['viin_theme_common'],
     'data': [
         'data/ir_asset.xml',
         'views/images_library.xml',
@@ -63,7 +63,10 @@
         "website.library_image_02":"/theme_viin_healthy_care/static/src/img/snippets/img_gallery/library_image_02.jpg"
     },
     'snippet_lists': {
-        'homepage': ['s_carousel', 's_images_wall', 's_text_image','s_three_columns', 's_image_text'],
+        'homepage': [
+            's_carousel', 's_picture', 's_title', 's_product_list', 's_images_wall', 's_title', 's_quotes_carousel', 
+            's_title', 's_media_list', 's_parallax', 's_company_team', 's_numbers', 's_image_text'
+        ],
     },
     'price': 0.0,
     'currency': 'EUR',

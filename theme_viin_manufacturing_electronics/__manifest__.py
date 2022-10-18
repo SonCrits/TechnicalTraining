@@ -1,8 +1,8 @@
 {
     "name": "Electronics Manufacturing Viindoo Theme",
     "name_vi_VN": "Chủ đề cho website sản xuất phụ kiện điện tử",
-    "summary": "Theme, Layout, Snippets for website manufacturing electronics",
-    "summary_vi_VN": "Chủ đề, snippet cho website sản xuất phụ kiện điện tử",
+    "summary": "Camera manufaturing, Electronic components manufacturing, Phone production",
+    "summary_vi_VN": "Sản xuất camera, Sản xuất phụ kiện điện tử, Sản xuất điện thoại",
     "description": "Theme, Layout, snippets for website manufacturing security camera(CCVT)",
     "description_vi_VN": "Chủ đề, bốc cục, snippets cho website doanh nghiệp sản xuất camera an ninh",
     "author": "Viindoo",
@@ -12,7 +12,7 @@
     'category': 'Theme/Corporate',
     "sequence": 20,
     "version": "0.1",
-    'depends': ['website_hr_recruitment'],
+    'depends': ['viin_theme_common'],
     'data': [
         'data/website_menu.xml',
         'data/ir_asset.xml',       
@@ -77,7 +77,11 @@
         "website.library_image_02":"/theme_viin_manufacturing_electronics/static/src/img/snippets/library_image_02.jpeg"
     },
     'snippet_lists': {
-        'homepage': ['s_carousel', 's_text_image', 's_features','s_media_list', 's_three_columns'],
+        'homepage': [
+            's_carousel', 's_text_image', 's_features', 's_features_grid', 
+            's_masonry_block', 's_media_list', 's_company_team', 's_numbers', 
+            's_quotes_carousel','s_title', 's_three_columns', 's_references'
+        ],
     },
     'price': 0.0,
     'currency': 'EUR',

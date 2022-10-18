@@ -11,7 +11,7 @@ class Website(models.Model):
         """
         themes = []
         domain = [('name', '=like', 'theme%'), ('name', 'not in', [
-            'theme_default', 'theme_common']), ('state', '!=', 'uninstallable')]
+            'theme_default']), ('state', '!=', 'uninstallable')]
         themes_name = http.request.env['ir.module.module'].search(domain).mapped('name')
         for theme_name in themes_name:
             themes.append({
@@ -30,11 +30,16 @@ class Website(models.Model):
         
     def _get_industry_id(self, theme_name):
         """
-        Take the labels corresponding to the selected industry, 
-        pour it into the selection box
+        returns a list of labels of themes, used to fill in the industry selection box. 
+        The value depends on the keywords in the key summary of each theme
         """
-        label = http.addons_manifest[theme_name].get('name', [])
-        return label
+        if request.env.lang == 'en_US':
+            summary_list = http.addons_manifest[theme_name].get('summary', [])
+        elif request.env.lang == 'vi_VN':
+            summary_list = http.addons_manifest[theme_name].get('summary_vi_VN', [])
+        if summary_list:
+            label_list = summary_list.split(',')              
+            return label_list
 
     def _get_image_urls(self, theme_name):
         """
@@ -80,21 +85,28 @@ class Website(models.Model):
     @api.model
     def configurator_init(self):
         """
-        This method will change the selection from the professions on the odoo api to the name of the theme modules, 
-        based on the module's key name in the manifest of each theme.
+        This method will change the selection from the professions on the odoo api to the synonym of the theme modules,
+        based on the module's summary in each theme's manifest.
         return: returns 1 dict pair of value pairs. 3 keys include:
             features
             logo
             industries
         """
         res = super().configurator_init()
+        res['industries'] = []
         themes = self._get_theme()
-        themes_name = [theme.get('name') for theme in themes]
-        res['industries'] = [{
-            'id': self._get_theme_id(theme_name),
-            'label': self._get_industry_id(theme_name),
-            'Synonyms': False
-        } for theme_name in themes_name]
+        if themes:
+            themes_name = [theme.get('name') for theme in themes]
+            for theme_name in themes_name:
+                industry_id = self._get_theme_id(theme_name)
+                industry_list = self._get_industry_id(theme_name)
+                for industry in industry_list:
+                    industry_label = industry.strip()
+                    res['industries'].append({
+                        'id': industry_id,
+                        'label': industry_label,
+                        'Synonyms': False
+                    })
         return res
 
     @api.model
@@ -135,8 +147,7 @@ class Website(models.Model):
         theme_name_for_industry = request.env['ir.module.module'].search([('id', '=', industry_id)])
         if theme_name_for_industry:
             theme_name_for_industry_id = theme_name_for_industry.mapped('name')[0]
-        custom_resources['images'] = self._get_images(theme_name_for_industry_id)
-        images = custom_resources.get('images', {}) 
-        self._change_images(images)
+            custom_resources['images'] = self._get_images(theme_name_for_industry_id)
+            images = custom_resources.get('images', {}) 
+            self._change_images(images)
         return res
-
