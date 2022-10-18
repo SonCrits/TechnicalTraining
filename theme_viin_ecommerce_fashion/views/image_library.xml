@@ -200,5 +200,12 @@
 	    <field name="name">website.s_product_list_default_image_6</field>
 	    <field name="url">/theme_viin_ecommerce_fashion/static/src/img/snippets/s_product_6.jpeg</field>
 	</record>
+	
+	<!-- price list -->
+	<record id="s_product_catalog_default_image" model="theme.ir.attachment">
+	    <field name="key">website.s_product_catalog_default_image</field>
+	    <field name="name">website.s_product_catalog_default_image</field>
+	    <field name="url">/theme_viin_ecommerce_fashion/static/src/img/snippets/s_product_catalog.jpeg</field>
+	</record>
 
 </odoo>

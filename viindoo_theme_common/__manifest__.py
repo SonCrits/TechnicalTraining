@@ -62,7 +62,7 @@ Editions Supported
         'web.assets_frontend': [
             # SCSS
             'viindoo_theme_common/static/src/scss/fontello-embedded.css',
-            'viindoo_theme_common/static/src/scss/theme_common.scss',
+            'viindoo_theme_common/static/src/scss/viin_theme_common.scss',
             'viindoo_theme_common/static/src/scss/viindoo.scss',
 
             # Legacy

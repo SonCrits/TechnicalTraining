@@ -1,25 +1,4 @@
 //------------------------------------------------------------------------------
-// Colors
-//------------------------------------------------------------------------------
-$o-color-palettes: map-merge($o-color-palettes,
-	(
-		'avantgarde-6': (
-            'o-color-1': #ffb700,
-            'o-color-2': #f5f5f5,
-            'o-color-3': #e7d1b5,
-            'o-color-4': #FFFFFF,
-            'o-color-5': #1c1c1e,
-
-            'o-cc2-headings': 'o-color-2',
-            'o-cc3-headings': 'o-color-3',
-            'o-cc5-headings': 'o-color-1',
-
-            'copyright-custom': 'black-15',
-        )
-	)
-);
-
-//------------------------------------------------------------------------------
 // Fonts
 //------------------------------------------------------------------------------
 
@@ -44,7 +23,6 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'avantgarde-6',
 	
 		//Fonts
         'font': 'Source Sans Pro',

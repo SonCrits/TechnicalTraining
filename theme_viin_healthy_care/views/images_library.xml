@@ -88,6 +88,18 @@
 	    <field name="url">/theme_viin_healthy_care/static/src/img/snippets/img_gallery/s_img_wall_1.jpg</field>
 	</record>
 	
+	<record id="library_image_08" model="theme.ir.attachment">
+	    <field name="key">website.library_image_08</field>
+	    <field name="name">website.library_image_08</field>
+	    <field name="url">/theme_viin_healthy_care/static/src/img/snippets/img_gallery/library_image_08.jpg</field>
+	</record>
+	
+	<record id="library_image_02" model="theme.ir.attachment">
+	    <field name="key">website.library_image_02</field>
+	    <field name="name">website.library_image_02</field>
+	    <field name="url">/theme_viin_healthy_care/static/src/img/snippets/img_gallery/library_image_02.jpg</field>
+	</record>
+	
 	<record id="library_image_13" model="theme.ir.attachment">
 	    <field name="key">website.library_image_13</field>
 	    <field name="name">website.library_image_13</field>
@@ -134,24 +146,22 @@
 	    <field name="url">/theme_viin_healthy_care/static/src/img/snippets/s_parallax.jpg</field>
 	</record>
 	
-	<record id="website.s_three_columns_default_image_1" model="ir.attachment">
-        <field name="public" eval="True"/>
-        <field name="name">s_three_columns_default_image_1.jpg</field>
-        <field name="type">url</field>
-        <field name="url">/web/image/website.library_image_11</field>
-    </record>
-    <record id="website.s_three_columns_default_image_2" model="ir.attachment">
-        <field name="public" eval="True"/>
-        <field name="name">s_three_columns_default_image_2.jpg</field>
-        <field name="type">url</field>
-        <field name="url">/web/image/website.library_image_13</field>
-    </record>
-    <record id="website.s_three_columns_default_image_3" model="ir.attachment">
-        <field name="public" eval="True"/>
-        <field name="name">s_three_columns_default_image_3.jpg</field>
-        <field name="type">url</field>
-        <field name="url">/web/image/website.library_image_07</field>
-    </record>
+	<!-- Three Columns -->
+	<record id="s_three_columns_default_image_1" model="theme.ir.attachment">
+	    <field name="key">website.s_three_columns_default_image_1</field>
+	    <field name="name">website.s_three_columns_default_image_1</field>
+	    <field name="url">/theme_viin_healthy_care/static/src/img/snippets/s_three_columns_1.jpg</field>
+	</record>
+	<record id="s_three_columns_default_image_2" model="theme.ir.attachment">
+	    <field name="key">website.s_three_columns_default_image_2</field>
+	    <field name="name">website.s_three_columns_default_image_2</field>
+	    <field name="url">/theme_viin_healthy_care/static/src/img/snippets/s_three_columns_2.jpg</field>
+	</record>
+	<record id="s_three_columns_default_image_3" model="theme.ir.attachment">
+	    <field name="key">website.s_three_columns_default_image_3</field>
+	    <field name="name">website.s_three_columns_default_image_3</field>
+	    <field name="url">/theme_viin_healthy_care/static/src/img/snippets/s_three_columns_3.jpg</field>
+	</record>
 	
 	<record id="s_quotes_carousel_demo_image_0" model="theme.ir.attachment">
 	    <field name="key">website.s_quotes_carousel_demo_image_0</field>
@@ -200,4 +210,12 @@
 	    <field name="name">website.s_company_team_image_4</field>
 	    <field name="url">/theme_viin_healthy_care/static/src/img/snippets/s_company_team_1.jpg</field>
 	</record>
+	
+	<!-- price list -->
+	<record id="s_product_catalog_default_image" model="theme.ir.attachment">
+	    <field name="key">website.s_product_catalog_default_image</field>
+	    <field name="name">website.s_product_catalog_default_image</field>
+	    <field name="url">/theme_viin_healthy_care/static/src/img/snippets/s_product_catalog.jpg</field>
+	</record>
+
 </odoo>
