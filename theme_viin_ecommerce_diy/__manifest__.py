@@ -3,10 +3,14 @@
     'name_vi_VN': "DIY Ecommerce Viindoo Theme",
 
     'summary': """
-    Saw machine, Drill, Screwdriver
+    Themes, snippets, layouts, images, content for websites about mechanical tools
 """,
     'summary_vi_VN': """
-    Máy cưa, Máy khoan, Tua vít
+    chủ đề, snippets, bố cục, ảnh, nội dung cho trang web về dụng cụ gia công cơ khí
+""",
+
+    'industries': """
+    saw machine, drill, screwdriver
 """,
 
     'description': """
@@ -40,7 +44,7 @@ Themes Ecommerce dành cho cửa hàng bán dụng cụ kỹ thuât
     'live_test_url': "https://v15demo-int.viindoo.com",
     'live_test_url_vi_VN': "https://v15demo-vn.viindoo.com",
     'support': "apps.support@viindoo.com",
-    'category': 'Theme/Ecommerce',
+    'category': 'Ecommerce',
     'version': '0.1',
     'depends': ['viin_theme_common'],
 

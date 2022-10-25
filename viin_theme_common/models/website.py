@@ -31,12 +31,9 @@ class Website(models.Model):
     def _get_industry_id(self, theme_name):
         """
         returns a list of labels of themes, used to fill in the industry selection box. 
-        The value depends on the keywords in the key summary of each theme
+        The value depends on the keywords in the key industries of each theme
         """
-        if request.env.lang == 'en_US':
-            summary_list = http.addons_manifest[theme_name].get('summary', [])
-        elif request.env.lang == 'vi_VN':
-            summary_list = http.addons_manifest[theme_name].get('summary_vi_VN', [])
+        summary_list = http.addons_manifest[theme_name].get('industries', [])       
         if summary_list:
             label_list = summary_list.split(',')              
             return label_list

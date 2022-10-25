@@ -1,15 +1,20 @@
 {
     "name": "Healthy Care Theme",
     "name_vi_VN": "Chủ đề cho website chăm sóc sức khỏe",
-    "summary": "Healthy Care, Cosmetic Surgery, Beauty Care",
-    "summary_vi_VN": "Chăm sóc sức khỏe, Phẫu thuật thẩm mỹ, Chăm sóc sắc đẹp",
+    "summary": "themes, snippets, layouts, images, content for healthcare websites",
+    "summary_vi_VN": "chủ đề, đoạn trích, bố cục, hình ảnh, nội dung cho trang web về chăm sóc sức khỏe",
+
+    'industries': """
+    healthy care, cosmetic surgery, beauty care
+""",
+
     "description": "Theme for website healthy care",
     "description_vi_VN": "Chủ đề cho website chăm sóc sức khỏe",
     "author": "Viindoo",
     "website": "https://viindoo.com/",
     "live_test_url": "https://viindoo.com",
     "support": "apps.support@viindoo.com",
-    "category": "Theme/Services",
+    "category": "Services",
     "sequence": 120,
     "version": "0.1",
     'depends': ['viin_theme_common'],

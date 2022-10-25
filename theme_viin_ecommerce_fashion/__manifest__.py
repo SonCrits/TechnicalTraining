@@ -1,15 +1,20 @@
 {
     "name": "Fashion Ecomerce Viindoo Theme",
     "name_vi_VN": "Chủ đề cho website thời trang thương mại điện tử",
-    "summary": "Fashion, Clothes, Footwear",
-    "summary_vi_VN": "Thời trang, Quần áo, Giày dép",
+    "summary": "themes, snippets, layouts, images, content for fashion websites",
+    "summary_vi_VN": "chủ đề, đoạn trích, bố cục, hình ảnh, nội dung cho trang web về thời trang",
+    
+    'industries': """
+    fashion, clothes, footwear
+""",
+
     "description": "Theme for website ecommerce fashion",
     "description_vi_VN": "Chủ đề cho website thời trang thương mại điện tử",
     "author": "Viindoo",
     "website": "https://viindoo.com/",
     "live_test_url": "https://viindoo.com",
     "support": "apps.support@viindoo.com",
-    "category": "Theme/Ecommerce",
+    "category": "Ecommerce",
     "sequence": 120,
     "version": "0.1",
     'depends': ['viin_theme_common'],
