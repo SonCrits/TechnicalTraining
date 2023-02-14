@@ -1,8 +1,0 @@
-<odoo>
-	<template id="s_images_wall" inherit_id="website.s_images_wall">
-	    <!-- Section -->
-	    <xpath expr="//section" position="attributes">
-	        <attribute name="class" add="pb64 o_full_screen_height" remove="pb24" separator=" "/>
-	    </xpath>
-	</template>
-</odoo>

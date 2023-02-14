@@ -1,7 +1,0 @@
-<odoo>
-	<template id='image_gallery' inherit_id="website.s_image_gallery">
-		<xpath expr="//section" position='attributes'>
-			<attribute name="class" add="o_colored_level s_image_gallery_cover o_full_screen_height s_image_gallery_indicators_arrows_rounded" separator=" "/>
-		</xpath>				
-	</template>
-</odoo>
