@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>16.9-Training</name>
+	<name>17.101-TechnicalTraining</name>
 	<comment></comment>
 	<projects>
-		<project>16.0-odoo</project>
-		<project>16.1-tvtmaaddons</project>
+		<project>17.00-odoo</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
