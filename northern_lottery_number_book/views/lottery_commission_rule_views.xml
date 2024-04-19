@@ -1,0 +1,48 @@
+<odoo>
+
+	<record id="lottery_commission_rule_view_form" model="ir.ui.view">
+		<field name="name">daily.prediction.view.form</field>
+		<field name="model">daily.prediction</field>
+		<field name="arch" type="xml">
+			<form>
+				<sheet>
+					<field name="name" />
+					<group>
+						<group>
+							<field name="currency_id" />
+						</group>
+						<group>
+							<field name="date" />
+						</group>
+					</group>
+					<notebook>
+						<page name="precdiction_lines" string="Precdiction Lines">
+							<field name="line_ids" />
+						</page>
+						<page name="results" string="Results">
+							<field name="daily_result_ids" />
+						</page>
+					</notebook>
+				</sheet>
+				<div class="oe_chatter">
+					<field name="message_follower_ids" />
+					<field name="activity_ids" />
+					<field name="message_ids" />
+				</div>
+			</form>
+
+		</field>
+	</record>
+
+	<record id="daily_prediction_action"
+		model="ir.actions.act_window">
+		<field name="name">Prediction</field>
+		<field name="res_model">daily.prediction</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<menuitem id="daily_prediction_menu" name="Prediction"
+		sequence="10" parent="prediction_root_menu"
+		action="daily_prediction_action" groups="base.group_user" />
+
+</odoo>

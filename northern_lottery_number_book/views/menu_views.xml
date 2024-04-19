@@ -1,0 +1,18 @@
+<odoo>
+	<menuitem id="lottery_root_menu"
+		name="Lottery"
+		web_icon="northern_lottery_number_book,static/description/main_screenshot.png" />
+	
+	<menuitem id="prediction_root_menu" 
+		name="Prediction"
+		sequence="10"
+		parent="lottery_root_menu"
+	/>
+
+	<menuitem id="lottery_setting_menu" 
+		name="Settings"
+		sequence="100"
+		parent="lottery_root_menu"
+	/>
+
+</odoo>

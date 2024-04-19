@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_daily_draw_result_user,access.daily.draw.result.user,model_daily_draw_result,base.group_user,1,1,1,1
+access_daily_prediction_line_user,access.daily.prediction.linet.user,model_daily_prediction_line,base.group_user,1,1,1,1
+access_daily_prediction_user,access.daily.prediction.user,model_daily_prediction,base.group_user,1,1,1,1
+access_lottery_commission_rule_user,access.lottery.commission.rule.user,model_lottery_commission_rule,base.group_user,1,1,1,1
