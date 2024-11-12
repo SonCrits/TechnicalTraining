@@ -1,0 +1,22 @@
+---Classes in module ---
+
+FILE: viin_mail_search/__init__.py
+
+
+FILE: viin_mail_search/controllers/discuss.py
+
+class ChannelDiscussController(DiscussController):
+
+    @http.route('/mail/inbox/messages', methods=['POST'], type='json', auth='user')
+    def discuss_inbox_messages(self, max_id=None, min_id=None, limit=30, **kwargs):
+    @http.route('/mail/starred/messages', methods=['POST'], type='json', auth='user')
+    def discuss_stared_messages(self, max_id=None, min_id=None, limit=30, **kwargs):
+    @http.route('/mail/history/messages', methods=['POST'], type='json', auth='user')
+    def discuss_history_messages(self, max_id=None, min_id=None, limit=30, **kwargs):
+    @http.route('/mail/channel/messages', methods=['POST'], type='json', auth='public')
+    def mail_channel_messages(self, channel_id, max_id=None, min_id=None, limit=30, **kwargs):
+    # Thay đổi theo cách trả về mới của Odoo (_message_format)
+    # Thêm controller get_mail_message_search_view_id để trả về view_id của mail_message_search_view
+
+FILE: viin_mail_search/controllers/__init__.py
+
