@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One Freight Forwarder Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- The HTML and BODY tags here are only for preview purposes during development. The Odoo App Store and backend Apps Store will automatically remove these tags, so they will have no effect on the Odoo Apps Store or backend Apps Store. -->
+        <!-- Overview -->
+        <section id="overview_block" style="margin-top: 1.5rem; margin-bottom: 1.5rem; border-radius: 15px;">
+            <div class="rounded p-5 position-relative">
+                <img src="https://github.com/Viindoo/branding/blob/16.0/viin_brand/static/img/viindoo_backgound.png?raw=true"
+                    class="position-absolute w-100 h-100 top-0 start-0 object-fit-cover z-1"
+                    style="border-radius: 15px;" />
+                <div class="row mx-0 p-3 align-items-center  position-relative z-0"
+                    style="border-radius: 15px; background-color: #E8F9FA;">
+                    <div class="col-sm-12 col-md-12 col-lg-4 text-center text-lg-start p-2">
+                        <a href="/apps/modules/browse?author=Viindoo">
+                            <img src="https://raw.githubusercontent.com/Viindoo/branding/2a5af87f5d75189c1dba7021e165f8085b36b086/viin_brand/static/img/viindoo-logo-slogan.svg"
+                                style="width: auto !important; height: 80px !important;" alt="Viindoo Logo">
+                        </a>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-8 d-flex flex-column flex-lg-row justify-content-end gap-2 p-3">
+                        <div class="btn text-md-nowrap  d-flex align-items-center"
+                            style="border-radius: 10px; color: #ffffff; background-color: #00BBCE;">
+                            <i class="fa fa-wf fa-check-circle-o"></i>
+                            <span class="ms-2">Odoo.sh</span>
+                        </div>
+                        <div class="btn text-md-nowrap  d-flex align-items-center"
+                            style="border-radius: 10px; color: #ffffff; background-color: #00BBCE;">
+                            <i class="fa fa-wf fa-check-circle-o"></i>
+                            <span class="ms-2">Odoo Community</span>
+                        </div>
+                        <div class="btn text-md-nowrap  d-flex align-items-center"
+                            style="border-radius: 10px; color: #ffffff; background-color: #00BBCE;">
+                            <i class="fa fa-wf fa-check-circle-o"></i>
+                            <span class="ms-2">Odoo Enterprise</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 text-center position-relative z-2">
+                    <div class="col-md-12" style="margin-bottom: 10%;">
+                        <h2 style="color: #ffffff; font-weight: 700; font-size: 45px;">
+                            All-in-One Freight Forwarder Management
+                        </h2>
+                        <div class="my-2" style="color: #ffffff;">
+                            <p class="w-75 mx-auto" style="font-size: 18px; line-height: 25px;">
+                                Comprehensive logistics management for freight forwarding companies, covering the complete workflow from customer inquiry, quotation, booking, shipment operations, to tracking and profitability analysis.
+                            </p>
+                        </div>
+                        <div class="text-center d-xl-none w-100">
+                            <img alt="Freight Forwarder Overview" class="img-fluid" src="./assets/freight_overview.png"
+                                style="width: 100%; height: auto;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-xl-block d-none position-relative" style="margin-top: -13%">
+                <div class="col-md-10 offset-md-1 text-center px-md-1"
+                    style="border-radius: 20px; padding: 3px; background: #00BBCE; display: inline-block;">
+                    <img alt="Freight Forwarder Overview" class="img-fluid" loading="lazy"
+                        src="./assets/freight_overview.png"
+                        style="border-radius: 15px; display: block; width: 100%; height: auto;" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section id="key_features_block" class="py-4">
+            <div style="background-color: #EAF9FA; padding: 47px; border-radius: 15px;">
+                <!-- Heading -->
+                <h2 class="text-center mb-5" style="color: #21272B; font-size: 32px; font-weight: bold;">
+                    Key Features
+                </h2>
+                <!-- Features Grid -->
+                <div class="row g-4">
+                    <!-- Feature Item 1 -->
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="d-flex align-items-center flex-fill"
+                            style="padding: 30px 24px; border-radius: 12px; background-color: white; border: 1px solid #F2F2F2;">
+                            <div class="feature-icon me-3">
+                                <i class="fa fa-wf fa-ship" style="font-size: 32px; color: #7F4282;"></i>
+                            </div>
+                            <p class="mb-0">End-to-End Multi-Modal Shipment Management with HBL/MBL control</p>
+                        </div>
+                    </div>
+                    <!-- Feature Item 2 -->
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="d-flex align-items-center flex-fill"
+                            style="padding: 30px 24px; border-radius: 12px; background-color: white; border: 1px solid #F2F2F2;">
+                            <div class="feature-icon me-3">
+                                <i class="fa fa-wf fa-calendar-check-o" style="font-size: 32px; color: #7F4282;"></i>
+                            </div>
+                            <p class="mb-0">Advanced Booking & Transport Planning with schedule synchronization</p>
+                        </div>
+                    </div>
+                    <!-- Feature Item 3 -->
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="d-flex align-items-center flex-fill"
+                            style="padding: 30px 24px; border-radius: 12px; background-color: white; border: 1px solid #F2F2F2;">
+                            <div class="feature-icon me-3">
+                                <i class="fa fa-wf fa-cubes" style="font-size: 32px; color: #7F4282;"></i>
+                            </div>
+                            <p class="mb-0">Customs-Compliant Cargo, Container & Dangerous Goods Management</p>
+                        </div>
+                    </div>
+                    <!-- Feature Item 4 -->
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="d-flex align-items-center flex-fill"
+                            style="padding: 30px 24px; border-radius: 12px; background-color: white; border: 1px solid #F2F2F2;">
+                            <div class="feature-icon me-3">
+                                <i class="fa fa-wf fa-map-marker" style="font-size: 32px; color: #7F4282;"></i>
+                            </div>
+                            <p class="mb-0">Real-Time Tracking & Customer Self-Service Portal Access</p>
+                        </div>
+                    </div>
+                    <!-- Feature Item 5 -->
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="d-flex align-items-center flex-fill"
+                            style="padding: 30px 24px; border-radius: 12px; background-color: white; border: 1px solid #F2F2F2;">
+                            <div class="feature-icon me-3">
+                                <i class="fa fa-wf fa-shopping-cart" style="font-size: 32px; color: #7F4282;"></i>
+                            </div>
+                            <p class="mb-0">Sales Integration & Revenue Optimization with pricing efficiency</p>
+                        </div>
+                    </div>
+                    <!-- Feature Item 6 -->
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="d-flex align-items-center flex-fill"
+                            style="padding: 30px 24px; border-radius: 12px; background-color: white; border: 1px solid #F2F2F2;">
+                            <div class="feature-icon me-3">
+                                <i class="fa fa-wf fa-line-chart" style="font-size: 32px; color: #7F4282;"></i>
+                            </div>
+                            <p class="mb-0">Profitability Reports & Comprehensive Master Data Management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section id="benefit_block" class="py-4">
+            <div class="" style="background-color: #F2F2F2; padding: 45px; border-radius: 15px;">
+                <!-- Heading -->
+                <h2 class="text-center mb-5" style="color: #21272B; font-size: 32px; font-weight: bold;">Benefits</h2>
+
+                <!-- benefit Grid -->
+                <div class=""
+                    style="padding: 24px; background-color: white; border-radius: 15px; border: 1px solid #F2F2F2;">
+                    <div class="d-flex align-items-start gap-3 p-3">
+                        <i class="fa fa-dot-circle-o me-3" style="font-size: 32px; color: #7F4282; margin-top: 5px;"></i>
+                        <div style="color: #282F33; line-height: 1.6; font-size: 16px;">
+                            <strong style="font-size: 18px; color: #21272B;">Streamline Operations:</strong> Automate shipment workflows with unified system and smart reminders. Reduce manual data entry, minimize errors with validation rules, and standardize processes across all forwarding operations.
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-3 p-3">
+                        <i class="fa fa-dot-circle-o me-3" style="font-size: 32px; color: #7F4282; margin-top: 5px;"></i>
+                        <div style="color: #282F33; line-height: 1.6; font-size: 16px;">
+                            <strong style="font-size: 18px; color: #21272B;">Enhance Customer Experience:</strong> Provide real-time tracking visibility and self-service portal for customers. Proactive status updates keep all stakeholders informed throughout the shipping journey.
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-3 p-3">
+                        <i class="fa fa-dot-circle-o me-3" style="font-size: 32px; color: #7F4282; margin-top: 5px;"></i>
+                        <div style="color: #282F33; line-height: 1.6; font-size: 16px;">
+                            <strong style="font-size: 18px; color: #21272B;">Maximize Profitability:</strong> Track costs and margins per shipment to identify profitable routes and customers. Handle growing volumes without increasing operational complexity while maintaining service quality.
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-3 p-3">
+                        <i class="fa fa-dot-circle-o me-3" style="font-size: 32px; color: #7F4282; margin-top: 5px;"></i>
+                        <div style="color: #282F33; line-height: 1.6; font-size: 16px;">
+                            <strong style="font-size: 18px; color: #21272B;">Ensure Compliance & Integration:</strong> Maintain proper documentation for customs, dangerous goods, and regulatory requirements. Seamlessly integrate with Sales, Accounting, and other business modules.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabs -->
+        <div id="tabs" class="container">
+            <ul class="nav nav-tabs justify-content-center bg-white py-2" id="myTab" role="tablist"
+                style="border-radius: 6px 6px 0 0;">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="feature-tab" data-bs-toggle="tab" href="#feature"
+                        role="tab" aria-controls="feature" aria-selected="true"
+                        style="color:#121212; font-weight:500; font-size:16px">
+                        Features</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="demo-tab" data-bs-toggle="tab" href="#demo"
+                        role="tab" aria-controls="demo" aria-selected="false"
+                        style="color:#121212; font-weight:500; font-size:16px">Demo</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="support-tab" data-bs-toggle="tab" href="#support"
+                        role="tab" aria-controls="support" aria-selected="false"
+                        style="color:#121212; font-weight:500; font-size:16px">
+                        Support</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="requirement-tab" data-bs-toggle="tab" href="#requirement"
+                        role="tab" aria-controls="requirement" aria-selected="false"
+                        style="color:#121212; font-weight:500; font-size:16px">Technical Requirement</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="releases-tab" data-bs-toggle="tab" href="#releases"
+                        role="tab" aria-controls="releases" aria-selected="false"
+                        style="color:#121212; font-weight:500; font-size:16px">Changes log</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="myTabContent">
+
+            <!-- Features Tab-->
+            <div aria-labelledby="feature-tab" class="tab-pane fade show active" id="feature" role="tabpanel">
+                <!-- Layout Feature 1: End-to-End Shipment Management -->
+                <section id="feature_shipment" class="py-4">
+                    <div class="" style="background-color: #EAF9FA; padding: 32px; border-radius: 15px;">
+                        <div class="row align-items-center">
+                            <div class="col-md-12 col-xl-4 order-1">
+                                <h3 class="text-xl-start text-center"
+                                    style="color: #21272B; font-weight:700; font-size:32px; line-height:38px;">
+                                    End-to-End Multi-Modal Shipment Management
+                                </h3>
+                                <p style="font-size: 18px; line-height: 24px; text-align: justify;">
+                                    Complete shipment lifecycle management across Sea, Air, Land, and Multi-modal transport. Automatic numbering, HBL/MBL control, flexible workflow stages, and real-time delivery tracking ensure on-time service.
+                                </p>
+                            </div>
+                            <div class="col-md-12 col-xl-8 order-2 mt-3 mt-xl-0 d-flex justify-content-center">
+                                <img alt="Shipment Management" class="img-fluid " loading="lazy"
+                                    src="./assets/shipment_form.png"
+                                    style="border-radius: 15px; display: block; width: 100%; height: auto;" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Layout Feature 2: Advanced Booking & Planning -->
+                <section id="feature_booking" class="py-4">
+                    <div class="" style="background-color: #F2F2F2; padding: 32px; border-radius: 15px;">
+                        <div class="row align-items-center">
+                            <div
+                                class="col-md-12 col-xl-8 order-2 order-xl-1 mt-3 mt-xl-0 d-flex justify-content-center">
+                                <img alt="Booking Management" class="img-fluid " loading="lazy"
+                                    src="./assets/booking_form.png"
+                                    style="border-radius: 15px; display: block; width: 100%; height: auto;" />
+                            </div>
+                            <div class="col-md-12 col-xl-4 order-1 order-xl-2">
+                                <h3 class="text-xl-end text-center"
+                                    style="color: #21272B; font-weight:700; font-size:32px; line-height:38px;">
+                                    Advanced Booking & Transport Planning
+                                </h3>
+                                <p style="font-size: 18px; line-height: 24px; text-align: justify;">
+                                    Multi-leg booking with vessel/flight/truck schedule sync. Cutoff alerts, stakeholder management, and seamless Booking-Route-Shipment data flow throughout operations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Layout Feature 3: Customs-Compliant Cargo -->
+                <section id="feature_cargo" class="py-4">
+                    <div class="" style="background-color: #EAF9FA; padding: 32px; border-radius: 15px;">
+                        <div class="row align-items-center">
+                            <div class="col-md-12 col-xl-4 order-1">
+                                <h3 class="text-xl-start text-center"
+                                    style="color: #21272B; font-weight:700; font-size:32px; line-height:38px;">
+                                    Customs-Compliant Cargo & Dangerous Goods
+                                </h3>
+                                <p style="font-size: 18px; line-height: 24px; text-align: justify;">
+                                    Three cargo input modes with container, seal, dimensions tracking. Complete HS Code, UN Number, DG Class management for customs compliance. Ultra-fast operations with cargo templates.
+                                </p>
+                            </div>
+                            <div class="col-md-12 col-xl-8 order-2 mt-3 mt-xl-0 d-flex justify-content-center">
+                                <img alt="Cargo Management" class="img-fluid " loading="lazy"
+                                    src="./assets/cargo_packages.png"
+                                    style="border-radius: 15px; display: block; width: 100%; height: auto;" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Layout Feature 4: Real-Time Tracking & Portal -->
+                <section id="feature_tracking" class="py-4">
+                    <div class="" style="background-color: #F2F2F2; padding: 32px; border-radius: 15px;">
+                        <div class="order-1">
+                            <h3 class="text-center"
+                                style="color: #21272B; font-weight:700; font-size:32px; line-height:38px;">
+                                Real-Time Tracking & Customer Portal
+                            </h3>
+                            <p class="text-center mx-auto w-75" style="font-size: 18px; line-height: 24px;">
+                                Intuitive Kanban tracking with sidebar for operations team. Timeline view with standardized status templates. Customer self-service portal for 24/7 shipment inquiry with advanced filters.
+                            </p>
+                        </div>
+                        <div class="order-2 mt-3 mt-xl-0">
+                            <img alt="Tracking Portal" class="img-fluid " loading="lazy"
+                                src="./assets/customer_portal.png"
+                                style="border-radius: 15px; display: block; width: 100%; height: auto;" />
+                        </div>
+                    </div>
+                </section>
+                <!-- Layout Feature 5: Sales Integration -->
+                <section id="feature_sales" class="py-4">
+                    <div class="" style="background-color: #EAF9FA; padding: 32px; border-radius: 15px;">
+                        <div class="row align-items-center">
+                            <div
+                                class="col-md-12 col-xl-8 order-2 order-xl-1 mt-3 mt-xl-0 d-flex justify-content-center">
+                                <img alt="Sales Integration" class="img-fluid " loading="lazy"
+                                    src="./assets/sales_integration.png"
+                                    style="border-radius: 15px; display: block; width: 100%; height: auto;" />
+                            </div>
+                            <div class="col-md-12 col-xl-4 order-1 order-xl-2">
+                                <h3 class="text-xl-end text-center"
+                                    style="color: #21272B; font-weight:700; font-size:32px; line-height:38px;">
+                                    Sales Integration & Revenue Optimization
+                                </h3>
+                                <p style="font-size: 18px; line-height: 24px; text-align: justify;">
+                                    Create logistics quotations and auto-generate shipments from sales orders. Full traceability linking order lines to routes. Supplier pricelist integration with transparent collection/disbursement marking.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Layout Feature 6: Profitability & Master Data -->
+                <section id="feature_profitability" class="py-4">
+                    <div class="" style="background-color: #F2F2F2; padding: 32px; border-radius: 15px;">
+                        <div class="order-1">
+                            <h3 class="text-center"
+                                style="color: #21272B; font-weight:700; font-size:32px; line-height:38px;">
+                                Profitability Reports & Master Data
+                            </h3>
+                            <p class="text-center mx-auto w-75" style="font-size: 18px; line-height: 24px;">
+                                Analytic account integration measuring revenue, cost, profit by customer/route/mode. Pivot/Graph reports with profitability analysis. Complete port, airport, route library with logistics UoM. Automated ETD/ETA reminders and base automation for service quality control.
+                            </p>
+                        </div>
+                        <div class="row order-2 mt-3">
+                            <div class="col-md-12 col-xl-6 order-1 mt-3 mt-xl-0">
+                                <img alt="Profitability Report" class="img-fluid " loading="lazy"
+                                    src="./assets/profitability_report.png"
+                                    style="border-radius: 15px; display: block; width: 100%; height: auto;" />
+                            </div>
+                            <div class="col-md-12 col-xl-6 order-2 mt-3 mt-xl-0">
+                                <img alt="Master Data" class="img-fluid " loading="lazy"
+                                    src="./assets/port_database.png"
+                                    style="border-radius: 15px; display: block; width: 100%; height: auto;" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Demo Tab-->
+            <div aria-labelledby="demo-tab" class="tab-pane fade" id="demo" role="tabpanel">
+                <!-- YouTube Embed Video -->
+                <section id="demo_block" class="py-4">
+                    <div class="" style="background-color: #EAF9FA; padding: 32px; border-radius: 15px;">
+                        <div class="order-1">
+                            <h3 class="text-center"
+                                style="color: #21272B; font-weight:700; font-size:32px; line-height:38px;">
+                                Video Demo
+                            </h3>
+                            <p class="text-center mx-auto" style="font-size: 16px; color: #666; margin-top: 10px;">
+                                Watch a comprehensive demo of the Freight Forwarder Management module
+                            </p>
+                        </div>
+                        <div class="order-2 mt-3 mt-xl-0 d-flex justify-content-center">
+                            <div style="width: 95%; margin: 15px; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                                <iframe 
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 15px;"
+                                    src="https://www.youtube.com/embed/bZVopOVVwDl" 
+                                    title="Freight Forwarder Management Demo" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- YouTube Preview with Thumbnail (Alternative) -->
+                <section id="play_video_demo_block" class="py-4" style="display: none;">
+                    <div class="" style="background-color: #F2F2F2; padding: 32px; border-radius: 15px;">
+                        <div class="order-1">
+                            <h3 class="text-center"
+                                style="color: #21272B; font-weight:700; font-size:32px; line-height:38px;">
+                                Video Tutorial
+                            </h3>
+                            <p class="text-center mx-auto" style="font-size: 16px; color: #666; margin-top: 10px;">
+                                Click to watch the complete tutorial on YouTube
+                            </p>
+                        </div>
+                        <div class="order-2 mt-3 mt-xl-0 d-flex justify-content-center position-relative">
+                            <div style="position: relative; width: 95%; margin: 15px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                                <img src="https://img.youtube.com/vi/bZVopOVVwDl/maxresdefault.jpg" 
+                                    alt="Video Thumbnail"
+                                    style="width: 100%; height: auto; display: block;" />
+                                <a href="https://youtu.be/bZVopOVVwDl" 
+                                    target="_blank"
+                                    class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none"
+                                    style="background-color: rgba(0,0,0,0.3); transition: background-color 0.3s;">
+                                    <div style="background-color: rgba(255,255,255,0.9); border-radius: 50%; width: 100px; height: 100px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="fa fa-play" style="font-size: 40px; color: #FF0000; margin-left: 8px;"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Support Tab-->
+            <div aria-labelledby="support-tab" class="tab-pane fade" id="support" role="tabpanel">
+                <section id="support_block" class="py-4">
+                    <div style="padding: 47px; border-radius: 15px; background-color: #F2F2F2;">
+                        <!-- Heading -->
+                        <h2 class="text-center" style="color: #21272B; font-size: 32px; font-weight: bold;">
+                            Need a help for this module?
+                        </h2>
+                        <p class="mb-5" style="text-align: center; font-size: 18px;">
+                            If you have questions, need any help, or have a customizations request, please contact us
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 mb-4">
+                                <div class="d-flex flex-column align-items-center "
+                                    style="background-color: #EAF9FA; padding: 47px; border-radius: 15px; min-height: 500px;">
+                                    <!-- Heading -->
+                                    <h2 class="text-center mb-5" style="color: #00bcd4; font-size: 32px; font-weight: bold;">
+                                        Pre-Sales Question
+                                    </h2>
+                                    <!-- Extensions Grid -->
+                                    <div class="d-flex align-items-center"
+                                        style="border-radius: 15px; overflow: hidden; border: 1px solid #00bcd4; background-color: white;">
+                                        <div class="d-flex align-items-center justify-content-center"
+                                            style="background-color: white; padding: 0px 26px;">
+                                            <a href="mailto:sales@viindoo.com">
+                                                <i class="fa fa-envelope-o" style="font-size: 28px; color: #00bcd4;"></i>
+                                            </a>
+                                        </div>
+                                        <div style="background-color: #00bcd4; padding: 14px 26px; flex: 1; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                                            <a href="mailto:sales@viindoo.com" style="color: white; font-size: 20px; font-weight: 500; text-decoration: none;">
+                                                sales@viindoo.com
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 text-left">
+                                        If you need pre-purchase support, please email us with the necessary
+                                        information to assist you:
+                                        <ul class="pl-4 mt-2 d-inline-block text-left">
+                                            <li class="mb-2">
+                                                The module you are exploring: name and version
+                                            </li>
+                                            <li class="mb-2">
+                                                Edition in use: CE, EE</li>
+                                            <li class="mb-2">
+                                                Your issue: trial, payment, installation, etc.
+                                            </li>
+                                            <li class="mb-2">
+                                                Provide screenshots or videos, if available.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 mb-4">
+                                <div class="d-flex flex-column align-items-center "
+                                    style="background-color: #FFFAFF; padding: 47px; border-radius: 15px; min-height: 500px;">
+                                    <!-- Heading -->
+                                    <h2 class="text-center mb-5"
+                                        style="color: #7F4282; font-size: 32px; font-weight: bold;">Support
+                                    </h2>
+                                    <!-- Extensions Grid -->
+                                    <div class="d-flex align-items-center"
+                                        style="border-radius: 15px; overflow: hidden; border: 1px solid #7F4282; background-color: white; overflow: hidden;">
+                                        <div class="d-flex align-items-center justify-content-center"
+                                            style="background-color: white; padding: 0px 26px;">
+                                            <a href="mailto:apps.support@viindoo.com">
+                                                <i class="fa fa-envelope-o" style="font-size: 28px; color: #7F4282;"></i>
+                                            </a>
+                                        </div>
+                                        <div style="background-color: #7F4282; padding: 14px 26px; flex: 1; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                                            <a href="mailto:apps.support@viindoo.com" style="color: white; font-size: 20px; font-weight: 500; text-decoration: none;">
+                                                apps.support@viindoo.com
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 text-left">
+                                        If you encounter any issues while using our application, please provide the necessary information so we can assist you promptly:
+                                        <ul class="pl-4 mt-2 d-inline-block text-left">
+                                            <li class="mb-2">
+                                                Your order number and attach a screenshot
+                                            </li>
+                                            <li class="mb-2">
+                                                A description of the issue you're experiencing
+                                            </li>
+                                            <li class="mb-2">
+                                                Your expectations for resolving the situation
+                                            </li>
+                                            <li class="mb-2">
+                                                Include images or videos that replicate the issue
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Technical Requirement Tab-->
+            <div aria-labelledby="requirement" class="tab-pane fade" id="requirement" role="tabpanel">
+                <section id="requirement_block" class="py-4">
+                    <div class="" style="background-color: #F2F2F2; padding: 45px; border-radius: 15px;">
+                        <!-- Heading -->
+                        <h2 class="text-center mb-5" style="color: #21272B; font-size: 32px; font-weight: bold;">
+                            Requirement
+                        </h2>
+                        <!-- requirement Grid -->
+                        <div class="p-3 bg-white rounded ">
+                            <div class="d-flex align-items-center gap-3 p-3">
+                                <i class="fa fa-dot-circle-o me-3" style="font-size: 32px; color: #7F4282;"></i>
+                                <div style="color: #282F33; line-height: 1.5; font-size: 16px;">
+                                    <strong>Odoo Version:</strong> 16.0 or higher
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 p-3">
+                                <i class="fa fa-dot-circle-o me-3" style="font-size: 32px; color: #7F4282;"></i>
+                                <div style="color: #282F33; line-height: 1.5; font-size: 16px;">
+                                    <strong>Required Modules:</strong> sale_management, sale_stock
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 p-3">
+                                <i class="fa fa-dot-circle-o me-3" style="font-size: 32px; color: #7F4282;"></i>
+                                <div style="color: #282F33; line-height: 1.5; font-size: 16px;">
+                                    <strong>Optional Modules:</strong> to_geo_routes (Viindoo Geo Routes), base_geolocalize, base_automation
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 p-3">
+                                <i class="fa fa-dot-circle-o me-3" style="font-size: 32px; color: #7F4282;"></i>
+                                <div style="color: #282F33; line-height: 1.5; font-size: 16px;">
+                                    <strong>Editions:</strong> Community Edition and Enterprise Edition
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 p-3">
+                                <i class="fa fa-dot-circle-o me-3" style="font-size: 32px; color: #7F4282;"></i>
+                                <div style="color: #282F33; line-height: 1.5; font-size: 16px;">
+                                    <strong>License:</strong> OPL-1 (Odoo Proprietary License)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Changes Log Tab-->
+            <div aria-labelledby="releases-tab" class="tab-pane fade" id="releases" role="tabpanel">
+
+                <section id="changes_log_block" class="py-4">
+                    <div style="background-color: #F2F2F2; padding: 45px; border-radius: 15px;">
+                        <div class="row">
+                            <div class="col-md-12 col-xl-4 d-flex align-items-center justify-content-center index-1">
+                                <h2 class="font-weight-bold text-center text-lx-start" style="color: #21272B; font-size: 32px;">
+                                    Changes log
+                                </h2>
+                            </div>
+                            <div class="col-md-12 col-xl-8 border-left" style="border-left: 2px solid #e0e0e0;">
+                                <div class="d-flex flex-column justify-content-center" style="height: 100%;">
+                                    <div class="mb-4">
+                                        <h2 class="font-weight-bold"
+                                            style="color: #282F33; margin-bottom: 10px; font-size: 20px;">
+                                            <span style="color: #3498db;">17.0.0.2</span> - 01/11/2024
+                                        </h2>
+                                        <ul class="list-unstyled" style="padding-left: 20px;">
+                                            <li style="color: #666; line-height: 1.6;">
+                                                Nội dung các thay đổi trong phiên bản mới
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h2 class="font-weight-bold"
+                                            style="color: #282F33; margin-bottom: 10px; font-size: 20px;">
+                                            <span style="color: #3498db;">17.0.0.1</span> - 01/10/2024
+                                        </h2>
+                                        <ul class="list-unstyled" style="padding-left: 20px;">
+                                            <li style="color: #666; line-height: 1.6;">
+                                                Nội dung các thay đổi trong phiên bản mới
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <hr style="border-top: 2px solid #00BBCE;">
+
+        <!-- Target Users -->
+        <section id="target_users_block" class="py-4">
+            <div class="" style="background-color: #EAF9FA; padding: 47px; border-radius: 15px;">
+                <!-- Heading -->
+                <h2 class="text-center mb-5" style="color: #21272B; font-size: 32px; font-weight: bold;">
+                    Who Should Use This Module?
+                </h2>
+                <p class="text-center mx-auto w-75" style="font-size: 18px; line-height: 25px; margin-bottom: 3rem;">
+                    Designed for freight forwarding companies of all sizes, from small specialized forwarders to medium and large logistics providers, handling various types of cargo and transport modes.
+                </p>
+                <!-- Target Industries Grid -->
+                <div class="row g-4">
+                    <!-- Target Item 1 -->
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="d-flex align-items-start flex-fill"
+                            style="padding: 24px; border-radius: 12px; background-color: white; border: 1px solid #F2F2F2;">
+                            <div class="feature-icon me-3">
+                                <i class="fa fa-wf fa-ship" style="font-size: 36px; color: #00BBCE;"></i>
+                            </div>
+                            <div>
+                                <p class="mb-1" style="font-size: 20px; font-weight: bold; color: #21272B;">
+                                    International Sea Freight
+                                </p>
+                                <p class="mb-0 text-muted" style="line-height: 1.5;">
+                                    FCL (Full Container Load) and LCL (Less than Container Load) shipments
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Target Item 2 -->
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="d-flex align-items-start flex-fill"
+                            style="padding: 24px; border-radius: 12px; background-color: white; border: 1px solid #F2F2F2;">
+                            <div class="feature-icon me-3">
+                                <i class="fa fa-wf fa-plane" style="font-size: 36px; color: #00BBCE;"></i>
+                            </div>
+                            <div>
+                                <p class="mb-1" style="font-size: 20px; font-weight: bold; color: #21272B;">
+                                    Air Freight Cargo
+                                </p>
+                                <p class="mb-0 text-muted" style="line-height: 1.5;">
+                                    Express and standard air cargo forwarding services
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Target Item 3 -->
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="d-flex align-items-start flex-fill"
+                            style="padding: 24px; border-radius: 12px; background-color: white; border: 1px solid #F2F2F2;">
+                            <div class="feature-icon me-3">
+                                <i class="fa fa-wf fa-truck" style="font-size: 36px; color: #00BBCE;"></i>
+                            </div>
+                            <div>
+                                <p class="mb-1" style="font-size: 20px; font-weight: bold; color: #21272B;">
+                                    Land Transport
+                                </p>
+                                <p class="mb-0 text-muted" style="line-height: 1.5;">
+                                    Trucking and road freight operations
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Target Item 4 -->
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="d-flex align-items-start flex-fill"
+                            style="padding: 24px; border-radius: 12px; background-color: white; border: 1px solid #F2F2F2;">
+                            <div class="feature-icon me-3">
+                                <i class="fa fa-wf fa-exchange" style="font-size: 36px; color: #00BBCE;"></i>
+                            </div>
+                            <div>
+                                <p class="mb-1" style="font-size: 20px; font-weight: bold; color: #21272B;">
+                                    Multi-modal Transport
+                                </p>
+                                <p class="mb-0 text-muted" style="line-height: 1.5;">
+                                    Combined transport using multiple transport modes
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Target Item 5 -->
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="d-flex align-items-start flex-fill"
+                            style="padding: 24px; border-radius: 12px; background-color: white; border: 1px solid #F2F2F2;">
+                            <div class="feature-icon me-3">
+                                <i class="fa fa-wf fa-globe" style="font-size: 36px; color: #00BBCE;"></i>
+                            </div>
+                            <div>
+                                <p class="mb-1" style="font-size: 20px; font-weight: bold; color: #21272B;">
+                                    Import/Export Operations
+                                </p>
+                                <p class="mb-0 text-muted" style="line-height: 1.5;">
+                                    Cross-border logistics and customs clearance
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Target Item 6 -->
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="d-flex align-items-start flex-fill"
+                            style="padding: 24px; border-radius: 12px; background-color: white; border: 1px solid #F2F2F2;">
+                            <div class="feature-icon me-3">
+                                <i class="fa fa-wf fa-map" style="font-size: 36px; color: #00BBCE;"></i>
+                            </div>
+                            <div>
+                                <p class="mb-1" style="font-size: 20px; font-weight: bold; color: #21272B;">
+                                    Domestic Logistics
+                                </p>
+                                <p class="mb-0 text-muted" style="line-height: 1.5;">
+                                    Local and regional freight forwarding services
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
