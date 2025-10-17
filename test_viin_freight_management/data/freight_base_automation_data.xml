@@ -1,0 +1,43 @@
+<odoo noupdate="1">
+    <record id="automation_freight_shipment_ETD_reminder" model="base.automation">
+        <field name="name">Shipment to ETD</field>
+        <field name="model_id" ref="viin_freight_management.model_freight_shipment"/>
+        <field name="trigger">on_time</field>
+        <field name="trg_date_id" ref="viin_freight_management.field_freight_shipment__etd"/>
+        <field name="trg_date_range">-2</field>
+        <field name="trg_date_range_type">day</field>
+        <field name="state">next_activity</field>
+        <field name="activity_type_id" ref="mail.mail_activity_data_todo"/>
+        <field name="activity_user_type">generic</field>
+        <field name="activity_user_field_name">responsible_id</field>
+        <field name="activity_summary">Shipment approaching ETD</field>
+    </record>
+
+    <record id="automation_freight_shipment_ETA_reminder" model="base.automation">
+        <field name="name">Shipment to ETA</field>
+        <field name="model_id" ref="viin_freight_management.model_freight_shipment"/>
+        <field name="trigger">on_time</field>
+        <field name="trg_date_id" ref="viin_freight_management.field_freight_shipment__eta"/>
+        <field name="trg_date_range">-2</field>
+        <field name="trg_date_range_type">day</field>
+        <field name="state">next_activity</field>
+        <field name="activity_type_id" ref="mail.mail_activity_data_todo"/>
+        <field name="activity_user_type">generic</field>
+        <field name="activity_user_field_name">responsible_id</field>
+        <field name="activity_summary">Shipment approaching ETA</field>
+    </record>
+
+    <record id="automation_freight_shipment_cutoff_reminder" model="base.automation">
+        <field name="name">Shipment to cutoff</field>
+        <field name="model_id" ref="viin_freight_management.model_freight_shipment"/>
+        <field name="trigger">on_time</field>
+        <field name="trg_date_id" ref="viin_freight_management.field_freight_shipment__cutoff"/>
+        <field name="trg_date_range">-2</field>
+        <field name="trg_date_range_type">day</field>
+        <field name="state">next_activity</field>
+        <field name="activity_type_id" ref="mail.mail_activity_data_todo"/>
+        <field name="activity_user_type">generic</field>
+        <field name="activity_user_field_name">responsible_id</field>
+        <field name="activity_summary">Shipment approaching cutoff</field>
+    </record>
+</odoo>
